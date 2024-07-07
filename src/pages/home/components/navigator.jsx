@@ -33,18 +33,28 @@ const StyledNav = styled.nav`
 `
 
 const StyledA = styled.div`
-	display: inline-block;
 	color: ${props => props.disabled ? "rgb(133, 133, 133)" : "#fff"};
 	padding: 2rem;
     letter-spacing: .2em;
     z-index: 10;
     font-size: 0.7vw;
-	transition: all 0.3s ease, color 0.3s ease;
-    :hover{
-        cursor: pointer;
-        color: rgb(175, 175, 175);
-        transform: scale(1.1);
+
+    span, img, i {
+        transition: all 0.3s ease, color 0.3s ease;
+        display: inline-block;
     }
+
+    ${props => !props.disabled ? `
+        :hover{
+            cursor: pointer;
+            color: rgb(175, 175, 175);
+            transform: scale(1.1);
+        }
+    ` : `
+        :hover{
+            cursor: not-allowed;
+        }
+    `};
 `
 
 const StyledAicon = styled(StyledA)`
