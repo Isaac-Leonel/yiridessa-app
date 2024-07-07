@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+@layer components {
+  :root {
+      --swiper-pagination-color: #5f1b1b;
+  }
+}

@@ -8,6 +8,7 @@ import { Annuncement } from "./components/announcement";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { OriginalImgPosition } from "../../components/navigator";
+import { ToastContainer } from "react-toastify";
 
 const styleIndex0 = {
     top: "400px",
@@ -60,6 +61,18 @@ export const Home = () => {
 
     return (
         <StyledHomeContainer>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
             <swiper-container 
                 init="false"
                 ref={swiperElRef}
@@ -94,5 +107,9 @@ const StyledHomeContainer = styled.div`
         justify-content: center;
         align-items: center;
         position: relative;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: red;
     }
 `
