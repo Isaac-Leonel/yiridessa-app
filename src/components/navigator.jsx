@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const OriginalImgPosition = {
-    top: "20px",
-    left: "50px"
+    top: "11px",
+    left: "23px"
 }
 
 export const Navigator = React.forwardRef((props, ref) => {
@@ -99,6 +99,7 @@ const StyledLinkDiv = styled.div`
     display: flex;
     overflow: hidden;
     align-items: center;
+    margin-left: 160px;
 `
 
 const StyledIconsContainer = styled.div`
