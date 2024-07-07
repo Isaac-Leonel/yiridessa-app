@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 export const OriginalImgPosition = {
     top: "11px",
-    left: "23px"
+    left: "23px",
+    width: "150px"
 }
 
 export const Navigator = React.forwardRef((props, ref) => {
@@ -40,10 +41,10 @@ const StyledNav = styled.nav`
 
 const StyledLink = styled(Link)`
 	color: ${props => props.disabled ? "rgb(133, 133, 133)" : "#fff"};
-	padding: 2rem;
+	padding: 2rem 0px 2rem 0px;
     letter-spacing: .2em;
     z-index: 10;
-    font-size: 0.7vw;
+    font-size: 15px;
 
     span, img, i {
         transition: all 0.3s ease, color 0.3s ease;
@@ -65,10 +66,10 @@ const StyledLink = styled(Link)`
 
 const StyledA = styled.a`
 	color: #fff;
-	padding: 2rem;
+	padding: 2rem 0px 2rem 0px;
     letter-spacing: .2em;
     z-index: 10;
-    font-size: 0.7vw;
+    font-size: 15px;
 
     span {
         transition: all 0.3s ease, color 0.3s ease;
@@ -98,6 +99,7 @@ const StyledLinkIconImg = styled(StyledLinkIcon)`
 const StyledLinkDiv = styled.div`
     display: flex;
     overflow: hidden;
+    gap: 02vw;
     align-items: center;
     margin-left: 160px;
 `
@@ -110,7 +112,7 @@ const StyledIconsContainer = styled.div`
 `
 
 const StyledImg = styled.img`
-    width: 09vw;
+    width: ${OriginalImgPosition.width};
     position: fixed;
     left: ${OriginalImgPosition.left};
     top: ${OriginalImgPosition.top};

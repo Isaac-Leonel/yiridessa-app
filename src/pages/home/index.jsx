@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { register } from 'swiper/element/bundle';
+import { PreRegister } from "./components/preRegister";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -9,7 +10,8 @@ import { OriginalImgPosition } from "../../components/navigator";
 
 const styleIndex0 = {
     top: "400px",
-    left: "50%"
+    left: "50%",
+    width: "300px"
 }
 
 export const Home = () => {
@@ -29,6 +31,7 @@ export const Home = () => {
                     const img = document.getElementById('yiridessaLogo')
                     img.style.top = styleIndex0.top
                     img.style.left = styleIndex0.left
+                    img.style.width = styleIndex0.width
                 },
                 slideChange(s) {
                     const img = document.getElementById('yiridessaLogo')
@@ -37,9 +40,11 @@ export const Home = () => {
                     if (s.activeIndex == 0) {
                         img.style.top = styleIndex0.top
                         img.style.left = styleIndex0.left
+                        img.style.width = styleIndex0.width
                     } else {
                         img.style.top = OriginalImgPosition.top
                         img.style.left = OriginalImgPosition.left
+                        img.style.width = OriginalImgPosition.width
                     }
                 },
             }
@@ -59,7 +64,7 @@ export const Home = () => {
                 ref={swiperElRef}
             >
                 <swiper-slide></swiper-slide>
-                <swiper-slide>Slide 2</swiper-slide>
+                <swiper-slide><PreRegister/></swiper-slide>
                 <swiper-slide>Slide 3</swiper-slide>
             </swiper-container>
         </StyledHomeContainer>
@@ -81,7 +86,7 @@ const StyledHomeContainer = styled.div`
     swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        background: #1f1f1f;
 
         /* Center slide text vertically */
         display: flex;
