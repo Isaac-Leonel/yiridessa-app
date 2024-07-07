@@ -1,11 +1,10 @@
 import React from "react";
-import { Navigator } from "./components/navigator";
+import { Navigator } from "../../components/navigator";
 import styled from "styled-components";
 
 export const Home = () => {
     return (
         <StyledHomeContainer>
-            <Navigator/>
         </StyledHomeContainer>
     )
 }
