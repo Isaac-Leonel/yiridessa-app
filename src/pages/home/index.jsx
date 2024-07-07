@@ -1,10 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { register } from 'swiper/element/bundle';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { OriginalImgPosition } from "../../components/navigator";
+
+const styleIndex0 = {
+    top: "400px",
+    left: "50%"
+}
 
 export const Home = () => {
     const swiperElRef = useRef(null);
@@ -14,9 +20,29 @@ export const Home = () => {
 
         // Object with parameters
         const params = {
+            slidesPerView: 1,
             pagination: true,
             direction: "vertical",
             mousewheel: true,
+            on: {
+                init(s) {
+                    const img = document.getElementById('yiridessaLogo')
+                    img.style.top = styleIndex0.top
+                    img.style.left = styleIndex0.left
+                },
+                slideChange(s) {
+                    const img = document.getElementById('yiridessaLogo')
+                    if (!img) return;
+
+                    if (s.activeIndex == 0) {
+                        img.style.top = styleIndex0.top
+                        img.style.left = styleIndex0.left
+                    } else {
+                        img.style.top = OriginalImgPosition.top
+                        img.style.left = OriginalImgPosition.left
+                    }
+                },
+            }
         };
   
       // Assign it to swiper element
@@ -32,7 +58,7 @@ export const Home = () => {
                 init="false"
                 ref={swiperElRef}
             >
-                <swiper-slide>Slide 2</swiper-slide>
+                <swiper-slide></swiper-slide>
                 <swiper-slide>Slide 2</swiper-slide>
                 <swiper-slide>Slide 3</swiper-slide>
             </swiper-container>
@@ -61,12 +87,6 @@ const StyledHomeContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        position: relative;
     }
 `

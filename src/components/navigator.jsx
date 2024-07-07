@@ -2,11 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Navigator = () => {
+export const OriginalImgPosition = {
+    top: "20px",
+    left: "50px"
+}
+
+export const Navigator = React.forwardRef((props, ref) => {
     return(
-        <StyledNav>
+        <StyledNav ref={ref}>
             <StyledLinkDiv>
-                <StyledLinkIconImg to={""}><StyledImg src="/img/logo_grande.png"/></StyledLinkIconImg>
+                <StyledLinkIconImg to={""}><StyledImg id="yiridessaLogo" src="/img/logo_grande.png"/></StyledLinkIconImg>
                 <StyledLink to={"books"}><span>LIVROS</span></StyledLink>
                 <StyledLink to={"jobs"}><span>PROFISSÔES</span></StyledLink>
                 <StyledA href="https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview" target="_blank"><span>REGRAS</span></StyledA>
@@ -20,7 +25,7 @@ export const Navigator = () => {
             </StyledIconsContainer>
         </StyledNav>
     )
-}
+})
 
 const StyledNav = styled.nav`
     width: 100%; 
@@ -87,7 +92,7 @@ const StyledLinkIcon = styled(StyledLink)`
 `
 
 const StyledLinkIconImg = styled(StyledLinkIcon)`
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 `
 
 const StyledLinkDiv = styled.div`
@@ -105,5 +110,7 @@ const StyledIconsContainer = styled.div`
 
 const StyledImg = styled.img`
     width: 09vw;
-    margin-top: -10px;
+    position: fixed;
+    left: ${OriginalImgPosition.left};
+    top: ${OriginalImgPosition.top};
 `
