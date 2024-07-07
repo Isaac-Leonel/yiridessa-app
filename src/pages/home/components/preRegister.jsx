@@ -3,66 +3,65 @@ import styled from "styled-components";
 import { InputYiridessa } from "../../../components/input";
 import { ButtonYiridessa } from "../../../components/button";
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import Lottie from "lottie-react";
+import potionAnimation from "../../../components/potionLoad.json";
 import 'react-toastify/dist/ReactToastify.css';
 
 export const PreRegister = () => {
-
+    const [loading, setLoading] = useState(false)
     const [email, setEmail] = useState("")
     const [discord, setDiscord] = useState("")
     const URL = 'https://yiridessabackend-production.up.railway.app/api/yiridessa/';
 
-    const handleEmail = (e) =>{
+    const handleEmail = (e) => {
         setEmail(e.target.value)
     }
-    const handleDiscord = (e) =>{
+    const handleDiscord = (e) => {
         setDiscord(e.target.value)
     }
 
-    const handleClick = (e) =>{
-        console.log(email, discord)
+    const handleClick = (e) => {
         sendPreRegister(email, discord)
     }
 
-    const sendPreRegister = async (email, discord) =>{
-        toast.success("Pré-registro enviado com sucesso!")
-        // if(email.trim() == '' || discord.trim() =='') return
-        // axios
-        // .post(`${URL}preRegister`, {email: email, discord:discord}, {timeout: 6000})
-        // .then(() => {toast.success("Pré-registro enviado com sucesso!")})
-        // .catch(error => {
-        //     if (error.error && error.error.message === 'O email já está registrado.') {
-        //         toast.warning('Este email já está cadastrado.');
-        //       } else {
-        //         toast.error('Não foi possível enviar o pré-registro. Tente novamente mais tarde.');
-        //       }
-        // })
+    const sendPreRegister = async (email, discord) => {
+        if(email.trim() == '' || discord.trim() == '') return
+
+        setLoading(true)
+        axios
+            .post(`${URL}preRegister`, {email: email, discord:discord}, {timeout: 6000})
+            .then(() => {toast.success("Pré-registro enviado com sucesso!")})
+            .catch(error => {
+                if (error.error && error.error.message === 'O email já está registrado.') {
+                    toast.warning('Este email já está cadastrado.');
+                } else {
+                    toast.error('Não foi possível enviar o pré-registro. Tente novamente mais tarde.');
+                }
+            })
+            .finally(() => setLoading(false))
     }
 
     return(
         <StyledPreRegisterContainer>
-            <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="dark"
-            />
-                <StyledContainerInf>
-                    <StyledH1>PRÉ-REGISTRO</StyledH1>
-                    <StyledH2>Faça o pré-registro para jogar em nosso servidor e garanta recompensas especiais no dia do lançamento!</StyledH2>
-                        <StyledContainerCenter>
-                            <StyledInputContainer><InputYiridessa placeholder={"E-MAIL"} onChange={handleEmail}></InputYiridessa></StyledInputContainer>
-                            <StyledInputContainer><InputYiridessa placeholder={"DISCORD"} onChange={handleDiscord}></InputYiridessa></StyledInputContainer>
-                            <StyledButtonContainer><ButtonYiridessa text={"PRÉ-REGISTRO"} onClick={handleClick}></ButtonYiridessa></StyledButtonContainer>
-                            <StyledP>Ao realizar o pré-registro, mais informações sobre o beta do servidor e as recompensas serão enviadas para o e-mail cadastrado. Fique atento para não perder nenhuma atualização importante!</StyledP>
-                        </StyledContainerCenter>
-                </StyledContainerInf>
+            <StyledContainerInf>
+                <StyledH1>PRÉ-REGISTRO</StyledH1>
+                <StyledH2>Faça o pré-registro para jogar em nosso servidor e garanta recompensas especiais no dia do lançamento!</StyledH2>
+                    <StyledContainerCenter>
+                        <StyledInputContainer><InputYiridessa placeholder={"E-MAIL"} onChange={handleEmail}></InputYiridessa></StyledInputContainer>
+                        <StyledInputContainer><InputYiridessa placeholder={"DISCORD"} onChange={handleDiscord}></InputYiridessa></StyledInputContainer>
+                        <StyledButtonContainer>
+                            <ButtonYiridessa onClick={handleClick}>
+                                {
+                                    loading ?
+                                    <Lottie animationData={potionAnimation} loop={true} style={{ width: "70px", marginTop: "8px" }}/> :
+                                    "PRÉ-REGISTRO"
+                                }
+                            </ButtonYiridessa>
+                        </StyledButtonContainer>
+                        <StyledP>Ao realizar o pré-registro, mais informações sobre o beta do servidor e as recompensas serão enviadas para o e-mail cadastrado. Fique atento para não perder nenhuma atualização importante!</StyledP>
+                    </StyledContainerCenter>
+            </StyledContainerInf>
             <StyledImg src="/img/rewards.png"></StyledImg>
         </StyledPreRegisterContainer>
     )

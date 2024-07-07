@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-export const ButtonYiridessa = ({text, onClick}) =>{
+export const ButtonYiridessa = ({onClick, children}) =>{
 
     const handleClick = (e) =>{
         if(onClick) onClick(e)
     }
 
     return(
-        <StyledButton onClick={handleClick}>{text??""}</StyledButton>
+        <StyledButton onClick={handleClick}>{children ?? ""}</StyledButton>
     )
 }
 
