@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { register } from 'swiper/element/bundle';
 import { PreRegister } from "./components/preRegister";
+import { Annuncement } from "./components/announcement";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -65,7 +66,7 @@ export const Home = () => {
             >
                 <swiper-slide></swiper-slide>
                 <swiper-slide><PreRegister/></swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide><Annuncement/></swiper-slide>
             </swiper-container>
         </StyledHomeContainer>
     )
