@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from "react";
 import styled from "styled-components";
 import { OriginalImgPosition } from "../../components/navigator";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, EffectCoverflow } from 'swiper/modules';
 import { BookCard } from "./components/bookCard";
 
 // Import Swiper styles
@@ -11,7 +11,6 @@ import 'swiper/css/pagination';
 import { register } from "swiper/element";
 
 export const Books = () => {
-
     const swiperElRef = useRef(null);
 
     useEffect(() => {
@@ -19,25 +18,19 @@ export const Books = () => {
         const asyncFunction = async () => {
             // Object with parameters
             const params = {
-                slidesPerView: 6,
-                spaceBetween: 10,
-                pagination:{
-                clickable: true,
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
                 },
-                breakpoints:{
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 50,
-                }},
-                modules: [Pagination]
+                pagination: true,
+                modules: [EffectCoverflow, Pagination]
             };
         
             // Assign it to swiper element
@@ -61,15 +54,18 @@ export const Books = () => {
     return (
         <StyledBooksContainer>
             <StyledGIF>
-                    <BlurOverlay />
-                    <StyledContainer>
-                        <swiper-container 
-                            init="false" 
-                            ref={swiperElRef}>
-                            <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
-                            <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
-                        </swiper-container>
-                     </StyledContainer>
+                <BlurOverlay />
+                <StyledContainer>
+                    <swiper-container 
+                        init="false" 
+                        ref={swiperElRef}
+                        id={"mySwiper"}
+                    >
+                        <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
+                        <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
+                        <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
+                    </swiper-container>
+                </StyledContainer>
             </StyledGIF>
         </StyledBooksContainer>
        
@@ -117,21 +113,17 @@ const StyledContainer = styled.div`
     backdrop-filter: blur(10px); /* Desfoque de fundo */
     -webkit-backdrop-filter: blur(10px); /* Desfoque de fundo para Safari */
 
-    .swiper {
+    #mySwiper {
         width: 100%;
         height: 100%;
-        padding: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     swiper-slide {
-        text-align: center;
-        width: 100px;
-        height: 100px;
-
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 100%;
     }
-
 `
