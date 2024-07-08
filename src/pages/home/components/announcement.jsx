@@ -1,16 +1,51 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { register } from 'swiper/element/bundle';
+import { AnnouncementComponent } from "./announcementComponent";
+import { useNavigate } from "react-router-dom";
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+const banners = [
+    {
+        imageName: "banner1.png",
+        title: "Yiridessa",
+        description: "Liberte-se das amarras da realidade e mergulhe em um universo de magia, combate e intriga. No Yiridessa Roleplay, a fantasia ganha vida de maneira inigualável, e cada escolha que você fizer moldará o destino do seu personagem.",
+        click: true,
+        link: "https://www.youtube.com/channel/UCATS-dtbr1ODcyOXxNN5N-Q",
+    },
+    {
+        imageName: "banner2.png",
+        title: "Livros",
+        description: "O primeiro exemplar da Biblioteca Yiridessa já está disponível! Venha conferir e prepare-se para uma emocionante aventura.",
+        click: true,
+        route: "/books"
+    },
+    {
+        imageName: "banner3.png",
+        title: "Profissoes",
+        description: "Descubra os diversos caminhos que você pode seguir no mundo de Yiridessa. Prepare-se para vender, comprar e comercializar produtos únicos e jamais vistos.",
+        click: true,
+        route: "/jobs"
+    },
+    {
+        imageName: "banner4.png",
+        title: "Regras",
+        description: "Liberte-se das amarras da realidade e mergulhe em um universo de magia, combate e intriga. No Yiridessa Roleplay, a fantasia ganha vida de maneira inigualável, e cada escolha que você fizer moldará o destino do seu personagem.",
+        click: true,
+        link: "https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview"
+    },
+   
+]
 
 export const Annuncement = () =>{
     const swiperElRef = useRef(null);
     const swiperEl2Ref = useRef(null);
     const progressCircle = useRef(null);
     const progressContent = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const asyncFunc = async () =>  {
@@ -37,7 +72,7 @@ export const Annuncement = () =>{
                     swiper: swiperEl2Ref.current
                 },
                 autoplay: {
-                    enabled: true,
+                    enabled: false,
                     delay: 5000,
                     pauseOnMouseEnter: true,
                 },
@@ -71,20 +106,45 @@ export const Annuncement = () =>{
                     </svg>
                     <span ref={progressContent}></span>
                 </div>
-                <swiper-slide> </swiper-slide>
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide>
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide>
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide>
+                {
+                    banners.reverse().map(banner => {
+                        return (
+                            <swiper-slide>
+                                <AnnouncementComponent 
+                                    onClick={
+                                        banner.click ? 
+                                        banner.link ? 
+                                        () => {
+                                            window.open(banner.link, "_blank")
+                                        } : 
+                                        () => {
+                                            navigate(banner.route)
+                                        }
+                                        : null
+                                    }
+                                    imageName={banner.imageName} 
+                                    title={banner.title}
+                                    description={banner.description}
+                                />
+                            </swiper-slide>
+                        )
+                    })
+                }
+           
             </swiper-container>
             <swiper-container 
                 init="false"
                 ref={swiperEl2Ref}
                 id={"mySwiper"}
             >
-                <swiper-slide> <img src="/img/banner1.png" /></swiper-slide>
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide>
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide>
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide>
+                {
+                    banners.map(banner => {
+                        return (
+                            <swiper-slide> <img src={`/img/${banner.imageName}`} /></swiper-slide>
+                        )
+                    })
+                }
+            
             </swiper-container>
         </StyledDivContainer>
     )
@@ -114,6 +174,7 @@ const StyledDivContainer = styled.div`
         height: 20%;
         box-sizing: border-box;
         padding: 10px 0 0px 0;
+        background-color: #110000;
 
         swiper-slide {
             width: 25%;

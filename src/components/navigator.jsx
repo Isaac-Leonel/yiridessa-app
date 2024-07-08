@@ -21,8 +21,8 @@ export const Navigator = React.forwardRef((props, ref) => {
                 <StyledLink disabled to={""}><span>ALLOWLIST</span></StyledLink>
             </StyledLinkDiv>
             <StyledIconsContainer>
-                <StyledLinkIcon><i className="fab fa-discord"></i></StyledLinkIcon>
-                <StyledLinkIcon><i className="fab fa-youtube"></i></StyledLinkIcon>
+                <StyledLinkIcon href="https://discord.gg/y4ZuCc9e8r" target="_blank"><i className="fab fa-discord"></i></StyledLinkIcon>
+                <StyledLinkIcon href="https://www.youtube.com/channel/UCATS-dtbr1ODcyOXxNN5N-Q" target="_blank"><i className="fab fa-youtube"></i></StyledLinkIcon>
             </StyledIconsContainer>
         </StyledNav>
     )
@@ -84,7 +84,7 @@ const StyledA = styled.a`
     }
 `
 
-const StyledLinkIcon = styled(StyledLink)`
+const StyledLinkIcon = styled(StyledA)`
     padding: 0;
 
     i {
@@ -93,7 +93,7 @@ const StyledLinkIcon = styled(StyledLink)`
     }
 `
 
-const StyledLinkIconImg = styled(StyledLinkIcon)`
+const StyledLinkIconImg = styled(StyledLink)`
     padding: 0px 0px 0px 0px;
 `
 

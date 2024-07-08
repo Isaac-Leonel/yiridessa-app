@@ -103,7 +103,12 @@ export const Home = () => {
                         <PreRegister/>
                     </StyledGIF>
                 </swiper-slide>
-                <swiper-slide><Annuncement/></swiper-slide>
+                <swiper-slide>
+                    <StyledGIF>
+                        <BlurOverlay />
+                        <Annuncement/>
+                    </StyledGIF>
+                </swiper-slide>
             </swiper-container>
         </StyledHomeContainer>
     )
