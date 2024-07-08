@@ -127,6 +127,7 @@ const StyledP = styled.p`
     width: 30vw;
     text-align: center;
     font-weight: 100;
+    margin-top: 20px;
 `
 
 const StyledImg = styled.img`
