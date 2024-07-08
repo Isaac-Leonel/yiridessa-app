@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { register } from 'swiper/element/bundle';
 import { PreRegister } from "./components/preRegister";
 import { Annuncement } from "./components/announcement";
+import { HomeContainer } from "./components/home";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,9 +12,9 @@ import { OriginalImgPosition } from "../../components/navigator";
 import { ToastContainer } from "react-toastify";
 
 const styleIndex0 = {
-    top: "400px",
-    left: "50%",
-    width: "300px"
+    top: "25%",
+    left: "05%",
+    width: "400px"
 }
 
 export const Home = () => {
@@ -77,8 +78,18 @@ export const Home = () => {
                 init="false"
                 ref={swiperElRef}
             >
-                <swiper-slide></swiper-slide>
-                <swiper-slide><PreRegister/></swiper-slide>
+                <swiper-slide>
+                    <StyledGIF>
+                        <BlurOverlay />
+                        <HomeContainer/>
+                    </StyledGIF>
+                </swiper-slide>
+                <swiper-slide>
+                    <StyledGIF>
+                        <BlurOverlay />
+                        <PreRegister/>
+                    </StyledGIF>
+                </swiper-slide>
                 <swiper-slide><Annuncement/></swiper-slide>
             </swiper-container>
         </StyledHomeContainer>
@@ -100,7 +111,7 @@ const StyledHomeContainer = styled.div`
     swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #1f1f1f;
+        background: #110000;
 
         /* Center slide text vertically */
         display: flex;
@@ -113,3 +124,22 @@ const StyledHomeContainer = styled.div`
         background: red;
     }
 `
+
+const StyledGIF = styled.div`
+    background-image: url('/gif/background_yiri.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+`
+
+const BlurOverlay = styled.div`
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px); /* Ajuste o valor do blur conforme necessário */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+`;
