@@ -49,7 +49,7 @@ export const PreRegister = () => {
                 <StyledH2>Faça o pré-registro para jogar em nosso servidor e garanta recompensas especiais no dia do lançamento!</StyledH2>
                     <StyledContainerCenter>
                         <StyledInputContainer><InputYiridessa placeholder={"E-MAIL"} onChange={handleEmail}></InputYiridessa></StyledInputContainer>
-                        <StyledInputContainer><InputYiridessa placeholder={"DISCORD"} onChange={handleDiscord}></InputYiridessa></StyledInputContainer>
+                        <StyledInputContainer><InputYiridessa placeholder={"DISCORD ID"} onChange={handleDiscord}></InputYiridessa></StyledInputContainer>
                         <StyledButtonContainer>
                             <ButtonYiridessa onClick={handleClick}>
                                 {
@@ -67,6 +67,7 @@ export const PreRegister = () => {
     )
 }
 
+
 const StyledPreRegisterContainer = styled.div`
     height: 80vh;
     display: flex;
@@ -77,12 +78,14 @@ const StyledPreRegisterContainer = styled.div`
     text-align: left;
     width: 90vw;
     margin-top: 10vh;
-    background: #470F0F;
+    background: rgba(71, 15, 15, 0.685); /* Fundo semi-transparente */
     border-radius: 20px;
     box-shadow: 11px 6px 26px 0px rgba(0,0,0,0.4);
     -webkit-box-shadow: 11px 6px 26px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 11px 6px 26px 0px rgba(0,0,0,0.4);
-`
+    backdrop-filter: blur(10px); /* Desfoque de fundo */
+    -webkit-backdrop-filter: blur(10px); /* Desfoque de fundo para Safari */
+`;
 
 const StyledContainerCenter = styled.div`
     display: flex;
@@ -128,7 +131,7 @@ const StyledP = styled.p`
 
 const StyledImg = styled.img`
     position: absolute;
-    right: 05%;
-    width: 50%;
-    bottom: 05%;
+    right: 0%;
+    width: 58%;
+    bottom: 0%;
 `

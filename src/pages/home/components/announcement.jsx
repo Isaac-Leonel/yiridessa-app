@@ -71,7 +71,7 @@ export const Annuncement = () =>{
                     </svg>
                     <span ref={progressContent}></span>
                 </div>
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide>
+                <swiper-slide> </swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide>
@@ -81,7 +81,7 @@ export const Annuncement = () =>{
                 ref={swiperEl2Ref}
                 id={"mySwiper"}
             >
-                <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide>
+                <swiper-slide> <img src="/img/banner1.png" /></swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide>
@@ -144,7 +144,7 @@ const StyledDivContainer = styled.div`
         align-items: center;
         justify-content: center;
         font-weight: bold;
-        color: #5f1b1b;
+        color: #ffffff;
     }
 
     .autoplay-progress svg {
@@ -156,11 +156,15 @@ const StyledDivContainer = styled.div`
         width: 100%;
         height: 100%;
         stroke-width: 4px;
-        stroke: #5f1b1b;
+        stroke: #ffffff;
         fill: none;
         stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
         stroke-dasharray: 125.6;
         transform: rotate(-90deg);
     }
+
+`
+
+const StyledContainerImg = styled.div`
 
 `

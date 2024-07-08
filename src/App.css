@@ -40,7 +40,7 @@
 @layer components {
   :root {
       --swiper-pagination-color: #5f1b1b;
-      --swiper-navigation-color: #5f1b1b;
+      --swiper-navigation-color: #fff;
       --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
       --swiper-scrollbar-drag-bg-color: #5f1b1b;
       --swiper-scrollbar-size: 6px;

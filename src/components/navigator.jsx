@@ -37,6 +37,7 @@ const StyledNav = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to bottom, #070000 70%, transparent 100%);
 `
 
 const StyledLink = styled(Link)`

@@ -12,8 +12,8 @@ import { OriginalImgPosition } from "../../components/navigator";
 import { ToastContainer } from "react-toastify";
 
 const styleIndex0 = {
-    top: "25%",
-    left: "05%",
+    top: "12vw",
+    left: "5vw",
     width: "400px"
 }
 
@@ -133,9 +133,7 @@ const StyledHomeContainer = styled.div`
         position: relative;
     }
 
-    .swiper-pagination-bullet-active {
-        background: red;
-    }
+    
 `
 
 const StyledGIF = styled.div`
