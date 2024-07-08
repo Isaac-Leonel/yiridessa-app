@@ -21,43 +21,56 @@ export const Home = () => {
     const swiperElRef = useRef(null);
 
     useEffect(() => {
-        register();
-
-        // Object with parameters
-        const params = {
-            slidesPerView: 1,
-            pagination: true,
-            direction: "vertical",
-            mousewheel: true,
-            on: {
-                init(s) {
-                    const img = document.getElementById('yiridessaLogo')
-                    img.style.top = styleIndex0.top
-                    img.style.left = styleIndex0.left
-                    img.style.width = styleIndex0.width
+        const asyncFunction = async () => {
+            // Object with parameters
+            const params = {
+                slidesPerView: 1,
+                pagination: false,
+                scrollbar: {
+                    enabled: true,
+                    draggable: true,
+                    clickable: false
                 },
-                slideChange(s) {
-                    const img = document.getElementById('yiridessaLogo')
-                    if (!img) return;
-
-                    if (s.activeIndex == 0) {
+                noSwiping: false,
+                direction: "vertical",
+                mousewheel: true,
+                keyboard: false,
+                watchOverflow: false,
+                allowTouchMove: false,
+                paginationClickable: false,
+                on: {
+                    init(s) {
+                        const img = document.getElementById('yiridessaLogo')
                         img.style.top = styleIndex0.top
                         img.style.left = styleIndex0.left
                         img.style.width = styleIndex0.width
-                    } else {
-                        img.style.top = OriginalImgPosition.top
-                        img.style.left = OriginalImgPosition.left
-                        img.style.width = OriginalImgPosition.width
-                    }
-                },
-            }
-        };
-  
-      // Assign it to swiper element
-      Object.assign(swiperElRef.current, params);
-  
-      // initialize swiper
-      swiperElRef.current.initialize();
+                    },
+                    slideChange(s) {
+                        const img = document.getElementById('yiridessaLogo')
+                        if (!img) return;
+
+                        if (s.activeIndex == 0) {
+                            img.style.top = styleIndex0.top
+                            img.style.left = styleIndex0.left
+                            img.style.width = styleIndex0.width
+                        } else {
+                            img.style.top = OriginalImgPosition.top
+                            img.style.left = OriginalImgPosition.left
+                            img.style.width = OriginalImgPosition.width
+                        }
+                    },
+                }
+            };
+        
+            // Assign it to swiper element
+            await Object.assign(swiperElRef.current, params);
+        
+            // initialize swiper
+            swiperElRef.current.initialize();
+        }
+
+        register();
+        asyncFunction();
     }, []);
 
     return (

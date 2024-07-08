@@ -26,7 +26,7 @@ export const PreRegister = () => {
     }
 
     const sendPreRegister = async (email, discord) => {
-        if(email.trim() == '' || discord.trim() == '') return
+        if(email.trim() == '' || discord.trim() == '' || loading) return
 
         setLoading(true)
         axios
