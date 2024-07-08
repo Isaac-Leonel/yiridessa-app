@@ -37,7 +37,6 @@ const banners = [
         click: true,
         link: "https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview"
     },
-   
 ]
 
 export const Annuncement = () =>{
@@ -72,7 +71,7 @@ export const Annuncement = () =>{
                     swiper: swiperEl2Ref.current
                 },
                 autoplay: {
-                    enabled: false,
+                    enabled: true,
                     delay: 5000,
                     pauseOnMouseEnter: true,
                 },
