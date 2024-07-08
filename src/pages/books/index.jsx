@@ -1,9 +1,10 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import styled from "styled-components";
 import { OriginalImgPosition } from "../../components/navigator";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCoverflow } from 'swiper/modules';
 import { BookCard } from "./components/bookCard";
+import books from './books';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,6 +13,7 @@ import { register } from "swiper/element";
 
 export const Books = () => {
     const swiperElRef = useRef(null);
+    const [slide, setSlide] = useState(0)
 
     useEffect(() => {
         
@@ -23,14 +25,22 @@ export const Books = () => {
                 centeredSlides: true,
                 slidesPerView: "auto",
                 coverflowEffect: {
-                    rotate: 50,
+                    rotate: 20,
                     stretch: 0,
                     depth: 100,
                     modifier: 1,
                     slideShadows: true,
                 },
                 pagination: true,
-                modules: [EffectCoverflow, Pagination]
+                modules: [EffectCoverflow, Pagination],
+                on: {
+                    init(s) {
+                        setSlide(s.activeIndex)
+                    },
+                    slideChange(s) {
+                        setSlide(s.activeIndex)
+                    },
+                }
             };
         
             // Assign it to swiper element
@@ -61,9 +71,13 @@ export const Books = () => {
                         ref={swiperElRef}
                         id={"mySwiper"}
                     >
-                        <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
-                        <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
-                        <swiper-slide><BookCard imageName={"background_preludio.jpg"}/></swiper-slide>
+                        {
+                            books.map((book, index) => {
+                                return (
+                                    <swiper-slide key={index}><BookCard imageName={book.img} active={slide == index}/></swiper-slide>
+                                )
+                            })
+                        }
                     </swiper-container>
                 </StyledContainer>
             </StyledGIF>

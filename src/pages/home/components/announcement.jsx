@@ -106,9 +106,9 @@ export const Annuncement = () =>{
                     <span ref={progressContent}></span>
                 </div>
                 {
-                    banners.reverse().map(banner => {
+                    banners.reverse().map((banner, index) => {
                         return (
-                            <swiper-slide>
+                            <swiper-slide key={index}>
                                 <AnnouncementComponent 
                                     onClick={
                                         banner.click ? 
@@ -137,9 +137,9 @@ export const Annuncement = () =>{
                 id={"mySwiper"}
             >
                 {
-                    banners.map(banner => {
+                    banners.map((banner, index) => {
                         return (
-                            <swiper-slide> <img src={`/img/${banner.imageName}`} /></swiper-slide>
+                            <swiper-slide key={index}> <img src={`/img/${banner.imageName}`} /></swiper-slide>
                         )
                     })
                 }
