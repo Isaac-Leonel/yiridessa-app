@@ -9,6 +9,8 @@ import 'swiper/css/pagination';
 export const Annuncement = () =>{
     const swiperElRef = useRef(null);
     const swiperEl2Ref = useRef(null);
+    const progressCircle = useRef(null);
+    const progressContent = useRef(null);
 
     useEffect(() => {
         const asyncFunc = async () =>  {
@@ -33,6 +35,14 @@ export const Annuncement = () =>{
                 loop: true,
                 thumbs: {
                     swiper: swiperEl2Ref.current
+                },
+                autoplay: {
+                    enabled: true,
+                    delay: 5000,
+                    pauseOnMouseEnter: true,
+                },
+                on: {
+                    autoplayTimeLeft: onAutoplayTimeLeft
                 }
             };
             await Object.assign(swiperElRef.current, params);      
@@ -43,6 +53,11 @@ export const Annuncement = () =>{
         asyncFunc();
     }, []);
 
+    const onAutoplayTimeLeft = (s, time, progress) => {
+        progressCircle.current.style.setProperty('--progress', 1 - progress);
+        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    };
+
     return(
         <StyledDivContainer>
             <swiper-container 
@@ -50,6 +65,12 @@ export const Annuncement = () =>{
                 ref={swiperElRef}
                 id={"mySwiper2"}
             >
+                <div className="autoplay-progress" slot="container-end">
+                    <svg viewBox="0 0 48 48" ref={progressCircle}>
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span ref={progressContent}></span>
+                </div>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide>
                 <swiper-slide> <img src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide>
@@ -111,4 +132,35 @@ const StyledDivContainer = styled.div`
         height: 100%;
         object-fit: cover;
     }
+
+    .autoplay-progress {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        z-index: 10;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #5f1b1b;
+    }
+
+    .autoplay-progress svg {
+        --progress: 0;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        stroke-width: 4px;
+        stroke: #5f1b1b;
+        fill: none;
+        stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+        stroke-dasharray: 125.6;
+        transform: rotate(-90deg);
+    }
+
 `
