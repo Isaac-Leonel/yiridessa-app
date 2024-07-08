@@ -51,6 +51,12 @@ const BodyDiv = styled.div`
     align-items: center;
     font-weight: 400;
     font-size: .9rem;
+
+    .first-letter {
+        line-height: normal;
+        font-family: FireFlight;
+        font-size: 30px;
+    }
 `
 
 const StyledTextDiv = styled.div`
