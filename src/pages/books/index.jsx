@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from "react";
 import styled from "styled-components";
 import { OriginalImgPosition } from "../../components/navigator";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, EffectCoverflow } from 'swiper/modules';
+import { Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
 import { BookCard } from "./components/bookCard";
 import books from './books';
 
@@ -24,6 +24,7 @@ export const Books = () => {
                 grabCursor: true,
                 centeredSlides: true,
                 slidesPerView: "auto",
+                mousewheel: true,
                 coverflowEffect: {
                     rotate: 20,
                     stretch: 0,
@@ -32,7 +33,8 @@ export const Books = () => {
                     slideShadows: true,
                 },
                 pagination: true,
-                modules: [EffectCoverflow, Pagination],
+                keyboard: false,
+                modules: [EffectCoverflow, Pagination, Mousewheel],
                 on: {
                     init(s) {
                         setSlide(s.activeIndex)
@@ -130,8 +132,7 @@ const StyledContainer = styled.div`
     #mySwiper {
         width: 100%;
         height: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 50px 20px 50px 20px;
     }
 
     swiper-slide {
