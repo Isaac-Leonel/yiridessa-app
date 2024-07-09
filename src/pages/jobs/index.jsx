@@ -71,7 +71,6 @@ const jobs = [
 
 export const Jobs = () => {
     const swiperElRef = useRef(null);
-    const [job, setJob] = useState({})
     const [modalOpen, setModalOpen] = useState(false)
     const [slide, setSlide] = useState(0)
 

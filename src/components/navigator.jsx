@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 export const OriginalImgPosition = {
@@ -9,16 +9,23 @@ export const OriginalImgPosition = {
 }
 
 export const Navigator = React.forwardRef((props, ref) => {
+    const location = useLocation();
+    const [pathName, setPathName] = useState("")
+
+    useEffect(() => {
+        setPathName(location.pathname.replace("/", ""))
+    }, [location]);
+
     return(
         <StyledNav ref={ref}>
             <StyledLinkDiv>
                 <StyledLinkIconImg to={""}><StyledImg id="yiridessaLogo" src="/img/logo_grande.png"/></StyledLinkIconImg>
-                <StyledLink to={"books"}><span>LIVROS</span></StyledLink>
-                <StyledLink to={"jobs"}><span>PROFISSÔES</span></StyledLink>
-                <StyledA href="https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview" target="_blank"><span>REGRAS</span></StyledA>
-                <StyledLink to={"races"}><span>RAÇAS</span></StyledLink>
-                <StyledLink disabled to={""}><span>CLASSES</span></StyledLink>
-                <StyledLink disabled to={""}><span>ALLOWLIST</span></StyledLink>
+                <StyledLink to={"books"} active={pathName == "books"}><span>LIVROS</span></StyledLink>
+                <StyledLink to={"jobs"} active={pathName == "jobs"}><span>PROFISSÔES</span></StyledLink>
+                <StyledA href="https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview" target="_blank" active={pathName == "rules"}><span>REGRAS</span></StyledA>
+                <StyledLink to={"races"} active={pathName == "races"}><span>RAÇAS</span></StyledLink>
+                <StyledLink disabled to={""} active={pathName == "classes"}><span>CLASSES</span></StyledLink>
+                <StyledLink disabled to={""} active={pathName == "allowlist"}><span>ALLOWLIST</span></StyledLink>
             </StyledLinkDiv>
             <StyledIconsContainer>
                 <StyledLinkIcon href="https://discord.gg/y4ZuCc9e8r" target="_blank"><i className="fab fa-discord"></i></StyledLinkIcon>
@@ -41,7 +48,7 @@ const StyledNav = styled.nav`
 `
 
 const StyledLink = styled(Link)`
-	color: ${props => props.disabled ? "rgb(133, 133, 133)" : "#fff"};
+	color: ${props => props.disabled ? "rgb(133, 133, 133)" : props.active ? "#961919" : "#fff"};
 	padding: 2rem 0px 2rem 0px;
     letter-spacing: .2em;
     z-index: 10;
