@@ -19,4 +19,9 @@ const StyledInput = styled.input`
     width: 100%;
     font-size: 0.9vw;
     font-family: Roboto;
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
 `

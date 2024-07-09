@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { OriginalImgPosition } from "../../components/navigator";
 import { ToastContainer } from "react-toastify";
+import { VideoContainer } from "./components/videoContainer";
 
 const styleIndex0 = {
     top: "12vw",
@@ -101,6 +102,12 @@ export const Home = () => {
                     <StyledGIF>
                         <BlurOverlay />
                         <PreRegister/>
+                    </StyledGIF>
+                </swiper-slide>
+                <swiper-slide>
+                    <StyledGIF>
+                        <BlurOverlay />
+                        <VideoContainer/>
                     </StyledGIF>
                 </swiper-slide>
                 <swiper-slide>
