@@ -105,6 +105,7 @@ export const Books = () => {
             refExpandDiv.current.style.height = `${rect.height}px`
             refExpandDiv.current.style.top = `${rect.top}px`
             refExpandDiv.current.style.left = `${rect.left}px`
+            refExpandDiv.current.style.textAlign = "justify";
             refExpandDiv.current.divRef = divRef
             refExpandDiv.current.focus()
         }, 100)()
@@ -118,6 +119,7 @@ export const Books = () => {
             refExpandDiv.current.style.zIndex = 0;
             refExpandDiv.current.style.opacity = 0;
             refExpandDiv.current.divRef.current.firstChild.style.transform = ""
+            refExpandDiv.current.style.textAlign = "left";
         }, 700)()
     }, [slide])
 
@@ -299,5 +301,9 @@ const StyledContainer = styled.div`
         background-size: cover;
         width: 300px;
         height: 470px;
+    }
+
+    swiper-container {
+        height: unset !important;
     }
 `
