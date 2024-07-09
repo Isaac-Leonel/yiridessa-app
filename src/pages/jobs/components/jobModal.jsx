@@ -13,10 +13,20 @@ export const JobModal = ({ url, jobName, text, open, onHide }) => {
                         <StyledTextDiv dangerouslySetInnerHTML={{__html: text}} />
                     </BodyDiv>
                 </StyledModal>
+                <StyledAdorn src="/adornments/3.png" />
             </StyledContainer>
        </>
     )
 }
+
+const StyledAdorn = styled.img`
+    position: absolute;
+    left: 57%;
+    height: 20%;
+    bottom: -7%;
+    width: 50px;
+    transform: rotateZ(91deg);
+`
 
 const StyledContainer = styled.div`
     display: flex;
@@ -25,6 +35,7 @@ const StyledContainer = styled.div`
     width: 100vw;
     color: white;
     height: auto; /* Compatibilidade com Safari */
+    position: relative;
 `
 
 const StyledModal = styled.div`

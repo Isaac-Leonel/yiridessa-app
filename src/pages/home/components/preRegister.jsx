@@ -63,6 +63,8 @@ export const PreRegister = () => {
                     </StyledContainerCenter>
             </StyledContainerInf>
             <StyledImg src="/img/rewards.png"></StyledImg>
+            <StyledAdorn src="/adornments/1.png" />
+            <StyledAdorn2 src="/adornments/2.png" />
         </StyledPreRegisterContainer>
     )
 }
@@ -135,4 +137,20 @@ const StyledImg = styled.img`
     right: 0%;
     width: 58%;
     bottom: 0%;
+`
+
+const StyledAdorn = styled.img`
+    position: absolute;
+    left: -2%;
+    width: 15%;
+    bottom: -2%;
+    transform: rotateY(180deg);
+`
+
+const StyledAdorn2 = styled.img`
+    position: absolute;
+    right: -3%;
+    width: 10%;
+    top: -8%;
+    transform: rotateZ(325deg);
 `
