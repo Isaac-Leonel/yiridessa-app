@@ -39,14 +39,7 @@ const StyledVideoContainer = styled.div`
     height: 80vh;
     width: 90vw;
 
-    @media screen and (min-width: 600px) {
-        padding-top: 20px;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @media screen and (min-width: 768px) {
+    @media only screen and (max-width: 600px) {
         padding-top: 20px;
         align-items: center;
         flex-direction: column;
@@ -65,11 +58,7 @@ const StyledText = styled.div`
     line-height: 60px;
     padding-left: 20px;
     
-    @media screen and (min-width: 600px) {
-        width: 100%;
-    }
-
-    @media screen and (min-width: 768px) {
+    @media only screen and (max-width: 600px) {
         width: 100%;
     }
 `
@@ -81,12 +70,7 @@ const StyledVideoDiv = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media screen and (min-width: 600px) {
-        width: 100%;
-        height: 100%;
-    }
-
-    @media screen and (min-width: 768px) {
+    @media only screen and (max-width: 600px) {
         width: 100%;
         height: 100%;
     }
@@ -99,6 +83,10 @@ const StyledVideoDiv = styled.div`
         position: absolute;
         top: 0;
         z-index: 0;
+
+        @media only screen and (max-width: 600px) {
+            min-width: 0px;
+        }
     }
 
     .video {
@@ -106,5 +94,10 @@ const StyledVideoDiv = styled.div`
         width: 85%;
         min-width: 560px;
         z-index: 1;
+
+        @media only screen and (max-width: 600px) {
+            width: 65%;
+            min-width: 0px;
+        }
     }
 `
