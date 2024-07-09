@@ -18,7 +18,7 @@ export const JobModal = ({ url, jobName, text, open, onHide }) => {
                 <Modal.Title style={{ fontSize: "35px" }}>
                     {jobName}
                 </Modal.Title>
-                <i class="fas fa-times" onClick={onHide}></i>
+                <i className="fas fa-times" onClick={onHide}></i>
             </StyledModalHeader>
             <Modal.Body style={{ backgroundColor: "#1f1f1f" }}>
                 <BodyDiv>
