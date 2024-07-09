@@ -11,7 +11,7 @@ export const VideoContainer = () => {
                 <div className='video'>
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/h-uocRRgas4?si=73lyOiv8_o_d2UwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <svg width="1134" height="780" viewBox="0 0 1134 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* <svg width="1134" height="780" viewBox="0 0 1134 780" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_i_86_6)">
                         <path d="M1098.09 73.126C1092.87 47.7689 1077.02 25.8719 1054.56 12.9962V12.9962C1028.34 -2.03874 996.414 -3.29911 969.085 9.62125L924.048 30.9126C888.251 47.8355 847.942 52.7271 809.136 44.857L693.15 21.3337C654.816 13.5591 615.202 14.7786 577.419 24.8965L467.727 54.2705C431.879 63.8701 394.359 65.4658 357.825 58.9446L110.236 14.7499C91.148 11.3428 71.4735 13.9459 53.9288 22.1998V22.1998C11.573 42.1261 -9.55737 90.2726 4.45162 134.936L43.3956 259.097C56.9079 302.177 58.1374 348.172 46.9458 391.913L7.41064 546.429C-4.53778 593.127 4.66057 642.717 32.5618 682.024V682.024C68.5745 732.758 130.192 758.748 191.661 749.132L390.541 718.018C420.902 713.268 451.874 714.089 481.941 720.441L735.189 773.943C769.701 781.234 805.355 781.228 839.864 773.925L923.616 756.201C1044.77 730.563 1126 616.293 1110.41 493.445V493.445C1107.5 470.468 1107.95 447.189 1111.76 424.344L1130.25 313.494C1135.37 282.775 1134.78 251.375 1128.5 220.871L1098.09 73.126Z" fill="#2F0D0D"/>
                     </g>
@@ -28,7 +28,7 @@ export const VideoContainer = () => {
                         <feBlend mode="normal" in2="shape" result="effect1_innerShadow_86_6"/>
                         </filter>
                     </defs>
-                </svg>
+                </svg> */}
             </StyledVideoDiv>
         </StyledVideoContainer>
     )
@@ -69,13 +69,17 @@ const StyledVideoDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('/Rectangle.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @media only screen and (max-width: 600px) {
         width: 100%;
         height: 100%;
     }
 
-    svg {
+    /* svg {
         width: 100%;
         height: 100%;
         min-width: 700px;
@@ -87,11 +91,11 @@ const StyledVideoDiv = styled.div`
         @media only screen and (max-width: 600px) {
             min-width: 0px;
         }
-    }
+    } */
 
     .video {
-        height: 50%;
-        width: 85%;
+        height: 80%;
+        width: 80%;
         min-width: 560px;
         z-index: 1;
 
