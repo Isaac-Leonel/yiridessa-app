@@ -39,8 +39,8 @@ export const BookCard = ({ imageName, text, title, active, callExpandDiv }) => {
                 </div>
             </div>
         </StyledCardContainer>
-    )
-}
+    );
+};
 
 const StyledCardContainer = styled.div`
     background-color: transparent;

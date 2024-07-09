@@ -106,7 +106,6 @@ export const Books = () => {
             refExpandDiv.current.style.top = `${rect.top}px`
             refExpandDiv.current.style.left = `${rect.left}px`
             refExpandDiv.current.divRef = divRef
-            containerRef.current.style.background = "transparent"
             refExpandDiv.current.focus()
         }, 100)()
     }
@@ -114,7 +113,6 @@ export const Books = () => {
     const handleClose = useCallback((e) => {
         handlePosition(swiperElRef.current.swiper.slides[slide])
         setExpanded(false)
-        containerRef.current.style.background = "rgba(71, 15, 15, 0.81)"
         
         _.debounce(() => {
             refExpandDiv.current.style.zIndex = 0;
@@ -281,16 +279,13 @@ const BlurOverlay = styled.div`
 `;
 
 const StyledContainer = styled.div`
-    height: 60vh;
+    height: 80vh;
     width: 90vw;
-    background: rgba(71, 15, 15, 0.81); /* Fundo semi-transparente */
+    background: rgba(71, 15, 15, 0); /* Fundo semi-transparente */
     border-radius: 20px;
-    box-shadow: 11px 6px 26px 0px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 11px 6px 26px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 11px 6px 26px 0px rgba(0,0,0,0.4);
-    backdrop-filter: blur(10px); /* Desfoque de fundo */
-    -webkit-backdrop-filter: blur(10px); /* Desfoque de fundo para Safari */
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background 1s;
 
     #mySwiper {

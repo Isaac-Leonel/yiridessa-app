@@ -1,8 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { JobCard } from "./components/jobCard";
 import { OriginalImgPosition } from "../../components/navigator";
 import { JobModal } from "./components/jobModal";
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { register } from "swiper/element";
+import { Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
 
 const jobs = [
     {
@@ -26,7 +33,7 @@ const jobs = [
     },
     {
         jobName: 'Minerador',
-        url: 'minerador_prf.jpg',
+        url: 'minerador_prf.png',
         text: `&emsp;&emsp;<span class="first-letter">S</span>ão, efetivamente, os precursores do continente. Os mineradores assumem a crucial responsabilidade de abastecer os recursos minerais essenciais para os castelos e os comerciantes. Encarregados da coleta e produção de diversos minérios, como pedras, barras, enxofre, vidro e outros, além de se dedicarem à extração e lapidação de gemas preciosas.<br><br>
             &emsp;&emsp;<span class="first-letter">C</span>ontrariando concepções equivocadas, a importância dos mineradores no continente é extraordinária, destacando-se especialmente em suas interações com ferreiros e armadureiros. Unicamente eles detêm a capacidade de coletar materiais preciosos, tais como barras de ferro, aço, metal das estrelas, obsidiana, entre outros. Além disso, a responsabilidade dos mineradores se estende à comercialização de vidro e cristais. São eles, igualmente, os encarregados da transação de prata, barras de ouro, e outros recursos afins.`
     },
@@ -65,38 +72,90 @@ const jobs = [
 ]
 
 export const Jobs = () => {
+    const swiperElRef = useRef(null);
     const [job, setJob] = useState({})
     const [modalOpen, setModalOpen] = useState(false)
+    const [slide, setSlide] = useState(0)
 
-    useEffect(() => {
+    useEffect(() => { 
+        const asyncFunction = async () => {
+            // Object with parameters
+            const params = {
+                direction: "vertical",
+                effect: "coverflow",
+                centeredSlides: true,
+                slidesPerView: 6,
+                mousewheel: true,
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 0,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+                pagination: false,
+                keyboard: false,
+                modules: [EffectCoverflow, Pagination, Mousewheel],
+                on: {
+                    init(s) {
+                        setSlide(s.activeIndex)
+                    },
+                    slideChange(s) {
+                        setSlide(s.activeIndex)
+                    },
+                }
+            };
+        
+            // Assign it to swiper element
+            await Object.assign(swiperElRef.current, params);
+        
+            // initialize swiper
+            swiperElRef.current.initialize();
+        }
+
+        register();
+        asyncFunction();
+
         const img = document.getElementById('yiridessaLogo')
         if (!img) return
         img.style.top = OriginalImgPosition.top
         img.style.left = OriginalImgPosition.left
         img.style.width = OriginalImgPosition.width
-    }, [])
+
+    }, []);
 
     return (
         <StyledSection>
-            <JobModal 
-                jobName={job.jobName ?? ""} 
-                text={job.text ?? ""} 
-                url={job.url ?? ""} 
-                open={modalOpen}
-                onHide={() => setModalOpen(false)}
-            />
             <StyledJobsContainer>
-                {
-                    jobs.map(job => {
-                        return (
-                            <JobCard 
-                                onClick={() => { setJob(job); setModalOpen(true); }}
-                                url={job.url} 
-                                jobName={job.jobName}
-                            />
-                        )
-                    })
-                }
+                <StyledArrow src="/img/arrow_scroll.svg"></StyledArrow>
+                <swiper-container
+                    init="false" 
+                    ref={swiperElRef}
+                    id={"mySwiper"}
+                >
+                    {
+                        jobs.map((job, index) => {
+                            
+                            return (
+                                <swiper-slide key={index}>
+                                    <JobCard 
+                                        url={job.url} 
+                                        jobName={job.jobName}
+                                        active={slide == index} 
+                                    />
+                                </swiper-slide>
+                               
+                            )
+                        })
+                    }
+                </swiper-container>
+                <JobModal 
+                    jobName={jobs[slide].jobName ?? ""} 
+                    text={jobs[slide].text ?? ""} 
+                    url={jobs[slide].url ?? ""} 
+                    open={modalOpen}
+                    onHide={() => setModalOpen(false)}
+                />
             </StyledJobsContainer>
         </StyledSection>
     )
@@ -104,12 +163,11 @@ export const Jobs = () => {
 
 const StyledJobsContainer = styled.div`
     width: 100%;
-    height: calc(100% - 10vh);
+    height: 80vh;
     margin-top: 15vh;
+    padding: 0px 0% 0px 02%;
     display: flex;
-    padding: 0px 10% 0px 10%;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
 `
 
 const StyledSection = styled.section`
@@ -122,7 +180,13 @@ const StyledSection = styled.section`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0px 0px 22vw 22vw rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 15vw 15vw rgb(0, 0, 0);
     font-family: FireFlight;
-    background-image: url('https://cdnb.artstation.com/p/assets/images/images/043/584/175/large/jefferson-bacquey-habrylo-jefferson-bacquey-hogwarts-library-001.jpg?1637688468');
+    background-image: url('/img/jobs_background.jpg');
+`
+
+const StyledArrow = styled.img`
+    width: 01.5%;
+    margin-bottom: 3vh;
+    margin-right: 30px;
 `

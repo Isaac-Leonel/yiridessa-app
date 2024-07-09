@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const JobCard = ({ url, jobName, onClick, active }) => {
+export const RaceCard = ({ url, raceName, onClick, active }) => {
     return (
         <CardContainer onClick={onClick} active={active}>
             <Card url={url} active={active} />
-            <JobName>{jobName}</JobName>
+            <JobName>{raceName}</JobName>
         </CardContainer>    
     )
 }

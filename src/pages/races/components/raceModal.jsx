@@ -1,15 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import Modal from 'react-bootstrap/Modal';
 
-export const JobModal = ({ url, jobName, text, open, onHide }) => {
+export const RaceModal = ({ url, raceName, text, open, onHide }) => {
     return (
        <>
           <StyledContainer>
                 <StyledModal>
                     <StyledImg url={url}></StyledImg>
                     <BodyDiv>
-                        <h1>{jobName}</h1>
+                        <h1>{raceName}</h1>
                         <StyledTextDiv dangerouslySetInnerHTML={{__html: text}} />
                     </BodyDiv>
                 </StyledModal>
