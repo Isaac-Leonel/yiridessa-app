@@ -300,4 +300,8 @@ const StyledContainer = styled.div`
         width: 300px;
         height: 470px;
     }
+
+    swiper-container {
+        height: unset !important;
+    }
 `
