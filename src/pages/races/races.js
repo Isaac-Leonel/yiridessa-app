@@ -2,9 +2,8 @@
 export default [
     {
         raceName: 'Elfos',
-        imageUrl: 'elfo.jpg',
-        femaleUrl: '',
-        maleUrl: '', 
+        imageUrl: 'elfo_ia.png',
+        racialImage: ['elf_f_gender_bg.png','elf_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Visão Norturna', 'SpellCaster'],
         racialPoints: [
@@ -12,6 +11,26 @@ export default [
                 bonusName: 'Agilidade',
                 bonusValue: '+3',
                 percentage: 30
+            },
+            {
+                bonusName: 'Força',
+                bonusValue: '+5',
+                percentage: 50
+            },
+            {
+                bonusName: 'Força',
+                bonusValue: '+5',
+                percentage: 50
+            },
+            {
+                bonusName: 'Força',
+                bonusValue: '+5',
+                percentage: 50
+            },
+            {
+                bonusName: 'Força',
+                bonusValue: '+5',
+                percentage: 50
             },
             {
                 bonusName: 'Força',

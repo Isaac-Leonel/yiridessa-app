@@ -17,7 +17,7 @@ const jobs = [
         url: 'alquimista_prf.jpg',
         text: `&emsp;&emsp;<span class="first-letter">A</span> jornada pelo misticismo é irrevogável. Uma vez que se experimenta o poder esotérico nas mãos, torna-se impossível se desvincular dele. É uma sensação libertadora, desprovida de inibições. Estar em sintonia com o mundo espiritual é uma experiência comum para os alquimistas, que se destacam especialmente em compreender as dinâmicas entre as raças. Dominar a solução de desafios provenientes do mundo sobrenatural é, essencialmente, sua área de especialização.
             <br><br>
-            &emsp;&emsp;<span class="first-letter">O</span>s alquimistas ganham notoriedade por suas habilidades místicas e maestria na criação de poções. São, em essência, considerados a essência do continente, trazendo consigo o conhecimento do misticismo e facilitando o acesso desses poderes aos demais habitantes. Além disso, os alquimistas assumem a responsabilidade de comercializar uma variedade de produtos resultantes de suas práticas, tais como óleos, fogaço, bases alquímicas, piche misterioso, entre outros, produzidos em seus caldeirões e bancadas.`
+            &emsp;&emsp;<span class="first-letter">O</span>s alquimistas ganham notoriedade por suas habilidades místicas e maestria na criação de poções. São, em essência, considerados a essência do continente, trazendo consigo o conhecimento do misticismo e facilitando o acesso desses poderes aos demais habitantes. Além disso, os alquimistas assumem a responsabilidade de comercializar uma variedade de produtos resultantes de suas práticas, tais como óleos, fogaço, bases alquímicas, piche misterioso e bases para outras criações com suas Orbes da Natureza, entre outros, produzidos em seus caldeirões e bancadas.`
     },
     {
         jobName: 'Carpinteiro',
@@ -33,9 +33,9 @@ const jobs = [
     },
     {
         jobName: 'Minerador',
-        url: 'minerador_prf.png',
+        url: 'minerador_prf.jpg',
         text: `&emsp;&emsp;<span class="first-letter">S</span>ão, efetivamente, os precursores do continente. Os mineradores assumem a crucial responsabilidade de abastecer os recursos minerais essenciais para os castelos e os comerciantes. Encarregados da coleta e produção de diversos minérios, como pedras, barras, enxofre, vidro e outros, além de se dedicarem à extração e lapidação de gemas preciosas.<br><br>
-            &emsp;&emsp;<span class="first-letter">C</span>ontrariando concepções equivocadas, a importância dos mineradores no continente é extraordinária, destacando-se especialmente em suas interações com ferreiros e armadureiros. Unicamente eles detêm a capacidade de coletar materiais preciosos, tais como barras de ferro, aço, metal das estrelas, obsidiana, entre outros. Além disso, a responsabilidade dos mineradores se estende à comercialização de vidro e cristais. São eles, igualmente, os encarregados da transação de prata, barras de ouro, e outros recursos afins.`
+            &emsp;&emsp;<span class="first-letter">C</span>ontrariando concepções equivocadas, a importância dos mineradores no continente é extraordinária, destacando-se especialmente em suas interações com ferreiros e armadureiros. Unicamente eles detêm a capacidade de manipular materiais preciosos, refinando-os para utilizações excepcionais, tais como barras de ferro, aço, metal das estrelas, obsidiana, entre outros. Além disso, a responsabilidade dos mineradores se estende à comercialização de vidro e cristais. São eles, igualmente, os encarregados da transação de prata, barras de ouro, e outros recursos afins.`
     },
     {
         jobName: 'Armadureiro',
@@ -49,16 +49,14 @@ const jobs = [
         url: 'mestre_prf.jpg',
         text: `&emsp;&emsp;<span class="first-letter">O</span> Mestre de Bestas, também conhecido como Escravista, desempenha um papel abrangente na manipulação e subjugação de criaturas. Ele é responsável pela captura e treinamento de lacaios, empregando uma variedade de métodos, desde o ensino e cuidado carinhoso até práticas cruéis, como a tortura, para subjugar os lacaios de maneira agressiva e sanguinária.
             <br><br>
-            &emsp;&emsp;<span class="first-letter">O</span>s Mestres de Bestas, além de lidar com a criação e treinamento de lacaios, são os principais comerciantes de escravos no reino.  Além disso, os Mestres de Bestas, como especialistas no reino animal, são hábeis na criação e comércio de cavalos, seguidores ferozes e selas para animais.`
+            &emsp;&emsp;<span class="first-letter">O</span>s Mestres de Bestas, além de lidar com a criação e treinamento de lacaios, são os principais comerciantes de escravos corrompidos no reino.  Além disso, os Mestres de Bestas, como especialistas no reino animal, são hábeis na criação e comércio de cavalos, seguidores ferozes e selas para animais.`
     },
     {
         jobName: 'Taverneiro',
         url: 'taverneiro_prf.jpg',
         text: `&emsp;&emsp;<span class="first-letter">E</span>ncarregados de proporcionar a alimentação e entretenimento na taverna, os taverneiros destacam-se pela habilidade em preparar as melhores receitas. Seja revitalizando seus aliados com saborosas sopas e carnes, aquecendo com bebidas vigorosas ou refrescando com sucos requintados, esses profissionais executam suas tarefas com maestria. Além disso, têm a capacidade de atrair os mais talentosos artistas para animar a taverna e asseguram que nenhum espírito negativo ou impuro encontre morada em seus recintos.
             <br><br>
-            &emsp;&emsp;<span class="first-letter">C</span>omo únicos responsáveis pela coleta e comercialização de ícor e óleo, os taverneiros também detêm o monopólio das caixas de preservação, essenciais para conservar alimentos em estoque, sendo violação gravíssima o repasse dessas caixas para outro jogador. Para além das atividades gastronômicas, os taverneiros frequentemente recebem chamados para liderar expedições, reunindo os mais habilidosos heróis e líderes natos caçadores para tal empreitada. Adicionalmente, são encarregados de divulgar eventos e novidades pelo continente.
-            <br><br>
-            &emsp;&emsp;<span class="first-letter">É</span> imperativo salientar que os taverneiros não têm permissão para integrar qualquer clã, mantendo, assim, sua independência e imparcialidade no cenário de qualquer reino.`
+            &emsp;&emsp;<span class="first-letter">C</span>omo únicos responsáveis pela coleta e comercialização de ícor e óleo, os taverneiros também detêm o monopólio das caixas de preservação, essenciais para conservar alimentos em estoque. Para além das atividades gastronômicas, os taverneiros frequentemente recebem chamados para liderar expedições, reunindo os mais habilidosos heróis e líderes natos caçadores para tal empreitada, além de poderem aumentar seu alvará com o reino, tornando sua taverna uma casa de apostas, uma casa de banho, teatros, apostas de equinos, arenas, entre outras atividades. Adicionalmente, são encarregados de divulgar eventos e novidades pelo continente.`
     },
     {
         jobName: 'Caçador',

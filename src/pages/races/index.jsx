@@ -80,7 +80,7 @@ export const Races = () => {
                             return (
                                 <swiper-slide key={index}>
                                     <RaceCard 
-                                        url={race.url} 
+                                        url={race.imageUrl} 
                                         raceName={race.raceName}
                                         active={slide == index} 
                                     />
@@ -91,11 +91,13 @@ export const Races = () => {
                     }
                 </swiper-container>
                 <RaceModal 
-                    raceName={races[slide].raceName ?? ""} 
-                    text={races[slide].text ?? ""} 
-                    url={races[slide].url ?? ""} 
-                    open={modalOpen}
-                    onHide={() => setModalOpen(false)}
+                    raceName={races[slide].raceName ?? ""}
+                    imageUrl={races[slide].imageUrl ?? ""} 
+                    racialImage={races[slide].racialImage ?? []}
+                    kingdom={races[slide].kingdom ?? ""}
+                    bonus={races[slide].bonus ?? ""}
+                    racialPoints={races[slide].racialPoints ?? []}
+                    views={races[slide].views ?? []}
                 />
             </StyledRacesContainer>
         </StyledSection>
@@ -109,6 +111,8 @@ const StyledRacesContainer = styled.div`
     padding: 0px 0% 0px 02%;
     display: flex;
     flex-direction: row;
+    backdrop-filter: blur(05px); /* Ajuste o valor do blur conforme necessário */
+    -webkit-backdrop-filter: blur(05px);
 `
 
 const StyledSection = styled.section`
@@ -123,7 +127,7 @@ const StyledSection = styled.section`
     background-size: cover;
     box-shadow: inset 0px 0px 15vw 15vw rgb(0, 0, 0);
     font-family: FireFlight;
-    background-image: url('/img/Races_background.jpg');
+    background-image: url('/img/races_background.jpg');
 `
 
 const StyledArrow = styled.img`
