@@ -82,7 +82,6 @@ const StyledCardContainer = styled.div`
         font-family: FireFlight;
         font-weight: 300;
         font-size: 3rem;
-        position: relative; /* Added for the custom-blur positioning */
     }
 
     .flip-card-front span{
