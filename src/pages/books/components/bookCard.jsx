@@ -82,6 +82,23 @@ const StyledCardContainer = styled.div`
         font-family: FireFlight;
         font-weight: 300;
         font-size: 3rem;
+        animation-timing-function: linear;
+
+        ${
+            props => props.slideActive ? 
+            `span {
+                animation: glow 2s infinite alternate;
+            }
+    
+            @keyframes glow {
+                from {
+                    text-shadow: 0 0 -20px white;
+                }
+                to {
+                    text-shadow: 0 0 20px white;
+                }
+            }` : ''
+        }
     }
 
     .flip-card-front span{
