@@ -1,13 +1,14 @@
 import React, { useRef } from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from './pages/home';
 import { Navigator } from './components/navigator';
 import { Jobs } from './pages/jobs';
 import { Books } from './pages/books';
 import { Races } from './pages/races';
 import {createTheme, ThemeProvider} from "@mui/material";
+import { My404Component } from './pages/404';
 
 function App() {
   const navigatorRef = useRef(null)
@@ -31,6 +32,7 @@ function App() {
           <Route path="/books" element={<Books/>}/>
           <Route path="/jobs" element={<Jobs/>}/>
           <Route path='/races' element={<Races/>}/>
+          <Route path="*" element={<My404Component />}/>
         </Routes>
       </ThemeProvider>
     </BrowserRouter>

@@ -144,8 +144,6 @@ const StyledHomeContainer = styled.div`
         align-items: center;
         position: relative;
     }
-
-    
 `
 
 const StyledGIF = styled.div`
