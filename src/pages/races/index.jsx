@@ -67,29 +67,31 @@ export const Races = () => {
 
     return (
         <StyledSection>
-            <StyledRacesContainer>
-                <StyledArrow src="/img/arrow_scroll.svg"></StyledArrow>
-                <swiper-container
-                    init="false" 
-                    ref={swiperElRef}
-                    id={"mySwiper"}
-                >
-                    {
-                        races.map((race, index) => {
-                            
-                            return (
-                                <swiper-slide key={index}>
-                                    <RaceCard 
-                                        url={race.imageUrl} 
-                                        raceName={race.raceName}
-                                        active={slide == index} 
-                                    />
-                                </swiper-slide>
-                               
-                            )
-                        })
-                    }
-                </swiper-container>
+            <div className="backdrop">
+                <StyledRacesContainer>
+                    <StyledArrow src="/img/arrow_scroll.svg"></StyledArrow>
+                    <swiper-container
+                        init="false" 
+                        ref={swiperElRef}
+                        id={"mySwiper"}
+                    >
+                        {
+                            races.map((race, index) => {
+                                
+                                return (
+                                    <swiper-slide key={index}>
+                                        <RaceCard 
+                                            url={race.imageUrl} 
+                                            raceName={race.raceName}
+                                            active={slide == index} 
+                                        />
+                                    </swiper-slide>
+                                
+                                )
+                            })
+                        }
+                    </swiper-container>
+                </StyledRacesContainer>
                 <RaceModal 
                     raceName={races[slide].raceName ?? ""}
                     imageUrl={races[slide].imageUrl ?? ""} 
@@ -99,39 +101,53 @@ export const Races = () => {
                     racialPoints={races[slide].racialPoints ?? []}
                     views={races[slide].views ?? []}
                 />
-            </StyledRacesContainer>
+            </div>
         </StyledSection>
     )
 }
 
 const StyledRacesContainer = styled.div`
-    width: 100%;
-    height: 80vh;
-    margin-top: 15vh;
-    padding: 0px 0% 0px 02%;
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    
+    height: 100%;
+    
     display: flex;
     flex-direction: row;
-    backdrop-filter: blur(05px); /* Ajuste o valor do blur conforme necessário */
-    -webkit-backdrop-filter: blur(05px);
+
+    swiper-container {
+        width: 250px;
+        min-width: 250px;
+        max-width: 250px;
+    }
 `
 
 const StyledSection = styled.section`
+    padding: 15vh 0px 0px 45px;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     min-height: 100vh;
-    display: flex;
-    overflow-x: hidden;
-    justify-content: center;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: inset 0px 0px 15vw 15vw rgb(0, 0, 0);
     font-family: FireFlight;
     background-image: url('/img/races_background.jpg');
+
+    .backdrop {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        backdrop-filter: blur(05px); /* Ajuste o valor do blur conforme necessário */
+        -webkit-backdrop-filter: blur(05px);
+    }
 `
 
 const StyledArrow = styled.img`
-    width: 01.5%;
+    width: 20px;
     margin-bottom: 3vh;
     margin-right: 30px;
 `
