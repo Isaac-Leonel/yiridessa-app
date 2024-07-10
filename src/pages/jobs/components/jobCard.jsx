@@ -34,7 +34,7 @@ const Card = styled.div`
 const JobName = styled.h1`
     font-family: FireFlight;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 100;
     margin-left: 20px;
     text-align: left;

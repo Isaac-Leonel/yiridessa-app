@@ -132,7 +132,6 @@ export const Jobs = () => {
                 >
                     {
                         jobs.map((job, index) => {
-                            
                             return (
                                 <swiper-slide key={index}>
                                     <JobCard 
@@ -165,6 +164,10 @@ const StyledJobsContainer = styled.div`
     padding: 0px 0% 0px 02%;
     display: flex;
     flex-direction: row;
+
+    swiper-container {
+        width: 280px;
+    }
 `
 
 const StyledSection = styled.section`

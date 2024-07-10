@@ -32,7 +32,7 @@ const StyledContainer = styled.div`
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 100vw;
+    width: calc(100% - 340px);
     color: white;
     height: auto; /* Compatibilidade com Safari */
     position: relative;
