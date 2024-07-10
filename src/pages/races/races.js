@@ -17,26 +17,7 @@ export default [
                 bonusValue: '+5',
                 percentage: 50
             },
-            {
-                bonusName: 'Força',
-                bonusValue: '+5',
-                percentage: 50
-            },
-            {
-                bonusName: 'Força',
-                bonusValue: '+5',
-                percentage: 50
-            },
-            {
-                bonusName: 'Força',
-                bonusValue: '+5',
-                percentage: 50
-            },
-            {
-                bonusName: 'Força',
-                bonusValue: '+5',
-                percentage: 50
-            },
+        
         ],
         views: [
             {

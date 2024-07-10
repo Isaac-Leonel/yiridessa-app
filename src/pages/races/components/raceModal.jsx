@@ -35,7 +35,7 @@ export const RaceModal = ({ raceName, racialImage, kingdom, bonus, racialPoints,
                 loop: true,
                 autoplay: {
                     enabled: true,
-                    delay: 5000,
+                    delay: 10000,
                     pauseOnMouseEnter: true,
                 },
                 on: {
@@ -167,7 +167,8 @@ const StyledContainer = styled.div`
 
 const StyledModal = styled.div`
     border-radius: 30px;
-    margin-left: 100px;
+    margin-left: 80px;
+    margin-bottom: 50px;
     font-family: FireFlight;
     display: flex;
     align-items: center;
@@ -176,11 +177,13 @@ const StyledModal = styled.div`
 `
 
 const StyledContainerGender = styled.div`
-    width: 300px;
+    width: 30%;
+    min-width: 300px;
     padding: 20px;
 
     swiper-container {
-        width: 100%;
+        width: 80%;
+        min-width: 250px;
         height: 100%;
     }
     swiper-slide {
@@ -190,9 +193,13 @@ const StyledContainerGender = styled.div`
 `
 
 const StyledContainerFirstInfo = styled.div`
-    background: white;
+    background: rgba(53, 53, 53, 0.438);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     width: 100%;
+    color: white;
     height: 380px ;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -215,7 +222,6 @@ const StyledContainerFirstInfo = styled.div`
 
 
 const StyledContainerRace = styled.div`
-    background: white;
     width: calc(100% - 215px);
     height: 350px ;
 `
@@ -281,7 +287,7 @@ const StyledInfoDiv = styled.div`
     align-items: center;
     flex-direction: column;
     color: #5f1b1b;
-    width: calc(100% - 300px);
+    width: 70%;
     height: 50%;
     font-weight: 400;
     font-size: 2rem;

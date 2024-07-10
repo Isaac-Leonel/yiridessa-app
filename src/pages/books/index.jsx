@@ -257,7 +257,8 @@ const StyledBooksContainer = styled.div`
 `
 
 const StyledGIF = styled.div`
-    background-image: url('/gif/background_yiri.gif');
+    background-image: url('/img/livros_background.jpg');
+    box-shadow: inset 0px 0px 15vw 15vw rgb(0, 0, 0);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -276,8 +277,8 @@ const BlurOverlay = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    backdrop-filter: blur(20px); /* Ajuste o valor do blur conforme necessário */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+    backdrop-filter: blur(06px); /* Ajuste o valor do blur conforme necessário */
+    -webkit-backdrop-filter: blur(06px); /* Compatibilidade com Safari */
 `;
 
 const StyledContainer = styled.div`

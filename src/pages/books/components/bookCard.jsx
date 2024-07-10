@@ -1,25 +1,25 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import _ from 'lodash'
+import _ from 'lodash';
 
 export const BookCard = ({ imageName, text, title, active, callExpandDiv }) => {
-    const refContainer = useRef(null)
+    const refContainer = useRef(null);
 
     useEffect(() => {
         refContainer.current.firstChild.style.transform = "";
-    }, [active])
+    }, [active]);
 
     const handleClick = (e) => {
-        if (!refContainer || !refContainer.current || !active) return
+        if (!refContainer || !refContainer.current || !active) return;
 
         refContainer.current.firstChild.style.transform = "rotateY(180deg)";
         
         _.debounce(() => {
-            callExpandDiv(text,refContainer)
-        }, [700])()
-    }
+            callExpandDiv(text, refContainer);
+        }, 700)();
+    };
 
-    return(
+    return (
         <StyledCardContainer ref={refContainer} onClick={handleClick} slideActive={active}>
             <div className="flip-card-inner">
                 <div 
@@ -32,6 +32,7 @@ export const BookCard = ({ imageName, text, title, active, callExpandDiv }) => {
                     }}
                 >
                     <span>{title}</span>
+                    <div className="custom-blur"></div>
                 </div>
                 <div className="flip-card-back">
                     <div className="backgroundPaper"></div>
@@ -76,17 +77,36 @@ const StyledCardContainer = styled.div`
         height: 100%;
         border-radius: 20px;
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: center;
         font-family: FireFlight;
         font-weight: 300;
         font-size: 3rem;
+        position: relative; /* Added for the custom-blur positioning */
     }
 
+    .flip-card-front span{
+        z-index: 3;
+        color: white;
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+    }
     .flip-card-back {
         border-radius: 20px;
         transform: rotateY(180deg);
         position: relative;
         padding: 20px;
     }
-`
+
+    .custom-blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        backdrop-filter: blur(05px); /* Ajuste a intensidade do blur */
+        background: linear-gradient(to top, #000000 5%, rgba(255, 255, 255, 0) 50%);
+        mask-image: linear-gradient(to top, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 50%);
+    }
+`;

@@ -33,7 +33,7 @@ const banners = [
     {
         imageName: "banner4.png",
         title: "Regras",
-        description: "Liberte-se das amarras da realidade e mergulhe em um universo de magia, combate e intriga. No Yiridessa Roleplay, a fantasia ganha vida de maneira inigualável, e cada escolha que você fizer moldará o destino do seu personagem.",
+        description: "Fique por dentro das regras do servidor e garanta uma experiência incrível e justa para todos! Não perca essa oportunidade de fazer parte da nossa comunidade e viver momentos épicos.",
         click: true,
         link: "https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview"
     },

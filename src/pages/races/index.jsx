@@ -141,8 +141,7 @@ const StyledSection = styled.section`
         height: 100%;
         display: flex;
         justify-content: center;
-        backdrop-filter: blur(05px); /* Ajuste o valor do blur conforme necessário */
-        -webkit-backdrop-filter: blur(05px);
+
     }
 `
 

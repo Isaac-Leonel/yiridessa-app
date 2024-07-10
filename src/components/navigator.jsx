@@ -23,7 +23,7 @@ export const Navigator = React.forwardRef((props, ref) => {
                 <StyledLink to={"books"} active={pathName == "books"}><span>LIVROS</span></StyledLink>
                 <StyledLink to={"jobs"} active={pathName == "jobs"}><span>PROFISSÔES</span></StyledLink>
                 <StyledA href="https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview" target="_blank" active={pathName == "rules"}><span>REGRAS</span></StyledA>
-                <StyledLink to={"races"} active={pathName == "races"}><span>RAÇAS</span></StyledLink>
+                <StyledLink disabled to={""} active={pathName == "races"}><span>RAÇAS</span></StyledLink>
                 <StyledLink disabled to={""} active={pathName == "classes"}><span>CLASSES</span></StyledLink>
                 <StyledLink disabled to={""} active={pathName == "allowlist"}><span>ALLOWLIST</span></StyledLink>
             </StyledLinkDiv>
