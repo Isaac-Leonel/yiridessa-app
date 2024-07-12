@@ -37,5 +37,6 @@ const JobName = styled.h1`
     font-size: 1.6rem;
     font-weight: 100;
     margin-left: 20px;
+    letter-spacing: 0.2rem;
     text-align: left;
 `

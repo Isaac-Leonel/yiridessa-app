@@ -17,7 +17,7 @@ import 'swiper/css/navigation';
 
 
 
-export const RaceModal = ({ raceName, racialImage, kingdom, bonus, racialPoints, views }) => {
+export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, racialPoints, views }) => {
     const swiperElRef = useRef(null);
     const [value, setValue] = useState(1);
 
@@ -119,7 +119,7 @@ export const RaceModal = ({ raceName, racialImage, kingdom, bonus, racialPoints,
                                 {
                                     views.map((view, index) => {
                                         return(
-                                            <TabPanel sx={{height: '350px', position: "relative"}} value={index}>
+                                            <TabPanel sx={{height: '350px', width: '100%', position: "relative"}} value={index}>
                                                 <StyledTextDiv dangerouslySetInnerHTML={{__html: view.content}} />
                                             </TabPanel>
                                         )
@@ -260,6 +260,7 @@ const BodyDiv = styled.div`
     color: #5f1b1b;
     padding-bottom: 100px;
     height: 400px;
+    min-width: 55vw;
     margin: 10px;
     position: relative;
 

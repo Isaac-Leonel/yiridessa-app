@@ -96,6 +96,7 @@ export const Races = () => {
                     raceName={races[slide].raceName ?? ""}
                     imageUrl={races[slide].imageUrl ?? ""} 
                     racialImage={races[slide].racialImage ?? []}
+                    Appearance={races[slide].Appearance ?? ""}
                     kingdom={races[slide].kingdom ?? ""}
                     bonus={races[slide].bonus ?? ""}
                     racialPoints={races[slide].racialPoints ?? []}

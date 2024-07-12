@@ -21,13 +21,13 @@ const jobs = [
     },
     {
         jobName: 'Carpinteiro',
-        url: 'carpinteiro_prf2.jpg',
+        url: 'carpinteiro_prf.png',
         text: `&emsp;&emsp;<span class="first-letter">A</span> perícia de um carpinteiro é facilmente perceptível a olho nu. Toda a beleza do continente frequentemente reflete o toque primoroso do carpinteiro, seja através de estruturas impecáveis, decorações meticulosas ou contribuições valiosas para projetos de construção. Nos reinos, a presença de um carpinteiro é essencial para a edificação de novos castelos, tornando-se uma peça fundamental na composição de qualquer organização de destaque.<br><br>
             &emsp;&emsp;<span class="first-letter">A</span> atuação dos carpinteiros não se limita à manipulação da madeira, uma vez que determinadas decorações demandam detalhes com outros materiais. A marcenaria é uma arte que os carpinteiros dominam com maestria, permitindo-lhes criar móveis e decorações de diversos estilos, sendo essa uma habilidade exclusiva de sua competência. Além disso, os carpinteiros assumem a responsabilidade pela forja de armas de longa distância, como arcos e flechas, ou bestas, contribuindo assim para o arsenal da comunidade. Adicionalmente, os carpinteiros desempenham um papel crucial ao fornecer matérias-primas, como madeiras moldadas, essenciais para a formação de peças estruturais na construção.`
     },
     {
         jobName: 'Ferreiro',
-        url: 'ferreiro_prf.jpg',
+        url: 'ferreiro_prf.png',
         text: `&emsp;&emsp;<span class="first-letter">O</span> papel desempenhado pelos ferreiros é crucial para a sobrevivência no continente, especialmente diante das constantes ameaças representadas por criaturas malignas. Manipular as forjas é uma tarefa desafiadora, porém, os mestres ferreiros conseguem executá-la com maestria, contanto que disponham dos materiais adequados. Embora não se dediquem à confecção de armaduras, a habilidade dos ferreiros reside precisamente na criação de armas capazes de perfurá-las. <br><br>
             &emsp;&emsp;<span class="first-letter">O</span>s ferreiros assumem a responsabilidade pela fabricação de uma ampla variedade de armas, incluindo lâminas, martelos e lanças, excluindo, no entanto, a expertise na criação de arcos. Suas habilidades abrangem a produção de armas que refletem diferentes eras e facilitam sua comercialização entre os habitantes do continente.`
     },

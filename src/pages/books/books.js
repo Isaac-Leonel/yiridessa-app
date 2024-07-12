@@ -109,8 +109,6 @@ export default [
             &emsp;&emsp;<span class="first-letter">D</span>entro dessa espécie, as características mutáveis do DNA são influenciadas tanto pelos pais quanto pela necessidade da natureza. Os Altos Elfos, defensores da luz solar, destacam-se pela beleza natural, rostos delicados e reações hormonais sutis. Responsáveis por manter a pureza no reino, eles administram julgamentos justos e preservam o castelo real. Enquanto isso, os Drow, encarregados do brilho lunar, compartilham semelhanças com os Altos Elfos, exibindo pele pálida que reflete a luz lunar, cabelos brancos e sobrancelhas marcantes, desempenhando um papel vital na preservação da harmonia no reino.<br/><br/>
         </p>
 
-
-
         `
     },
    
