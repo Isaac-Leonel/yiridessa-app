@@ -349,7 +349,7 @@ export default [
     {
         raceName: 'Bastet',
         imageUrl: 'bastet_ia.png',
-        racialImage: ['barou_f_gender_bg.png','barou_m_gender_bg.png'],
+        racialImage: ['bastet_f_gender_bg.png','bastet_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Night Vision', 'Feast', 'Tireless'],
         racialPoints: [

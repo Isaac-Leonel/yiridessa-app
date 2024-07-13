@@ -9,20 +9,20 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const banners = [
-    // {
-    //     imageName: "banner5.png",
-    //     title: "Reino: Aetherya",
-    //     description: "Num reino resplandecente e incorruptível, os Aetherianos carregam consigo a herança divina da preguiça e a bênção da água. Explore a beleza e o mistério deste mundo encantado e confira o vídeo trailer de divulgação do reino para sentir a magia que o espera.",
-    //     click: true,
-    //     link: "https://www.youtube.com/watch?v=nwkraD0-hO0",
-    // },
-    // {
-    //     imageName: "banner6.png",
-    //     title: "Aetheryanos",
-    //     description: "Venha conferir as raças de Aetherya.",
-    //     click: true,
-    //     route: "/races",
-    // },
+    {
+        imageName: "banner5.png",
+        title: "Reino: Aetherya",
+        description: "Num reino resplandecente e incorruptível, os Aetherianos carregam consigo a herança divina da preguiça e a bênção da água. Explore a beleza e o mistério deste mundo encantado e confira o vídeo trailer de divulgação do reino para sentir a magia que o espera.",
+        click: true,
+        link: "https://www.youtube.com/watch?v=nwkraD0-hO0",
+    },
+    {
+        imageName: "banner6.png",
+        title: "Aetheryanos",
+        description: "Venha conferir as raças de Aetherya.",
+        click: true,
+        route: "/races",
+    },
     {
         imageName: "banner1.png",
         title: "Yiridessa",
