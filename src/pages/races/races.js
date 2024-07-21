@@ -399,4 +399,426 @@ export default [
             },
         ],
     },
+
+    {
+        raceName: 'Humanos',
+        imageUrl: 'humana_IA.png',
+        racialImage: ['Humano_F.png','Humano_M.png'],
+        kingdom: 'Ydris',
+        bonus: ['Fortified', 'Fight or Flight', 'Tireless'],
+        racialPoints: [
+            {
+                bonusName: 'Força',
+                bonusValue: '+2',
+                percentage: 20            },
+            {
+                bonusName: 'Agilidade',
+                bonusValue: '+2',
+                percentage: 20
+            },
+ {
+                bonusName: 'Vitalidade',
+                bonusValue: '+2',
+                percentage: 20
+            },
+ {
+                bonusName: 'Autoridade',
+                bonusValue: '+2',
+                percentage: 20
+            },
+ {
+                bonusName: 'Coragem',
+                bonusValue: '+2',
+                percentage: 20
+            },
+ {
+                bonusName: 'Expertise',
+                bonusValue: '+2',
+                percentage: 20
+            },
+        ],
+        views: [
+            {
+                title: 'Os Sobreviventes',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s Sobreviventes
+                No coração do reino de Ydris, onde a magia e a natureza se entrelaçam em um balé eterno, habita uma raça cuja história é marcada pela resiliência e adaptação: os humanos. Embora muitas vezes subestimados pelas outras raças, os humanos possuem uma força intrínseca que os torna sobreviventes formidáveis em um mundo cheio de maravilhas e perigos.
+                <br><br>
+                &emsp;&emsp;<span class="first-letter">O</span>s humanos são notáveis por sua diversidade. Sem traços sobrenaturais ou animalescos, sua aparência varia amplamente, refletindo a rica tapeçaria de suas culturas e ambientes. Altos ou baixos, robustos ou esguios, a única constante é sua capacidade de adaptação.
+                <br><br>
+                &emsp;&emsp;<span class="first-letter">A</span>personalidade dos humanos é igualmente variada. Influenciados por fatores como ambiente social, religiões e criação, os humanos podem ser bravos ou medrosos, benevolentes ou cruéis, sábios ou tolos. Essa diversidade é a fonte de sua força, permitindo que cada indivíduo traga uma perspectiva única ao coletivo.
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">H</span>istória e Conflitos
+                A origem dos humanos é um conto curioso de um erro que se tornou um triunfo. Eles não foram criados de forma voluntária, mas emergiram como um erro do universo. No entanto, ao invés de serem destruídos por sua aparente fraqueza, os humanos mostraram uma surpreendente resiliência e capacidade de sobrevivência.
+                <br><br>
+                &emsp;&emsp;<span class="first-letter">N</span>os tempos antigos, os primeiros humanos enfrentaram desafios que teriam dizimado raças menos adaptáveis. Sem habilidades mutantes ou poderes mágicos para protegê-los, confiaram em sua inteligência, determinação e capacidade de se adaptar a qualquer ambiente. Esta adaptabilidade permitiu que se espalhassem por Ydris, construindo vilas, cidades e eventualmente reinos.
+                <br><br>
+                &emsp;&emsp;<span class="first-letter">A</span>o longo dos séculos, os humanos provaram seu valor não apenas sobrevivendo, mas prosperando. Eles se tornaram mestres de seu próprio destino, muitas vezes contrariando as expectativas de raças mais antigas e poderosas. Sua capacidade de enfrentar adversidades e se levantar após cada queda tornou-se lendária.
+                <br><br>
+                `
+            },
+            {
+                title: 'Relações',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">R</span>elações e Desprezo
+                Os humanos têm relações complexas com outras espécies. Sem um desgosto universal, suas opiniões e preconceitos variam amplamente, influenciados por suas experiências e culturas individuais. Esta diversidade de pensamento pode ser uma fonte de força ou fraqueza, dependendo das circunstâncias. Eles são capazes de formar alianças e rivalidades com igual facilidade, adaptando suas estratégias conforme necessário.
+                `
+            },
+{
+                title: 'Aparência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s humanos não recebem nenhuma alteração visual.
+
+                `
+            },
+        ],
+    },
+
+ {
+        raceName: 'Ogro',
+        imageUrl: 'Ogro_IA.png',
+        racialImage: ['Ogro_F.png','Ogro_M.png'],
+        kingdom: 'Ydris',
+        bonus: ['Tenacity', 'Troll Blood', 'Toughness'],
+        racialPoints: [
+            {
+                bonusName: 'Força',
+                bonusValue: '+4',
+                percentage: 60            },
+            {
+                bonusName: 'Vitalidade',
+                bonusValue: '+3',
+                percentage: 40
+            },
+        ],
+        views: [
+            {
+                title: 'O Pântano',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span> despertar<br> 
+                Nas vastas e selvagens terras de Ydris, uma raça se destaca por sua força bruta, teimosia e ingenuidade: os Ogros. Estas criaturas, de pele esverdeada e presas proeminentes, são os guerreiros inabaláveis e a alma indomável das linhas de frente nas batalhas, sempre prontos para defender suas raízes e tradições.
+<br>                &emsp;&emsp;<span class="first-letter">O</span>s Ogros possuem uma aparência robusta e intimidante. Com orelhas grandes e pontudas, pele esverdeada e presas afiadas, eles são a personificação da força bruta. Apesar de sua aparência assustadora, os Ogros são surpreendentemente ingênuos, muitas vezes confundidos com criaturas tolas. No entanto, a sua teimosia e apego às raízes culturais os tornam seres complexos e fascinantes.
+<br><br>                &emsp;&emsp;<span class="first-letter">P</span>ersonalidade é um aspecto marcante dos Ogros. São teimosos e extremamente apegados às suas tradições. A ingenuidade que carregam não deve ser confundida com burrice; os Ogros são astutos à sua própria maneira. Eles não entendem o uso de moedas e, em vez disso, adquirem objetos intimidando outras raças, através de lutas, caças e trocas. Esse comportamento, embora os faça ter muitas desavenças, também revela uma sociedade com valores e práticas únicas.
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span>cervo histórico
+                <br>Os Ogros compartilham práticas culturais com outras raças goblinoides. Desde tempos imemoriais, eles entregam seus filhos aos clérigos de seus deuses para que aprendam as culturas tribais e descubram suas vocações como clérigos ou feiticeiros. Esta prática de iniciação é fundamental para a estrutura social dos Ogros, garantindo que cada membro da tribo conheça profundamente suas raízes e responsabilidades.<br>                                &emsp;&emsp;<span class="first-letter">A</span> vontade de lutar e o gosto por estar sempre em movimento fizeram dos Ogros grandes guerreiros. Eles se destacam nas linhas de frente, onde sua robustez e resistência são inestimáveis. Ao longo dos anos, os Ogros tornaram-se uma adição poderosa à Aliança, desempenhando papéis cruciais nas batalhas que moldaram a história de Ydris.<br>                                &emsp;&emsp;<span class="first-letter">N</span>o entanto, a aceitação dos Ogros não é universal. Nem todas as divindades os reconhecem, e eles não são bem-vindos em todos os cantos de Arton. Seu tamanho imponente e modo de vida rústico frequentemente os tornam alvo de preconceito e exclusão. Mesmo assim, os Ogros permanecem firmes em suas convicções, prontos para lutar e proteger o que lhes é mais precioso.
+                <br><br>
+                `
+            },
+            {
+                title: 'Tradições',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">R</span>elação e Aceitação<br>                 <span class="first-letter">O</span>s Ogros não possuem um desgosto específico por outras raças, mas sua natureza grosseira e intimidadora frequentemente os coloca em conflito. Suas práticas de aquisição de bens através da intimidação e da força geram desavenças, especialmente com raças mais civilizadas. Ainda assim, os Ogros conseguem formar alianças baseadas no respeito mútuo pela força e coragem.
+                `
+            },
+	        {
+                title: 'Aparência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span>parência racial<br><b>ATTACHEDS:</b><br>[C] Ogre Ears 666000374<br>Tusks I [A] 666000022<br>Tusks II [A] 666000023<br>Tusks III [A] 666000024<br>Tusks IV [A] 6660000025
+                `
+            },
+        ],
+    },
+
+
+    {
+        raceName: 'Anões',
+        imageUrl: 'Anao_IA.png',
+        racialImage: ['Anao_F.png','Anao_M.png'],
+        kingdom: 'Ydris',
+        bonus: ['Fortified', 'Toughness', 'Tenacity'],
+        racialPoints: [
+            {
+                bonusName: 'Vitality',
+                bonusValue: '+4',
+                percentage: 60            },
+            {
+                bonusName: 'Coragem',
+                bonusValue: '+3',
+                percentage: 40
+            },
+ {
+                bonusName: 'Expertise',
+                bonusValue: '+3',
+                percentage: 40
+            },
+        ],
+        views: [
+            {
+                title: 'As minas',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s adaptáveis<br> 
+                &emsp;&emsp;<span class="first-letter">N</span>as profundezas das montanhas de Ydris, onde a rocha se encontra com os segredos da terra, reside uma raça antiga e resiliente: os Anões. Conhecidos por sua eficiência militar, habilidade em resistir a castigos físicos e mágicos, e profundo conhecimento sobre os mistérios subterrâneos, os Anões são o pilar de força e sabedoria do reino.<br>                &emsp;&emsp;<span class="first-letter">O</span>s Anões são seres robustos, com altura variando entre 1,40m e 1,50m. Apesar da estatura relativamente baixa, seus corpos são largos e compactos, dando-lhes uma presença imponente. Os Anões são ligeiramente mais altos e consideravelmente mais pesados que as Anãs. Com seus semblantes severos, hesitam em sorrir ou celebrar e desconfiam de estranhos. No entanto, são generosos com aqueles que conquistam sua confiança.<br>                &emsp;&emsp;<span class="first-letter">O</span> senso de justiça dos Anões é inabalável, e essa qualidade pode se transformar em uma sede de vingança infindável quando traídos. Eles não combatem de forma recatada ou temerária, mas com coragem, tenacidade e cautela. Valorizam profundamente o ouro, as gemas e os objetos de arte criados com esses materiais preciosos, e muitos já sucumbiram à ambição em busca desses tesouros.
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>rigem e História
+                <br>&emsp;&emsp;<span class="first-letter">A</span>ntigamente, os Anões habitavam o reino de Anaryou, cujos reinos subterrâneos eram famosos pelos tesouros maravilhosos produzidos tanto para presentes quanto para comércio. Quase sempre, esses reinos eram localizados nas profundezas, abaixo das superfícies rochosas das montanhas, de onde os Anões extraíam gemas e metais preciosos para forjar seus fabulosos trabalhos.<br>                &emsp;&emsp;<span class="first-letter">O</span>s reinos dos Anões eram misteriosos e repletos de riquezas. Membros dignos de confiança de outras raças eram bem-vindos, mas existiam restrições a algumas áreas, preservando os segredos e tesouros da raça. A vida nas profundezas moldou os Anões para serem resilientes e incansáveis, com uma notável capacidade de beber cerveja como poucos.<br>                &emsp;&emsp;<span class="first-letter">Q</span>uando os humanos começaram a governar Ydris, ofereceram moradas e cargos dignos para os Anões, reconhecendo seu valor e habilidades. Os Anões, por sua vez, aceitaram se unir à causa dos humanos, trazendo consigo sua destreza, força e sabedoria acumulada ao longo dos séculos.
+                <br><br>
+                `
+            },
+            {
+                title: 'Tolerância',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">R</span>elações interraciais<br>                 <span class="first-letter">A</span>s Anões não possuem desgosto específico por outras raças. Entretanto, sua natureza desconfiada e reservada pode gerar mal-entendidos. A generosidade e lealdade dos Anões são reservadas apenas para aqueles que provam ser dignos de sua confiança. Nas relações comerciais, eles são mestres da negociação, valorizando cada gema e cada peça de ouro.
+                `
+            },
+	{
+                title: 'Aparência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span>parência racial<br><b>ATTACHED:</b><br>Beard: Styles - Dwarven A 5053027<br>Beard: Styles - Dwarven B 5053054<br>Beard: Styles - Dwarven C 5053055
+                `
+            },
+        ],
+    },
+
+ {
+        raceName: 'Genasi',
+        imageUrl: 'Genasi_IA.png',
+        racialImage: ['Genasi_F.png','Genasi_M.png'],
+        kingdom: 'Ydris',
+        bonus: ['Impervious', 'Toughness', 'Fortified'],
+        racialPoints: [
+            {
+                bonusName: 'Agilidade',
+                bonusValue: '+4',
+                percentage: 60            },
+            {
+                bonusName: 'Vitalidade',
+                bonusValue: '+3',
+                percentage: 40
+            },
+        ],
+        views: [
+            {
+                title: 'Natureza',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s espiritos da Floresta e da Natureza<br> 
+                &emsp;&emsp;<span class="first-letter">N</span>o alvorecer dos tempos, quando o universo ainda estava envolto no caos primigenio, surgiram as primeiras manifestações elementares conhecidas como Grand Genasis. Estas majestosas entidades, dotadas de poderes divinos, foram criadas pelas divindades com um propósito claro: trazer ordem ao universo e preparar o terreno para que outras formas de vida pudessem prosperar. Cada Grand Genasi personificava um dos elementos fundamentais – fogo, terra, ar e água – e a eles foi confiada a tarefa de estabilizar o cosmos.<br>                &emsp;&emsp;<span class="first-letter">O</span>s Genasi, descendentes dos Grand Genasis, exibem uma aparência profundamente ligada ao elemento de sua origem. Aqueles associados ao fogo possuem uma aparência vulcânica, com pele semelhante a lava e olhos ardentes. Os Genasi da terra exibem uma constituição rochosa, com pele como pedra e músculos sólidos. Os Genasi do ar têm uma aparência etérea, com características relampejantes e uma leveza quase sobrenatural, enquanto os da água parecem feitos de oceano, com pele fluida e olhos profundos como o mar.<br><br>                &emsp;&emsp;<span class="first-letter">F</span>isicamente, os Genasi variam em estatura de forma aleatória, um reflexo de sua natureza elemental. Em termos de personalidade, são geralmente benevolentes e profundamente emotivos. No entanto, sua vingança pode ser tão implacável quanto as forças da natureza que representam. Estes seres elementais possuem uma conexão intrínseca com seu elemento, o que lhes confere um caráter tanto protetor quanto vingativo.
+                <br><br>
+                `
+            },
+            {
+                title: 'Origem',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>rigem e História
+                <br>&emsp;&emsp;<span class="first-letter">A</span> história dos Genasi começa nos tempos antigos, quando o caos ameaçava a estabilidade do universo. As divindades, em um ato de desespero e esperança, criaram os Grand Genasis. Estes seres divinos eram responsáveis por trazer equilíbrio e sustentar a vida no cosmos. Contudo, durante uma das muitas batalhas contra o caos, os Grand Genasis perceberam que a derrota era iminente. Para evitar a destruição total, eles se fragmentaram, dando origem aos Genasi, seres menores e fragmentos de si mesmos, mas ainda carregando a essência elemental.<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Genasi, embora criados para continuar a missão de seus progenitores, revelaram-se seres com sentimentos e pensamentos próprios. Esse livre-arbítrio, uma bênção e uma maldição, desviou muitos deles de seu propósito original. Apesar disso, a mera presença dos Genasi no mundo afeta positivamente o equilíbrio natural dos recursos, mantendo um delicado equilíbrio entre os elementos.
+                <br><br>
+                `
+            },
+            {
+                title: 'Relações',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">R</span>elações<br>                 <span class="first-letter">O</span>s Genasi têm um profundo desgosto por qualquer criatura vinda de Nibhanus, visto que estas entidades representam uma ameaça constante ao equilíbrio que os Genasi tentam manter. Apesar de sua benevolência geral, os Genasi são implacáveis na defesa do equilíbrio natural, tornando-se ferozes adversários daqueles que ameaçam o mundo que eles juraram proteger.
+
+                `
+            },
+	        {
+                title: 'Aparência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span>parência racial<br><b>ATTACHEDS:</b><br><b>Terra:</b> <br>Thorns (Arms) [A] 666000029<br>Thorns (Torso) [A] 666000030<br>Horns of Yog (Attached) 1000251 <br>Body Effect [Sand] (Attached) 1002082<br><br><b>Fogo:</b> <br>Body Effect [Fire] (Attached) 1001776<br><br><b>Ar:</b><br>Body Effect [Lighting] (Attached) 1001774 <br><br><b>Água:</b><br>Body Effect [Dry Ice] (Attached) 1001781<br><b><br>Todos:<br>Frieren Ears 325322058</b><br><br><b>Tom de pele</b>
+<b><br>Fogo:</b> B12828<br>
+<b>Água:</b> 00A8FB<br>
+<b>Ar:</b> 26C2C2<br>
+<b>Terra:</b> A6FFD9<br><br>
+
+<b>Scars: </b><b><br>Head:</b>(CS) The Gecko
+<b> <br>Body:</b> (CS) The Gecko
+
+                `
+            
+            },
+        ],
+    },
+
+
+ {
+        raceName: 'Alados',
+        imageUrl: 'Alado_IA.jpeg',
+        racialImage: ['Alado_F.png','Alado_M.png'],
+        kingdom: 'Ydris',
+        bonus: ['Flight', 'Sharpeye', 'Tireless', 'Fortified'],
+        racialPoints: [
+           {
+                bonusName: 'Vitalidade',
+                bonusValue: '+4',
+                percentage: 60            },
+            {
+                bonusName: 'Coragem',
+                bonusValue: '+3',
+                percentage: 40
+            },
+        ],
+        views: [
+            {
+                title: 'Guardiões',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">G</span>uardiões do conhecimento<br> 
+                &emsp;&emsp;<span class="first-letter">N</span>o vasto e diversificado mundo de Ydris, poucas raças são tão veneradas e respeitadas quanto os Alados. Estas majestosas criaturas, descendentes dos primeiros seres alados que habitaram o reino, são conhecidas por sua inabalável lealdade, destemida bravura e incomparável sabedoria.<br>                &emsp;&emsp;<span class="first-letter">O</span>s Alados são criaturas de beleza imponente, herdando traços dos elegantes cisnes e dos enigmáticos corvos. Suas asas são imponentes, refletindo a graça etérea dos cisnes ou a misteriosa beleza dos corvos, e suas patas lembram as de aves, adaptadas para uma vida entre os céus e a terra. Estes seres possuem habilidades mágicas únicas, que lhes permitem uma profunda ligação com os céus, sendo capazes de adquirir informações e conhecimento de forma quase sobrenatural.<br><br>                &emsp;&emsp;<span class="first-letter">E</span>m termos de personalidade, os sereianos são conhecidos por seu egocentrismo e uma inclinação para o sarcasmo e a ironia. Embora muitas vezes se comportem de maneira sedutora, não são intrinsecamente maldosos. Tendem a ser difíceis de se abrir, mas uma vez que confiam em alguém, são fiéis até o fim. Essa mistura de dureza e lealdade os torna companheiros formidáveis e protetores implacáveis de seu domínio aquático.
+                <br><br>
+                `
+            },
+            {
+                title: 'Escrituário',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">L</span>ápide Histórica
+                <br>&emsp;&emsp;<span class="first-letter">T</span>alvez a raça mais antiga de Ydris, depois dos Genasi, os Alados têm suas raízes firmemente plantadas na história do reino. Desde tempos imemoriais, eles desempenharam um papel crucial na construção e na preservação do reino. Como mensageiros natos, os primeiros Alados voavam grandes distâncias, levando mensagens e conhecimentos através do mundo. Entretanto, com o passar do tempo e a extinção do caos, a necessidade de voar diminuiu, e muitos Alados perderam esta capacidade, focando-se em suas outras habilidades.<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Alados são frequentemente encontrados em posições prestigiosas, especialmente em bibliotecas e instituições de ensino, onde compartilham sua sabedoria e orientam os jovens. Sua habilidade de transmitir conhecimento com clareza e paciência os torna ideais para essas funções. Além disso, sua natureza diplomática os torna indispensáveis em missões de paz e embaixadas, onde são conhecidos por sua capacidade de evitar conflitos e promover a harmonia.
+                <br><br>
+                `
+            },
+            {
+                title: 'Aversões',
+                content: 
+                `
+                                &emsp;&emsp;<span class="first-letter">A</span>versões<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Alados mantêm uma relação de desconfiança e aversão com qualquer criatura vinda de Nibhanus, visto que estas frequentemente ameaçam a paz e a estabilidade de Ydris. Embora não tenham problemas significativos com outras espécies, geralmente não se dão bem com felinos, talvez devido a instintos naturais que prevalecem mesmo na civilização.
+                `
+            },
+ {
+                title: 'Aparência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span>parência racial<br><b>ATTACHED:</b><br><br><b>Aparência:</b><br>(HA) Bird Feet 2490176<br>(HA) Bird Feet (Feathered) 2490969<br>Bird Feet 666000115<br>Angel Wings Folded Black (Attached) 1000888<br>Angel Wings Folded (Attached) 1000886<br>(A) Hair Wings 4853035 <br><br><b>Warpaint:</b><br><b>Head:</b> 9821002<br><b>Body:</b> 9821002<br><b>Hands:</b> 9821002
+                `
+            },
+        ],
+    },
+
+ {
+        raceName: 'Viera',
+        imageUrl: 'Vieira_IA.jpeg',
+        racialImage: ['Viera_F.png','Viera_M.png'],
+        kingdom: 'Ydris',
+        bonus: ['Night Vision', 'Fortified', 'Toughness'],
+        racialPoints: [
+            {
+                bonusName: 'Vitalidade',
+                bonusValue: '+4',
+                percentage: 60            },
+            {
+                bonusName: 'Agilidade',
+                bonusValue: '+3',
+                percentage: 40
+            },
+        ],
+        views: [
+            {
+                title: 'Fervor',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span> fervor da caçada<br> 
+                &emsp;&emsp;<span class="first-letter">E</span>m meio às vastas florestas de Ydris, onde a vegetação densa sussurra segredos antigos e os ventos carregam histórias esquecidas, vivem os enigmáticos Viera. Esta raça, marcada por uma combinação única de graça, agilidade e uma seriedade quase etérea, mantém-se firme como os guardiões das matas e dos segredos da natureza.<br>                &emsp;&emsp;<span class="first-letter">O</span>s Viera possuem uma aparência que exala sensualidade e exotismo, contrastando profundamente com sua personalidade geralmente séria. As características mais notáveis desta raça são suas chamativas orelhas de coelho e um pequeno rabo, que complementam seu porte gracioso. Suas expressões são frequentemente vazias e distantes, como se estivessem sempre sintonizadas com algo além do alcance humano.<br><br>                &emsp;&emsp;<span class="first-letter">A</span> voz dos Viera é suave, com um sotaque característico que lhes confere um ar nobre e polido. Seu modo de falar é calmo e ponderado, revelando uma profundidade de pensamento e uma sabedoria inata. Caminham de forma vagarosa e pausada, cada passo ddacentuado por suas longas pernas, que lhes conferem uma elegância natural.
+                <br><br>
+                `
+            },
+            {
+                title: 'Ancestralidade',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span> conto
+                <br>&emsp;&emsp;<span class="first-letter">O</span>s Viera, conhecidos como os Caçadores da Floresta, possuem uma história rica e fascinante. Dotados de uma visão, audição e faro aguçados, são capazes de ouvir até mesmo os espíritos do outro mundo, além daquilo que chamam de "A Voz da Floresta". Reclusos em suas vilas escondidas nas grandes matas de Ydris, eles mantinham-se isolados do resto do mundo, dedicando suas vidas à proteção e preservação dos segredos da natureza.<br><br>                &emsp;&emsp;<span class="first-letter">N</span>o entanto, com a ascensão dos humanos ao poder em Ydris, os Viera começaram a se tornar mais sociáveis, abrindo suas vilas e interagindo mais com outras raças. Esta mudança trouxe novas dinâmicas e alianças, permitindo-lhes proteger suas florestas de maneira mais eficaz. Durante este período de transição, os Viera encontraram e resgataram os Squirrels, incorporando-os à sua sociedade e fazendo com que fossem chamados de Viera também.
+                <br><br>
+                `
+            },
+            {
+                title: 'Rivalidades',
+                content: 
+                `
+                                &emsp;&emsp;<span class="first-letter">R</span>ivalidades Naturais<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Viera não demonstram desgosto aparente por nenhuma outra raça, mantendo uma postura neutra e observadora. Esta neutralidade, no entanto, não deve ser confundida com indiferença. Eles são vigilantes e protetores fervorosos de suas florestas, e qualquer ameaça a seu território ou modo de vida é tratada com severidade.
+                `
+            },
+ {
+                title: 'Aparência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span>parência racial<br><b>Coelhos:</b><br>Bunny Ears 325322000<br>bunnytail 869430185<br>(A) Yasagi Rabbit Tail 4853019<br>(T) Yasagi Rabbit Tail 4853022<br><br><b>Esquilos</b><br>Cauda de Esquilo<br>Orelha de Esquilo<br><br><b>WARPAINT:</b><br><b>Head:</b> 9821002<br><b>Body:</b> 9821002<b><br>Hands:</b> 9821002
+                `
+            },
+        ],
+    },
+
+ {
+        raceName: 'Abéllidas',
+        imageUrl: 'Abelha_IA.jpeg',
+        racialImage: ['Bee_F.png','Bee_M.png'],
+        kingdom: 'Ydris',
+        bonus: ['Night Vision', 'Feast', 'Tireless'],
+        racialPoints: [
+            {
+                bonusName: 'Agilidade',
+                bonusValue: '+4',
+                percentage: 60
+            },
+            {
+                bonusName: 'Vitalidade',
+                bonusValue: '+3',
+                percentage: 40
+            },
+        ],
+        views: [
+            {
+                title: 'Resiliência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span> ferrão<br> 
+                &emsp;&emsp;<span class="first-letter">A</span>s Abéllidas são criaturas protetoras e inofensivas quando não são encurraladas. Sua personalidade reflete um profundo senso de comunidade e lealdade, operando com a mentalidade de uma colmeia. Fisicamente, possuem grandes asas de abelhas e um ferrão na cauda, características que reforçam sua conexão com os insetos dos quais derivam seu nome.<br><br>                &emsp;&emsp;<span class="first-letter">O</span>riginalmente, as Abéllidas habitavam o reino de Aetherya. Hoje, entretanto, elas encontraram um novo lar em Ydris, onde continuam a viver em harmonia com a natureza, apesar das mudanças e desafios ao longo do tempo.
+                <br><br>
+                `
+            },
+            {
+                title: 'Segredos',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s Diários do Mel
+                <br>&emsp;&emsp;<span class="first-letter">O</span>s Abéllidas são uma raça única, semelhantes às abelhas, que vivem geralmente como parte de um enxame. Operam em grupos coesos, com uma mentalidade de colmeia que valoriza a cooperação e a proteção mútua. Historicamente, elas construíam colmeias sintéticas nos sótãos de suas casas, onde colhiam suas próprias apitoxinas, o veneno das abelhas, que utilizavam para defesa.<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Abéllidas possuíam a habilidade de controlar abelhas da natureza para dar cobertura quando necessário, uma habilidade que se perdeu ao longo do tempo. Esta perda ocorreu durante um período de conflitos, quando utilizaram a natureza para guerras pessoais, um desvio trágico de sua harmonia original com o ambiente.<br><br>                &emsp;&emsp;<span class="first-letter">A</span> estrutura social dos Abéllidas refletia a das abelhas, com uma Rainha e operárias. A Abelha Rainha seguia um estrito código de honra e era extremamente protetora com seus aliados. A Rainha representava a força e a continuidade da comunidade, guiando as operárias com sabedoria e cuidado.<br>                &emsp;&emsp;<span class="first-letter">A</span> transição das Abéllidas de Aetherya para Ydris não foi sem desafios. Elas tiveram que se adaptar a um novo ambiente e reconstruir suas colmeias em um território desconhecido. No entanto, sua forte coesão social e habilidades adaptativas permitiram que se estabelecessem com sucesso em Ydris.
+                <br><br>
+                `
+            },
+            {
+                title: 'Interpessoalidade',
+                content: 
+                `
+                                &emsp;&emsp;<span class="first-letter">R</span>ivalidades Naturais<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Abéllidas têm uma aversão particular por espécies que canalizam magia negra. Elas veem essas forças como uma ameaça direta à sua existência e à harmonia de seu habitat.
+                `
+            },
+ {
+                title: 'Aparência',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span>parência racial<br><b>APARÊNCIA:</b><br>(JCACC) Bastet’s Cat Ear Left 5585390<br>(JCACC) Bastet’s Cat Ear Right 5585391<br>(JCACC) Bastet’s Fluffy Cat Ear Left 5585393<br>(JCACC) Bastet’s Fluffy Cat Ear Right 5585394<br>(JCACC) Bastet’s Tiger’s Cat Ear Left 5585399<br>(JCACC) Bastet’s Tiger’s Cat Ear Right 5585400<br>(JCACC) Bastet’s Cat Tail 5585392<br>(JCACC) Bastet’s Tiger Tail 5585398<br>(JCACC) Bastet’s Jaguar Rail 5585411<br>(JCACC) Bastet’s Leopard Tail 5585398<br>Whiskers - Cat v1 (Attached) 7656150<br>Whiskers - Cat v1 Large (Attached) 7656151<br><br><b>MAKEUP:</b><br><b>Makeup A:</b> 220104029<br><br><b>SCAR:</b><br><b>Face:</b> (CS) Streetcat<br><b>Body:</b> (CS) Streetcat<br><br><br><b>WARPAINT:</b><br><b>Head:</b> 9821002<br><b>Body:</b> 9821002<br><b>Hand:</b> 9821002
+                `
+            },
+        ],
+    },
+
 ]

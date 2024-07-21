@@ -10,6 +10,20 @@ import 'swiper/css/pagination';
 
 const banners = [
     {
+        imageName: "banner8.png",
+        title: "Reino: Ydris",
+        description: "No coração pulsante do continente de Yridessa, o reino de Ydris se destaca como um farol de cultura e arte.",
+        click: true,
+        link: "https://www.youtube.com/watch?v=iTZCRKdOWcA",
+    },
+    {
+        imageName: "banner7.png",
+        title: "Ydrisianos",
+        description: " Ydris traz consigo os costumes da adoração e o fervor da fé, demonstrando sua lealdade aos seus deuses através de músicas, adorações e replicação das perspectivas de suas divindades.",
+        click: true,
+        route: "/races",
+    },
+    {
         imageName: "banner5.png",
         title: "Reino: Aetherya",
         description: "Num reino resplandecente e incorruptível, os Aetherianos carregam consigo a herança divina da preguiça e a bênção da água. Explore a beleza e o mistério deste mundo encantado e confira o vídeo trailer de divulgação do reino para sentir a magia que o espera.",
