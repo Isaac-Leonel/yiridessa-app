@@ -147,7 +147,7 @@ export default [
             &emsp;&emsp;Para os habitantes da Terra das Areias, cada dia era uma batalha pela dignidade humana. A escassez de alimentos levava muitos a fazerem escolhas impensáveis. O canibalismo, embora um tabu extremo, tornava-se uma opção de último recurso quando a sobrevivência estava em jogo. Esse ato de desespero deixava marcas profundas na alma das pessoas, um lembrete sombrio do quão longe haviam caído.<br/>
             &emsp;&emsp;A crianças cresciam conhecendo apenas a luta e o sofrimento. Suas brincadeiras eram frequentemente interrompidas por gritos de alerta e pela urgência de se esconderem das ameaças noturnas. Seus sonhos eram povoados por monstros, e suas esperanças, moldadas por um futuro incerto.<br/><br/>
             
-            <strong>Uma Terra de Contrastese</strong><br/>
+            <strong>Uma Terra de Contrastes</strong><br/>
             &emsp;&emsp;Apesar da dureza da vida, havia momentos de beleza efêmera. O nascer do sol pintava as dunas com cores vibrantes, e as noites estreladas ofereciam um vislumbre da vastidão do universo. Essas raras ocasiões de paz eram um bálsamo para as almas cansadas, uma pausa breve na constante luta pela sobrevivência.<br/>
             &emsp;&emsp;O deserto, com sua desolação e desafios, era um teste de resistência e vontade. As dificuldades que enfrentavam forçavam cada indivíduo a confrontar seus limites, e para aqueles que sonhavam com um futuro melhor, o deserto era tanto um obstáculo quanto uma oportunidade de passagem para o pós-morte.<br/><br/>
 
