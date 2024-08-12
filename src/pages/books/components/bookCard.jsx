@@ -80,8 +80,7 @@ const StyledCardContainer = styled.div`
         align-items: end;
         justify-content: center;
         font-family: FireFlight;
-        font-weight: 300;
-        font-size: 3rem;
+        font-weight: 200;
         animation-timing-function: linear;
 
         ${
@@ -104,8 +103,10 @@ const StyledCardContainer = styled.div`
     .flip-card-front span{
         z-index: 3;
         color: white;
-        font-size: 3rem;
+        font-size: 1.8rem;
         letter-spacing: 0.1rem;
+        text-align: center;
+        padding: 30px;
     }
     .flip-card-back {
         border-radius: 20px;
@@ -122,7 +123,7 @@ const StyledCardContainer = styled.div`
         left: 0;
         border-radius: 20px;
         backdrop-filter: blur(05px); /* Ajuste a intensidade do blur */
-        background: linear-gradient(to top, #000000 5%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(to top, #000000 20%, rgba(255, 255, 255, 0) 50%);
         mask-image: linear-gradient(to top, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 50%);
     }
 `;
