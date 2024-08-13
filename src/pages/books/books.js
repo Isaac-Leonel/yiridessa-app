@@ -130,7 +130,8 @@ export default [
         <h2>AL-MIRAJE</h2>
 
         <p>
-            &emsp;&emsp;<span class="first-letter">N</span>os confins do deserto, onde o sol inclemente queimava as dunas sem fim, ergue-se uma terra envolta em lendas e mistérios: Al-Miraje. Conhecida como a Terra das Areias, esta região era um lugar de desolação e luta, onde o vento carregava canções antigas e as estrelas guardavam segredos dos tempos imemoriais. Para muitos, o deserto representava um desafio insuperável, uma vasta extensão de areia dourada que testava os limites da resistência humana.<br/>
+            <strong>Al-Miraje, a Terra das Areias</strong><br/>
+            &emsp;&emsp;Nos confins do deserto, onde o sol inclemente queimava as dunas sem fim, ergue-se uma terra envolta em lendas e mistérios: Al-Miraje. Conhecida como a Terra das Areias, esta região era um lugar de desolação e luta, onde o vento carregava canções antigas e as estrelas guardavam segredos dos tempos imemoriais. Para muitos, o deserto representava um desafio insuperável, uma vasta extensão de areia dourada que testava os limites da resistência humana.<br/>
             <br/>
             <strong>Uma Terra de Sofrimento e Medo</strong><br/>
             &emsp;&emsp;O reino em questão era dividido e assolado por desafios incessantes. As tribos nômades, vivendo isoladas, enfrentavam a dura realidade do deserto. A fome e a sede eram inimigas constantes, enquanto o calor implacável do dia drenava a energia dos que se aventuravam além da segurança de suas tendas. As noites, embora mais frescas, traziam consigo um perigo ainda mais aterrorizante.<br/>
@@ -140,12 +141,12 @@ export default [
             &emsp;&emsp;A sensação de desolação era intensificada pelo isolamento entre as tribos. A comunicação entre elas era rara, e cada grupo via os outros mais como rivais do que aliados. Essa divisão enfraquecia a todos, e o senso de comunidade era quase inexistente. Muitas vezes, as tribos viam umas às outras com desconfiança, competindo pelos escassos recursos que o deserto oferecia.<br/>
             &emsp;&emsp;Os recursos eram tão limitados que os conflitos internos e disputas por territórios se tornavam inevitáveis. As escaramuças pela água ou por pequenas áreas de sombra tornavam-se frequentes, levando a um ciclo interminável de animosidade e retaliação.<br/><br/>
             
-            <strong>Linhagens das Areias</strong><br/>
+            <strong>Linhagens das areias</strong><br/>
             &emsp;&emsp;A diversidade cultural das areias era um dos pilares que sustentava a vitalidade do reino, enriquecido por raças singulares dotadas de habilidades místicas extraordinárias. Essas raças, com suas contribuições únicas, eram responsáveis por transformar o deserto em uma terra de oportunidades. Com suas aptidões notáveis, desempenhavam papéis essenciais na sobrevivência e prosperidade do reino. Desde a habilidade de controlar os ventos que moldavam as dunas até a capacidade de encontrar água nas profundezas da aridez, essas raças magníficas garantiam a subsistência e o florescimento do reino. Cada uma delas, com suas características e talentos distintos, tecia uma tapeçaria de habilidades que era crucial para a harmonia e resiliência do lugar.<br/><br/>
 
             <strong>A Luta pela Dignidade</strong><br/>
             &emsp;&emsp;Para os habitantes da Terra das Areias, cada dia era uma batalha pela dignidade humana. A escassez de alimentos levava muitos a fazerem escolhas impensáveis. O canibalismo, embora um tabu extremo, tornava-se uma opção de último recurso quando a sobrevivência estava em jogo. Esse ato de desespero deixava marcas profundas na alma das pessoas, um lembrete sombrio do quão longe haviam caído.<br/>
-            &emsp;&emsp;A crianças cresciam conhecendo apenas a luta e o sofrimento. Suas brincadeiras eram frequentemente interrompidas por gritos de alerta e pela urgência de se esconderem das ameaças noturnas. Seus sonhos eram povoados por monstros, e suas esperanças, moldadas por um futuro incerto.<br/><br/>
+            &emsp;&emsp;As crianças cresciam conhecendo apenas a luta e o sofrimento. Suas brincadeiras eram frequentemente interrompidas por gritos de alerta e pela urgência de se esconderem das ameaças noturnas. Seus sonhos eram povoados por monstros, e suas esperanças, moldadas por um futuro incerto.<br/><br/>
             
             <strong>Uma Terra de Contrastes</strong><br/>
             &emsp;&emsp;Apesar da dureza da vida, havia momentos de beleza efêmera. O nascer do sol pintava as dunas com cores vibrantes, e as noites estreladas ofereciam um vislumbre da vastidão do universo. Essas raras ocasiões de paz eram um bálsamo para as almas cansadas, uma pausa breve na constante luta pela sobrevivência.<br/>
