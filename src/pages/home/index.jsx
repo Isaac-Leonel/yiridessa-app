@@ -98,12 +98,12 @@ export const Home = () => {
                         <HomeContainer/>
                     </StyledGIF>
                 </swiper-slide>
-                <swiper-slide>
+                {/* <swiper-slide>
                     <StyledGIF>
                         <BlurOverlay />
                         <PreRegister/>
                     </StyledGIF>
-                </swiper-slide>
+                </swiper-slide> */}
                 {/* <swiper-slide>
                     <StyledGIF>
                         <BlurOverlay />

@@ -203,9 +203,9 @@ export default [
         <p>
             &emsp;&emsp;<span class="first-letter">H</span>oje, Umbrovea é o berço de seres das trevas, sendo composta por algumas regiões, cada uma com suas próprias características sombrias.<br/>
             &emsp;&emsp;Gran Goecian É uma terra onde os segredos do passado se entrelaçam com as promessas do futuro. Sob a vigilância constante dos Soberanos, esta região é um monumento à grandiosidade e à história do reino, um farol de poder que ilumina as sombras ao seu redor. A Torre Real se ergue como uma sentinela antiga, e as árvores rubras serpenteiam entre o edifício grandioso e imponente. Festas assombrosas, banquetes opulentos e torneios são realizados com frequência, reforçando Gran Goecian como o coração pulsante do Mundo das Sombras.  <br/>
-            &emsp;&emsp;Volupinea é presidida pelo segundo Overlord e é um domínio onde deleites e excessos se entrelaçam em uma dança sedutora. A atmosfera de luxúria e decadência permeia a região, com uma torre irradiando volúpia, dançarinas hipnotizantes, um bar soturno e arenas de luta sangrentas. Cada esquina oferece tentação e perigo, e por trás da fachada de prazer, há uma escuridão espreitando, pronta para engolir os desavisados.  <br/>
-            &emsp;&emsp;Sudratanea é uma terra envolta em fogo e mistério, governada pelo terceiro Overlord. Chamas eternas dançam em uma sinfonia de calor e destruição, alimentando forjas negras que consomem tudo em seu caminho. Os guerreiros de Sudratanea, conhecidos como os Incandescentes, são a personificação da fúria e da vontade de lutar. Eles são guardiões de Umbrovea, uma força inquebrantável que mantém as trevas seguras com o uso de seus sentimentos flamejantes.  <br/>
-            &emsp;&emsp;Abissinea é um reduto de mistério e magia obscura, onde a escuridão é uma entidade viva e pulsante. Governada pelo terceiro Overlord, Abissinea abriga a Biblioteca Profana, guardada pelos Sussurrantes, seres etéreos. A floresta assombrada desta região abrigam criaturas das trevas que tecem suas tramas e devoram suas vítimas lentamente, até mesmo durante a noite se é capaz de ouvir gritos e gemidos vindos de lá. Este é o domínio repleto de paradoxos e enigmas, onde a verdade está sempre oculta nas sombras que a Guerra Antiga forjou.  <br/>
+            &emsp;&emsp;Volupinea é presidida pelo primeiro Soberano e é um domínio onde deleites e excessos se entrelaçam em uma dança sedutora. A atmosfera de luxúria e decadência permeia a região, com uma torre irradiando volúpia, dançarinas hipnotizantes, um bar soturno e arenas de luta sangrentas. Cada esquina oferece tentação e perigo, e por trás da fachada de prazer, há uma escuridão espreitando, pronta para engolir os desavisados.  <br/>
+            &emsp;&emsp;Sudratanea é uma terra envolta em fogo e mistério, governada pelo segundo Soberano. Chamas eternas dançam em uma sinfonia de calor e destruição, alimentando forjas negras que consomem tudo em seu caminho. Os guerreiros de Sudratanea, conhecidos como os Incandescentes, são a personificação da fúria e da vontade de lutar. Eles são guardiões de Umbrovea, uma força inquebrantável que mantém as trevas seguras com o uso de seus sentimentos flamejantes.  <br/>
+            &emsp;&emsp;Abissinea é um reduto de mistério e magia obscura, onde a escuridão é uma entidade viva e pulsante. Governada pelo terceiro Soberano, Abissinea abriga a Biblioteca Profana, guardada pelos Sussurrantes, seres etéreos. A floresta assombrada desta região abrigam criaturas das trevas que tecem suas tramas e devoram suas vítimas lentamente, até mesmo durante a noite se é capaz de ouvir gritos e gemidos vindos de lá. Este é o domínio repleto de paradoxos e enigmas, onde a verdade está sempre oculta nas sombras que a Guerra Antiga forjou.  <br/>
             &emsp;&emsp;Carnificidea é uma região pulsante e viva, completamente consumida por uma infecção constante conhecida como Noxrégia. Aqui, a própria terra parece respirar, vibrando com uma energia sombria e inquietante. O solo é coberto por uma vegetação mutante que se contorce, emitindo uma luz avermelhada que cria uma atmosfera de constante inquietação.  <br/>
             &emsp;&emsp;A paisagem é instável, com protuberâncias que se erguem e retraem como se fossem pulmões. A flora é composta por plantas mutantes, exalando um aroma adocicado e venenoso que intoxica os incautos. As árvores têm galhos retorcidos que parecem agarrar o céu, e algumas sussurram palavras de desespero aos passantes, como se contassem segredos de um pesadelo eterno.  <br/>
             &emsp;&emsp;Os seres que habitam Carnificidea são produtos do grandioso fungo, transformados em grotescas aberrações de seus antigos eus. Esses monstros que vagam pela região são ex-humanos ou animais fundidos com a infecção. Outros também são originários do líquido materno da criatura ancestral que deu origem ao Noxrégia. São imprevisíveis e hostis, sempre em busca de novas vítimas para alimentar o fungo que lentamente se alastra pela região, expandindo seu domínio, até mesmo se é capaz de dizer que este ser tem consciência própria.  <br/>
@@ -228,7 +228,7 @@ export default [
             &emsp;&emsp;A nova doutrina desafiou as tradições estabelecidas, promovendo a ideia de um Deus unificado em vez de múltiplos deuses separados. A Igreja dos Sete cresceu rapidamente, estabelecendo templos e centros de sabedoria por todo o reino. A mensagem de Lorkan ressoou profundamente entre os Ydrianos, que viam essa revelação como uma forma de alcançar uma compreensão mais profunda do divino.<br/>
             &emsp;&emsp;Ydris se estabeleceu como um reino devotado à sua religião, onde a prática espiritual e a adoração ocupavam um lugar central na vida cotidiana. A sociedade ydriana era marcada por uma devoção fervorosa e uma estrita adesão às tradições religiosas. Os templos dedicados aos Sete se erguiam majestosos em todas as cidades e vilarejos, e os sacerdotes da Igreja dos Sete eram figuras de grande respeito e influência.<br/>
             &emsp;&emsp;A religião moldava todos os aspectos da vida em Ydris. As festividades religiosas, os rituais diários e as celebrações em honra dos Sete eram eventos importantes que uniam a comunidade e reforçavam a coesão social. Cada aspecto da vida, desde a agricultura até a educação, era permeado pela crença na iluminação divina.<br/>
-            &emsp;&emsp;Despite de ser um reino pacífico, Ydris era extremamente conservador devido à sua fervorosa devoção religiosa. As normas sociais e os costumes eram rígidos, refletindo uma profunda reverência pelas tradições estabelecidas. Mudanças na prática religiosa ou novos pensamentos eram frequentemente recebidos com resistência.<br/>
+            &emsp;&emsp;Apesar de ser um reino pacífico, Ydris era extremamente conservador devido à sua fervorosa devoção religiosa. As normas sociais e os costumes eram rígidos, refletindo uma profunda reverência pelas tradições estabelecidas. Mudanças na prática religiosa ou novos pensamentos eram frequentemente recebidos com resistência.<br/>
             &emsp;&emsp;O governo de Ydris estava intrinsecamente ligado à religião. Os líderes políticos eram muitas vezes também sacerdotes, e suas decisões eram guiadas pelos princípios dos Sete. As leis e políticas do reino eram moldadas para refletir os ensinamentos da Igreja, e a justiça era administrada de acordo com a moralidade religiosa.<br/>
             &emsp;&emsp;Apesar da harmonia interna e da paz relativa, o reino enfrentava desafios derivados de sua natureza conservadora. O isolamento cultural e a resistência à mudança podiam levar a tensões com reinos vizinhos que seguiam tradições diferentes ou que eram mais progressistas. A proteção das tradições e da ordem social muitas vezes exigia um equilíbrio delicado entre manter a coesão interna e interagir com o mundo exterior.<br/>
             &emsp;&emsp;O legado de Lorkan e a fundação da Igreja dos Sete permaneceram como pilares centrais da identidade de Ydris. A busca pela iluminação e pela verdade continuava a inspirar os habitantes, e a religião fornecia um sentido profundo de propósito e pertencimento. Embora o reino permanecesse conservador e profundamente enraizado em suas tradições, a essência da fé ydriana servia como uma fonte de força e estabilidade para a nação.<br/>
@@ -318,5 +318,70 @@ export default [
 
         `
     },
+    {
+        img: "livro9.png",
+        title: "Ordem Dos Magos",
+        text: `
+          
+        <h1>INICIATIVA</h1>
+        <h2>ORDEM DOS MAGOS</h2>
+
+        <p style="margin: 0; padding: 0;">
+            <br/><br/>
+            Os Muzarkianos, uma pequena tribo de agricultores e estudiosos, viviam em paz em seu vale isolado. Enquanto o mundo ao seu redor passava por mudanças significativas, com grandes raças se expandindo e consolidando seus próprios reinos, os Muzarkianos sentiam um medo crescente de serem extintos. Eles sabiam que sua sobrevivência dependia de algo mais do que suas habilidades agrícolas e científicas, então seus grandes pesquisadores começaram a explorar ruínas antigas e territórios desconhecidos em busca de respostas.
+            <br/>
+            Por muitos anos, essas explorações trouxeram mais perdas do que ganhos. Vários pesquisadores desapareceram misteriosamente, e a tribo parecia à beira do desespero. Contudo, em um certo dia, um dos pesquisadores mais dedicados encontrou um pergaminho ancestral escondido nas profundezas de uma caverna esquecida. Esse pergaminho, repleto de símbolos e textos em uma linguagem arcaica, continha os segredos de uma energia espiritual chamada Mana.
+            <br/>
+            Após anos de estudo meticuloso e experimentação, os Muzarkianos finalmente compreenderam como manipular a Mana. Essa descoberta mudou o destino da tribo para sempre. Percebendo o potencial desse poder, os anciãos decidiram criar a Ordem dos Magos, uma instituição dedicada ao estudo e à prática da magia. Uma grande torre foi erguida em seu território, e um conselho foi formado, composto pelos magos mais aptos a manipular a Mana. Apenas aqueles que alcançassem um nível grandioso dentro da Ordem poderiam se juntar ao conselho.
+            <br/>
+            Com a criação da Ordem dos Magos, o nome dos Muzarkianos começou a se espalhar pelo mundo. Durante esse período, novos reinos também começaram a tomar forma. Os elfos e outras criaturas das florestas estabeleceram o reino de Aetherya. A Ordem dos Magos também tomou conhecimento do surgimento de Al-Miraje, um reino criado no deserto, além de dois outros reinos em desenvolvimento: Ydris, liderado por um rei humano que fazia alianças com outras raças, e Umbrovea, um reino envolto em mistério, sobre o qual pouco se sabia.
+            <br/>
+            Enquanto a Ordem dos Magos crescia rapidamente, seus membros decidiram não se aliar a nenhum reino. Sentiam que algo estava mudando na própria terra, uma energia negativa que eles não podiam ignorar. A princípio, essa energia parecia ser apenas uma perturbação sutil, mas com o tempo, os magos descobriram sua verdadeira natureza: ela estava sendo alimentada pelos pensamentos sombrios, ações malignas e desejos egoístas dos seres que habitavam o continente.
+            <br/>
+            Essa energia começou a corromper tudo ao seu redor, e um dos anciões da Ordem, antes respeitado por sua sabedoria, caiu em desgraça ao sucumbir ao caos. A Ordem entrou em uma era de desestabilização, marcada por guerras internas e traições. As fundações da grande Ordem dos Magos começaram a ruir, e o que antes era um farol de conhecimento e poder tornou-se um campo de batalhas devastadoras.
+            <br/>
+            Enquanto a Ordem desmoronava, os reinos do continente também entraram em guerra. O motivo exato dessas guerras é desconhecido, mas o impacto foi devastador. Mirage foi completamente destruído durante a Grande Guerra, e seus segredos e riquezas se perderam nas areias do deserto. A Ordem dos Magos, outrora poderosa, foi reduzida a fragmentos. Muitos grimórios e pesquisas inestimáveis foram destruídos, e os magos mais talentosos perderam a vida ou desapareceram.
+            <br/><br/>
+            <strong>A Reconstrução e a Nova Ordem</strong><br/><br/>
+            Os poucos remanescentes da Ordem dos Magos, aqueles que conseguiram escapar da destruição, decidiram recriar a Ordem. Eles sabiam que não poderiam reconstruir tudo o que foi perdido, mas estavam determinados a começar de novo. A nova Torre foi erguida, mas com uma diferença crucial: desta vez, eles decidiram abrir as portas para pessoas de todos os reinos que mostrassem aptidão para a magia.
+            <br/>
+            A nova Ordem tornou-se um lugar de aprendizado e crescimento, aceitando alunos de todas as origens. Os magos restantes dedicam suas vidas a ensinar as novas gerações, com a esperança de que a Torre pudesse um dia alcançar uma grandeza ainda maior do que antes.
+            <br/>
+            Os Muzarkianos passaram de uma tribo pacífica a mestres da magia, enfrentando desafios e tragédias ao longo de seu caminho. A queda da Ordem dos Magos foi um duro golpe, mas sua reconstrução simboliza a resiliência e a determinação de um povo que se recusa a desaparecer. Embora muito tenha sido perdido, a nova Ordem dos Magos representa um novo começo, com a promessa de um futuro em que a magia e o conhecimento possam florescer novamente.
+            <br/>
+        </p>
+
+        `
+    },
+    {
+        img: "livro10.png",
+        title: "Sindicato",
+        text: `
+          
+        <h1>INICIATIVA</h1>
+        <h2>Sindicato</h2>
+
+        <p style="margin: 0; padding: 0;">
+            <br/><br/>
+            Era uma vez, em tempos antigos, quando os sete deuses dos reinos de Ydris sentiam que a balança da justiça e da prosperidade começava a oscilar perigosamente. Os reinos, outrora prósperos e pacíficos, estavam à beira do caos devido a desentendimentos e injustiças que corrompiam a harmonia entre as nações. Cada deus, guardião de uma vertente essencial do universo, reconheceu a necessidade de uma entidade que pudesse mediar e manter a justiça, assegurando que todos os reinos prosperassem em harmonia, sem que conflitos os destruíssem.
+            <br/>
+            Foi então que Uitar, o deus da beleza incontestável, do reflexo, da luz e do fogo, tomou a iniciativa. Sabendo que apenas a união de todas as essências divinas poderia criar algo realmente poderoso e equilibrado, ele propôs que cada deus contribuísse com um fragmento de sua própria essência para criar um local sagrado, um centro de poder e sabedoria que governaria a economia e a justiça entre os reinos.
+            <br/>
+            Uitar, com sua habilidade única de moldar a luz e a natureza, esculpiu uma gigantesca árvore no coração das terras de Ydris. Esta não era uma árvore comum; suas raízes penetravam nas profundezas da terra, conectando-se às energias vitais do mundo, enquanto seus galhos tocavam o céu, banhando-se na luz eterna do sol. Cada flor e cogumelo que brotava de sua casca brilhava com uma luz própria, como se a magia das estrelas tivesse sido tecida em suas pétalas. Ao redor, um aroma doce e calmante pairava no ar, fazendo com que qualquer um que se aproximasse sentisse uma paz indescritível. Cada um dos deuses, imbuído de seu próprio poder, depositou um fragmento de sua essência nesta árvore sagrada.
+            <br/>
+            Assim nasceu o Sindicato, uma entidade viva, que ressoava com a força e a harmonia dos sete deuses. O Sindicato não era uma simples organização; era um ser de pura magia e equilíbrio. Para entrar em sua sede, localizada dentro do tronco colossal da árvore, era necessário passar por um ritual de luz. Aqueles que desejavam adentrar o coração do Sindicato tinham de ser encolhidos por um feitiço de luz, tornando-se pequenos como insetos, para que pudessem caminhar pelas intricadas passagens e câmaras da árvore. Esse ritual, além de proteger o local de intrusos, simbolizava o respeito pela grandiosidade dos deuses e pela natureza.
+            <br/>
+            Os trabalhadores do Sindicato, escolhidos a dedo pelos deuses, eram abençoados pela luz de Uitar. Suas almas brilhavam com uma energia pura, e seus corações eram justos e benevolentes. Normalmente utilizando chapéu de cogumelo, eles trabalhavam incansavelmente para manter a justiça e a prosperidade nos reinos. Eram responsáveis por controlar a economia dos reinos, fazendo a distribuição justa dos recursos semanais, e por recompensar aqueles que seguiam as leis divinas com bonificações e apoio em tempos de necessidade.
+            <br/>
+            O Sindicato também era encarregado de distribuir missões aos heróis dos reinos, fornecendo informações vitais e orientando-os nas decisões mais difíceis. Suas análises das iniciativas dos reinos eram precisas e imparciais, assegurando que todos estivessem alinhados com os princípios de justiça e harmonia estabelecidos pelos deuses.
+            <br/>
+            Apesar de seu papel rigoroso, o Sindicato era conhecido por sua natureza pacífica e alegre. Seus funcionários eram felizes e acolhedores, sempre prontos para ajudar qualquer um que precisasse. No entanto, em tempos de grande injustiça, ou quando a árvore vital, o coração do Sindicato, estava em perigo, eles se transformavam. A paz e a alegria davam lugar a uma fúria divina. Quando a guerra era injusta ou sem motivo, o Sindicato se erguia com toda a força dos sete deuses, trazendo harmonia e paz, mesmo que isso significasse agir com uma severidade implacável.
+            <br/>
+            A lenda do Sindicato se espalhou por todos os cantos dos reinos de Ydris, e sua presença se tornou sinônimo de justiça e equilíbrio. E assim, sob a sombra protetora da árvore sagrada, os reinos prosperaram, unidos pela força dos sete deuses e pela sabedoria eterna do Sindicato.
+        </p>
+
+        `
+    },
+   
    
 ]
