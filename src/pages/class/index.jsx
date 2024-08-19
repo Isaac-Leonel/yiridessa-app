@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { RaceCard } from "./components/raceCard";
+import { ClasseCard } from "./components/classeCard";
 import { OriginalImgPosition } from "../../components/navigator";
-import { RaceModal } from "./components/raceModal"; 
+import { ClasseModal } from "./components/classeModal"; 
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { register } from "swiper/element";
 import { Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
-import races from './races';
+import classes from './classes.js';
 
 
-export const Races = () => {
+export const Classes = () => {
     const swiperElRef = useRef(null);
     const [race, setRace] = useState({})
     const [modalOpen, setModalOpen] = useState(false)
@@ -75,13 +75,12 @@ export const Races = () => {
                         id={"mySwiper"}
                     >
                         {
-                            races.map((race, index) => {
+                            classes.map((race, index) => {
                                 
                                 return (
                                     <swiper-slide key={index}>
-                                        <RaceCard 
-                                            url={race.imageUrl} 
-                                            raceName={race.raceName}
+                                        <ClasseCard 
+                                            url={race.iconURL} 
                                             active={slide == index} 
                                         />
                                     </swiper-slide>
@@ -91,16 +90,16 @@ export const Races = () => {
                         }
                     </swiper-container>
                 </StyledRacesContainer>
-                <RaceModal 
-                    raceName={races[slide].raceName ?? ""}
-                    imageUrl={races[slide].imageUrl ?? ""} 
-                    racialImage={races[slide].racialImage ?? []}
-                    Appearance={races[slide].Appearance ?? ""}
-                    kingdom={races[slide].kingdom ?? ""}
-                    bonus={races[slide].bonus ?? ""}
-                    racialPoints={races[slide].racialPoints ?? []}
-                    views={races[slide].views ?? []}
-                    videoEmbed={races[slide].videoEmbed ?? ""}
+                <ClasseModal 
+                    className={classes[slide].className ?? ""}
+                    description={classes[slide].description ?? ""}
+                    evolution={classes[slide].evolution}
+                    videoEmbed={classes[slide].videoEmbed}
+                    armor={classes[slide].armor}
+                    weapons={classes[slide].weapons}
+                    passives={classes[slide].passive}
+                    classAttributes={classes[slide].classAttributes ?? []}
+
                 />
             </div>
         </StyledSection>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const RaceCard = ({ url, raceName, onClick, active }) => {
+export const ClasseCard = ({ url, raceName, onClick, active }) => {
     return (
         <CardContainer onClick={onClick} active={active}>
             <Card url={url} active={active} />

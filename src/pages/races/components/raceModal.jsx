@@ -17,7 +17,7 @@ import 'swiper/css/navigation';
 
 
 
-export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, racialPoints, views }) => {
+export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, racialPoints, views, videoEmbed }) => {
     const swiperElRef = useRef(null);
     const [value, setValue] = useState(1);
 
@@ -92,11 +92,18 @@ export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, r
                                 }
                             </StyledContainerRacialPoints>
                         </StyledContainerRace>
+                        <iframe 
+                            src= {videoEmbed}
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                         <div className={"divImg"}>
                             
                                 <img src={`/img/${kingdom}_icon.png`}></img>
                                 <h1>{kingdom}</h1>
                         </div>
+                        
                     </StyledContainerFirstInfo>
                     <BodyDiv>
                         <div className="backgroundPaper"></div>
@@ -119,7 +126,7 @@ export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, r
                                 {
                                     views.map((view, index) => {
                                         return(
-                                            <TabPanel sx={{height: '350px', width: '100%', position: "relative"}} value={index}>
+                                            <TabPanel sx={{height: '240px', width: '100%', position: "relative"}} value={index}>
                                                 <StyledTextDiv dangerouslySetInnerHTML={{__html: view.content}} />
                                             </TabPanel>
                                         )
@@ -146,40 +153,41 @@ export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, r
                     </swiper-container>
                 </StyledContainerGender>
             </StyledModal>
-            <svg>
+            {/* <svg>
                 <filter id="wavy2">
                     <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
                     <feDisplacementMap in="SourceGraphic" scale="20" />
                 </filter>
-            </svg>
+            </svg> */}
         </StyledContainer>
     )
 }
 
 const StyledContainer = styled.div`
     display: flex;
-    justify-content: left;
-    align-items: center;
-    width: calc(100% - 300px);
-    color: #5f1b1b;
-    height: auto; /* Compatibilidade com Safari */
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
 `
 
 const StyledModal = styled.div`
+    backdrop-filter: blur(10px); /* Ajuste o valor do blur conforme necessário */
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 30px;
-    margin-left: 80px;
-    margin-bottom: 50px;
     font-family: FireFlight;
+    background-color: #16161649;
     display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: calc(100% - 100px);
+    height: 95%;
+    width: calc(100% - 200px);
 `
 
 const StyledContainerGender = styled.div`
     width: 30%;
     min-width: 300px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     swiper-container {
         width: 80%;
@@ -193,37 +201,40 @@ const StyledContainerGender = styled.div`
 `
 
 const StyledContainerFirstInfo = styled.div`
-    background: rgba(53, 53, 53, 0.438);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
     width: 100%;
+    padding: 20px;
+    height: 300px;
     color: white;
-    height: 380px ;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
 
     .divImg {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        min-width: 215px;
-        max-width: 215px;
+        min-width: 150px;
+        max-width: 150px;
 
         img {
             width: 100%;
             height: 100%;
         }
     }
+
+    iframe {
+        height: 230px;
+        width: 400px;
+        border-radius: 20px;
+    }
 `
 
 
 const StyledContainerRace = styled.div`
-    width: calc(100% - 215px);
-    height: 350px ;
+    height: 300px ;
+    width: 500px;
 `
 
 const StyledContainerRacialPoints = styled.div`
@@ -243,7 +254,7 @@ const StyledContainerRacialInfos = styled.div`
 
     h2 {
         font-family: Roboto;
-        background: #200000dd;
+        background: #5f1b1b;
         color: white;
         font-size: 1rem;
         padding: 10px;
@@ -259,14 +270,15 @@ const BodyDiv = styled.div`
     /* background: #eeeeee; */
     color: #5f1b1b;
     padding-bottom: 100px;
-    height: 400px;
-    min-width: 55vw;
+    height: 280px;
+    min-width: 61vw;
     margin: 10px;
     position: relative;
 
     .backgroundPaper {
         height: 100%;
         width: 100%;
+        border-radius: 20px;
         left: 0;
         top: 0;
         position: absolute;
@@ -338,17 +350,17 @@ const StyledImg = styled.div`
 `
 
 const ContainerAttribute = styled.div`
-    margin: 30px;
+    margin: 20px;
     width: 200px;
-    height: 10px;
+    height: 5px;
 `
 
 const AttributeName = styled.div`
     display: flex;
     justify-content: space-between;
     h1{
-        font-size: 1.5rem;
-        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
     }
 `
 

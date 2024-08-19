@@ -7,6 +7,7 @@ import { Navigator } from './components/navigator';
 import { Jobs } from './pages/jobs';
 import { Books } from './pages/books';
 import { Races } from './pages/races';
+import { Classes } from './pages/class';
 import {createTheme, ThemeProvider} from "@mui/material";
 import { My404Component } from './pages/404';
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/books" element={<Books/>}/>
           <Route path="/jobs" element={<Jobs/>}/>
           <Route path='/races' element={<Races/>}/>
+          <Route path='/classes' element={<Classes/>}/>
           <Route path="*" element={<My404Component />}/>
         </Routes>
       </ThemeProvider>

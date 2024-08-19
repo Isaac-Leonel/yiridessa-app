@@ -6,6 +6,7 @@ export default [
         racialImage: ['elf_f_gender_bg.png','elf_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Night Vision', 'Sharpeye', 'Tireless'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Agilidade',
@@ -71,6 +72,7 @@ export default [
         racialImage: ['lizard_f_gender_bg.png','lizard_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Troll Blood', 'Fortified', 'Toughness'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Força',
@@ -128,6 +130,7 @@ export default [
         racialImage: ['fairy_f_gender_bg.png','fairy_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Flight', 'Sharpeye', 'Night Vision'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Agilidade',
@@ -188,6 +191,7 @@ export default [
         racialImage: ['faun_f_gender_bg.png','faun_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Fortified', 'Toughness', 'Tenacity'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Força',
@@ -242,6 +246,7 @@ export default [
         racialImage: ['mermaid_f_gender_bg.png','mermaid_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Night Vision', 'Frostborn', 'Potent Sorcery', 'Amphibian'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Coragem',
@@ -296,6 +301,7 @@ export default [
         racialImage: ['garou_f_gender_bg.png','garou_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Night Vision', 'Feast', 'Fortified'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Força',
@@ -352,6 +358,7 @@ export default [
         racialImage: ['bastet_f_gender_bg.png','bastet_m_gender_bg.png'],
         kingdom: 'Aetherya',
         bonus: ['Night Vision', 'Feast', 'Tireless'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Agilidade',
@@ -406,6 +413,7 @@ export default [
         racialImage: ['Humano_F.png','Humano_M.png'],
         kingdom: 'Ydris',
         bonus: ['Fortified', 'Fight or Flight', 'Tireless'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Força',
@@ -489,6 +497,7 @@ export default [
         racialImage: ['Ogro_F.png','Ogro_M.png'],
         kingdom: 'Ydris',
         bonus: ['Tenacity', 'Troll Blood', 'Toughness'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Força',
@@ -545,6 +554,7 @@ export default [
         racialImage: ['Anao_F.png','Anao_M.png'],
         kingdom: 'Ydris',
         bonus: ['Fortified', 'Toughness', 'Tenacity'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Vitality',
@@ -603,6 +613,7 @@ export default [
         racialImage: ['Genasi_F.png','Genasi_M.png'],
         kingdom: 'Ydris',
         bonus: ['Impervious', 'Toughness', 'Fortified'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Agilidade',
@@ -667,6 +678,7 @@ export default [
         racialImage: ['Alado_F.png','Alado_M.png'],
         kingdom: 'Ydris',
         bonus: ['Flight', 'Sharpeye', 'Tireless', 'Fortified'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
            {
                 bonusName: 'Vitalidade',
@@ -720,6 +732,7 @@ export default [
         racialImage: ['Viera_F.png','Viera_M.png'],
         kingdom: 'Ydris',
         bonus: ['Night Vision', 'Fortified', 'Toughness'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Vitalidade',
@@ -767,12 +780,13 @@ export default [
         ],
     },
 
- {
+    {
         raceName: 'Abéllidas',
         imageUrl: 'Abelha_IA.jpeg',
         racialImage: ['Bee_F.png','Bee_M.png'],
         kingdom: 'Ydris',
-        bonus: ['Night Vision', 'Feast', 'Tireless'],
+        bonus: ['Night Vision', 'Tireless'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
                 bonusName: 'Agilidade',
@@ -811,7 +825,7 @@ export default [
                                 &emsp;&emsp;<span class="first-letter">R</span>ivalidades Naturais<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Abéllidas têm uma aversão particular por espécies que canalizam magia negra. Elas veem essas forças como uma ameaça direta à sua existência e à harmonia de seu habitat.
                 `
             },
- {
+            {
                 title: 'Aparência',
                 content: 
                 `
@@ -820,5 +834,383 @@ export default [
             },
         ],
     },
+    {
+        raceName: 'Daemons',
+        imageUrl: 'deamon.jpeg',
+        racialImage: ['DeamonM.png', 'DeamonF.png'],
+        kingdom: 'Umbrovea',
+        bonus: ['Night Vision', 'Toughness', 'Potent Sorcery'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
+        racialPoints: [
+            {
+                bonusName: 'Coragem',
+                bonusValue: '+4',
+                percentage: 60
+            },
+            {
+                bonusName: 'Vitalidade',
+                bonusValue: '+3',
+                percentage: 40
+            },
+        ],
+        views: [
+            {
+                title: 'Os Daemons: Herdeiros das Sombras',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">N</span>os recessos mais sombrios de Yiridessa, além dos limites da compreensão mortal, existe um reino onde dor e agonia são a essência da existência. Este lugar é Umbrovea, a região sombria, lar de criaturas agressivas, seres forjados no fogo do caos primordial. Com chifres pontudos, caudas afiadas, presas ameaçadoras e asas imponentes, essas criaturas são a personificação do terror e da desordem.
+.
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+       &emsp;&emsp;<span class="first-letter">O</span> conto deles é uma tapeçaria tecida com fios de caos e poder. Desde tempos imemoriais, os mesmos foram os precursores de guerras caóticas e vorazes, arquitetos do inferno em terra e senhores do oculto. As castas sombrias, um sistema de classes que define a hierarquia entre eles, são essenciais para entender a complexidade deste reino sombrio. Existem os Daemons Maiores, nascidos diretamente do Caos Infernal, possuidores de poder brutal. Em contraste, os Daemons Menores são criaturas que falharam em suas missões de vida e foram condenadas a uma existência de sofrimento e servidão.
+                `
+            },
+            {
+                title: 'Aparência',
+                content: 
+                `
+                <b>ATTACHEDS:</b><br>Horns - Mastema (Attached) 7655150<br>Horns - Azazel (Attached) 7655151<br>Horns - Chemosh (Attached) 7655152<br>
+                Horns - Ishtar (Attached) 7655153<br>Horns - Moloch (Attached) 7655155<br>Horns - Samnu (Attached) 7655156<br>Horns - Sedit (Attached) 7655157<br>Horns - Lilith (Attached) 7655163<br>Succubus Tail - Red 99987808<br>Succubus Tail - Black 99987807<br>Succubus Tail - Blue 99987793<br>Succubus Tail - White 99987781<br>Dragon Wings (flying) 99987794<br>Dragon Wings Red (flying) 99987790<br>Dragon Wings Black (flying) 99987788<br>Dragon Wings White (flying) 99987787<br>
+                `
+            },
+        ],
+    },
+    {
+        raceName: 'Dark Fey',
+        imageUrl: 'darkfey.jpeg',
+        racialImage: ['DarkFeyF.png', 'DarkFeyM.png'],
+        kingdom: 'Umbrovea',
+        bonus: ['Night Vision', 'Potent Sorcery', 'Flight'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
+        racialPoints: [
+            {
+                bonusName: 'Expertise',
+                bonusValue: '+3',
+                percentage: 40
+            },
+            {
+                bonusName: 'Coragem',
+                bonusValue: '+2',
+                percentage: 30
+            },  
+	    {
+                bonusName: 'Agilidade',
+                bonusValue: '+2',
+                percentage: 30
+            }
+        ],
+        views: [
+            {
+                title: 'Despertar',
+                content: 
+                `
+               &emsp;&emsp;<span class="first-letter">O</span>s Dark Fey são criaturas de uma beleza sombria e uma natureza encantadora. São seres cordiais e hospitaleiros, demonstrando uma ligação profunda com a natureza que os cerca. No entanto, sua bondade e hospitalidade desaparecem rapidamente quando sua existência é ameaçada. Com asas obscuras e chifres elegantes, sua aparência evoca um misto de mistério e poder, frequentemente confundida com a de Daemons.
 
+
+
+
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">C</span>om sua existência entre sombra e luz, são um testemunho vivo da complexidade da natureza e da magia. Embora frequentemente mal compreendidos, eles permanecem fieis aos seus princípios, protegendo a natureza e cultivando uma cultura rica e profunda. Em Umbrovea, eles continuam a ser guardiões silenciosos e poderosos, suas asas negras um lembrete constante da beleza que pode ser encontrada mesmo nas sombras mais profundas.
+
+
+                `
+            },
+            {
+                title: 'Informações Adicionais',
+                content: 
+                `
+                
+		 &emsp;&emsp;<span class="first-letter">A</span> origem dos Dark Fey vem de uma criação perdida. Eles foram criados pela primeira geração das bruxas mais talentosa e poderosa, que, em sua busca por guardiões para a natureza, deram vida aos primeiros integrantes dessa raça. No entanto, sua aparência, que aos olhos dos outros seres lembra os imponentes Daemons, trazendo-lhes julgamentos injustos. Foram considerados seres malignos, perpetuamente por estarem envolvidos em trevas, porém os outros se esquecem que até mesmo na escuridão há sua beleza.                `
+            },
+            {
+                title: 'Aparência',
+                content: 
+                `
+                <b>ATTACHEDS:</b><br>Halo [A] 666000112<br>Demons Wings 1000523<br>Satanic Horns [A] 666000053<br>Satanic Horns II [A] 666000054<br>Satanic Horns III [A] 666000055<br>Satanic Horns IV [A] 666000056<br>Satanic Horns V [A] 666000057<br>Maleficent Horn 869430292<br>Horns 2 (a) 9921017<br>Horns3 869430086<br>
+                `
+            },
+        ],
+    },
+	{
+        raceName: 'Osteon',
+        imageUrl: 'ossilda.jpeg',
+        racialImage: ['OsteonF.png', 'OsteonM.png'],
+        kingdom: 'Umbrovea',
+        bonus: ['Night Vision', 'Toughness', 'Impervious'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
+        racialPoints: [
+            {
+                bonusName: 'Vitalidade',
+                bonusValue: '+3',
+                percentage: 40
+            },
+            {
+                bonusName: 'Coragem',
+                bonusValue: '+2',
+                percentage: 30
+
+            },  
+              {
+                 bonusName: 'Expertise',
+                bonusValue: '+2',
+                percentage: 30
+
+            }
+        ],
+        views: [
+            {
+                title: 'Osteons',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">N</span>os domínios sombrios, onde as sombras são profundas e os segredos, ainda mais, existe uma raça que transcende as fronteiras entre a vida e a morte: os Osteon. Com aparência esquelética e uma presença que provoca tanto temor quanto admiração, esses seres desafiam todas as concepções tradicionais, misturando mistério e dever numa dança eterna.
+
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span> origem dos Osteon é envolta em lendas e mitos. Alguns acreditam que surgiram com a queda do antigo Deus da Morte, um evento que desestabilizou as fronteiras entre o mundo dos vivos e o dos mortos. Outros atribuem sua existência à ascensão do caos como um poderoso lich, que transformou a nação de Yiridessa em um reino necromante. Independentemente das causas, o que se sabe é que os Osteon foram inicialmente criados com a função de transportar as almas dos mortos para o plano de julgamento dos deuses.
+
+Esta função sagrada, no entanto, foi se perdendo ao longo do tempo, especialmente quando os deuses começaram a se desinteressar pelas criaturas vivas. Abandonados em seu propósito original, os Osteon adaptaram-se, encontrando novos sentidos e propósitos em sua existência. Eles se integraram à sociedade, contribuindo com suas habilidades únicas e seu conhecimento profundo do além.
+                `
+            },
+	     {
+                title: 'Aparência',
+                content: 
+                `
+		           <b>ATTACHEDS:</b><br>Skeleton: Skulll [A] 6660000002<br>Skeleton: Torso [A] 666000003<br>Skeleton: Arm L [A] 666000004<br>Skeleton: ForeArm L [A] 666000005<br>Skeleton: Hand L [A] 666000006<br>Skeleton: Arm R [A] 666000007<br>Skeleton: ForeArm R [A] 666000008<br>Skeleton: Hand R [A] 666000009<br>Skeleton: Pelvis [A] 666000010<br>Skeleton: Femur [A] 666000011<br>Skeleton: Leg [L] 666000012<br>Skeleton: Foot [A] 666000013<br>Skeleton: Femur [A] 666000014<br>Skeleton: Leg [L] 666000015<br>Skeleton: Foot [A] 666000016<br>Skull Head 666000072<br>Skull Head II 666000073<br>Head Skull 7656271<br>Iron Torch (Lit) 129003<br>Iron Torch 129004<br>     
+
+                `
+            }
+        ]
+        },
+
+		{
+        raceName: 'Tieflings',
+        imageUrl: 'Tiefling.jpeg',
+        racialImage: ['TieflingF.png', 'TieflingM.png'],
+        kingdom: 'Umbrovea',
+        bonus: ['Night Vision', 'Fireborn', 'Fortified'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
+        racialPoints: [
+            {
+                bonusName: 'Força',
+                bonusValue: '+4',
+                percentage: 60
+ 
+
+            },
+            {
+                bonusName: 'Autoridade',
+                bonusValue: '+3',
+                percentage: 40
+
+
+
+            }
+        ],
+        views: [
+            {
+                title: 'Tieflings',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s Tieflings possuem uma aparência inconfundível. Seus chifres longos e curvados evocam a memória de suas origens dracônicas, enquanto suas caudas grossas, medindo entre 1,20 m e 1,50m, balançam de forma ameaçadora e graciosa. A cor de sua pele varia como a dos humanos, mas também inclui tonalidades vermelhas, desde um rubor bronzeado até um profundo vinho-escuro, conferindo-lhes uma aura de mistério e perigo.
+
+
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s Tieflings são herdeiros de uma antiga linhagem dracônica e descendentes de nobres humanos que, em tempos imemoriais, fizeram barganhas com poderes sombrios. Esses nobres ergueram um império que subjugou metade do mundo conhecido, um império construído sobre promessas sombrias e magia dracônica. Contudo, como todo império construído sobre fundações instáveis, ele eventualmente caiu em ruínas.
+                <br><br>
+                `
+            },
+
+            {
+                title: 'Aparência',
+                content: 
+                `
+		        <b>ATTACHEDS</b><br>Horn 04V2 (a) 9921033<br>Horn 08V2 (a) 9921027<br>Horns1 869430084<br>Horns6 869430089<br>succubus tail 869430176<br><br>
+                <b>SCARS:</b><br><b>Head:</b> (CS) Tiefling<br><b>Body:</b> (CS) Tiefling<br>
+ 		        `
+            }
+        ]
+        },
+        {
+        raceName: 'Vampiros',
+        imageUrl: 'vampiro.jpeg',
+        racialImage: ['VampiroF.png', 'VampiroM.png'],
+        kingdom: 'Umbrovea',
+        bonus: ['Night Vision', 'FrostBorn', 'Toughness', 'Troll Blood'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
+        racialPoints: [
+
+             {
+                bonusName: 'Agilidade',
+                bonusValue: '+3',
+                percentage: 40            },
+            {
+                bonusName: 'Coragem',
+                bonusValue: '+4',
+                percentage: 60
+            }
+
+        ],
+        views: [
+            {
+                title: 'Vampiros',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">N</span>os recessos mais escuros de Umbrovea, onde a luz do dia jamais alcança, residem os Vampiros, criaturas noturnas de beleza hipnótica e voracidade insaciável. Com pele pálida que contrasta com a escuridão ao seu redor e presas afiadas prontas para perfurar a carne de suas presas, os vampiros são a personificação do medo e do fascínio. Suas línguas possuem um poder curativo que lhes permite selar rapidamente os ferimentos de suas vítimas, uma ferramenta tanto para a tortura quanto para a sobrevivência.
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">A</span> história dos vampiros é uma narrativa de dor, resistência e transformação. Durante a manifestação das sombras os vampiros se sentiram convidados a viver em Umbrovea pela própria escuridão da Rainha. Em tempos de difíceis estas criaturas eram correntados em prata, uma substância que os enfraquece e causa dor excruciante, eles eram deixados a secar sem sangue e, posteriormente, expostos ao sol, membro por membro, para sentir uma agonia incessante. Este tratamento brutal moldou uma raça de seres profundamente traumatizados e ferozes.
+
+                <br><br>
+                `
+            },
+
+            {
+                title: 'Aparência',
+                content: 
+                `
+		<b>ATTACHEDS:</b><br>(JCACC) Pointed Fand Left 5585118<br>(JCACC) Pointed Fand Right 5585119<br>
+		 `
+            }
+            ]
+        },
+            
+              {
+        raceName: 'Goétios',
+        imageUrl: 'goetica.jpeg',
+        racialImage: ['GoeticoF.png', 'GoeticoM.png'],
+        kingdom: 'Umbrovea',
+        bonus: ['Night Vision', 'Fortified', 'Toughness'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
+        racialPoints: [
+            {
+                bonusName: 'Força',
+                bonusValue: '+3',
+                percentage: 40  
+
+            },
+            {
+                bonusName: 'Coragem',
+                bonusValue: '+2',
+                percentage: 30
+
+
+            },  
+              {
+
+                bonusName: 'Vitalidade',
+                bonusValue: '+2',
+                percentage: 30
+
+
+            }
+        ],
+        views: [
+            {
+                title: 'Goéticos',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">N</span>os confins das trevas, onde as sombras dançam eternamente, reside uma raça de poder e disciplina inabalável: os Goétios. Conhecidos entre as raças mortais, essas imponentes criaturas são o epítome de força e honra, com corpos humanoides e traços de um animalescos mimetizados e únicos de cada uma das espécies. Sua aparência é autêntica, trazendo consigo a herança selvagem em cascos, chifres, patas, entre outras características de sua criatura, que são tanto símbolos de orgulho quanto de identidade.
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s primórdios dos Goétios eram semelhantes a outras raças meio animais, lutando bravamente contra as forças da escuridão. Eles estavam na linha de frente dessas batalhas, enfrentando os horrores mais terríveis que o caos podia conjurar. No entanto, durante a guerra, enquanto os Garou eram esquartejados, os chifres dos Goétios eram arrancados em atos de tortura e humilhação. Esse tormento deixou marcas profundas em suas almas, que, após a vitória, sentiram-se envergonhados de suas mutilações.
+
+Em busca de um refúgio onde pudessem esconder suas feridas, os Goétios migraram para Umbrovea após o fatídico acontecimento das sombras. O reino sombrio ofereceu-lhes a escuridão necessária para ocultar sua vergonha. Lá, os mesmos reconstruíram suas vidas e suas tradições. À medida que as novas gerações nasceram com chifres impecáveis, a gratidão e a lealdade dos Goétios a Umbrovea se solidificaram. Eles juraram proteger o reino que lhes ofereceu um lar, mantendo uma vigilância constante e feroz.
+                <br><br>
+                `
+            },
+
+            {
+                title: 'Aparência',
+                content: 
+                ` <b>ATTACHEDS:</b><br>Bull Horns [A] 666000048<br>Bull Horns II [A] 666000049<br>Bull Horns III [A] 666000050<br>Bull Horns IV [A] 666000051<br>Hoofed Feet 1000497<br>hooves v1 869430092<br>hooves v2 869430095<br>tailwithflooftip 869430182<br>Casco de Tartaruga de Yiridessa<br><br><b>WARPAINT:</b><br><b>TOURO</b><br><b>Head:</b> 4854083<br><b>Body:</b> 4854083<br><b>Hand:</b> 4854083<br><br><b>VACA</b><br><b>Body:</b> 1000233<br><b>Hand:</b> 1000233<br> `
+
+
+            },
+        ]
+    },
+		{
+        raceName: 'Caído',
+        imageUrl: 'caidos.jpeg',
+        racialImage: ['CaidoF.png', 'CaidoM.png'],
+        kingdom: 'Umbrovea',
+        bonus: ['Night Vision', 'Fortified', 'Flight'],
+        videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
+        racialPoints: [
+            {
+                bonusName: 'Força',
+                bonusValue: '+3',
+                percentage: 60
+            },
+            {
+                bonusName: 'Autoridade',
+                bonusValue: '+2',
+                percentage: 40
+            },  
+              {
+                bonusName: 'Vitalidade',
+                bonusValue: '+2',
+                percentage: 30
+            }
+        ],
+        views: [
+            {
+                title: 'Os Daemons de Nibhanus: Herdeiros do Caos e Senhores do Inferno',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">N</span>os altos domínios dos céus, onde a pureza e a serenidade reinavam supremas, viviam os celestes, seres de beleza etérea e asas brilhantes. Suas penas reluziam em brancura impecável, trazendo calma e paz àqueles que as tocassem. Eles eram enviados divinos, mensageiros da luz e da bondade, guardiões da harmonia em meio ao Palácio Divino.
+
+No entanto, em meio a esses seres de esplendor, havia aqueles cujo o desejo por maior poder os corrompiam. Um celeste que cobiçasse mais poder e se entregasse às trevas e ao pecado era expulso do Palácio, caindo em desgraça. Assim nasciam os Celestes Caídos, seres moldados diretamente pelo divino que, ao desafiar a ordem dos Deuses, eram lançados dos céus e condenados a vagar pelas sombras.
+                <br><br>
+                `
+            },
+            {
+                title: 'História',
+                content: 
+                `
+                &emsp;&emsp;<span class="first-letter">O</span>s Celestes Caídos trazem em si um contraste doloroso com seus irmãos celestiais. Enquanto os celestes emanam serenidade, os caídos carregam o peso do remorso e a dor da culpa. Suas asas, outrora brilhantes e brancas, tornam-se negras como a noite.A aréola  que antes irradiava luz transforma-se em um anel escuro, e seus olhos brilham com um fulgor que reflete a angústia e a determinação.A história dos Celestes Caídos é uma saga de tragédia e redenção. No ápice de sua existência, estes anjos serviam como bastiões da virtude e da justiça. No entanto, a ambição e o desejo por um poder maior os levaram a trair suas essências divinas. Ao se entregarem às trevas, foram expulsos do Paraíso, condenados a viver desolados e abraçados pelas sombras Umbroveanas.
+
+
+                `
+            },
+            {
+                title: 'Aparência',
+                content: 
+                `
+		<b>ATTACHEDS:</b><br>Death Spirit Wing L 325321890<br>Death Spirit Wing R 325321891<br>[C] Halo 666000209<br>	
+
+		 `
+
+            }
+        ],
+    },
 ]
