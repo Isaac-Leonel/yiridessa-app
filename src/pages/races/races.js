@@ -837,7 +837,7 @@ export default [
     {
         raceName: 'Daemons',
         imageUrl: 'deamon.jpeg',
-        racialImage: ['DeamonM.png', 'DeamonF.png'],
+        racialImage: ['DaemonM.png', 'DaemonF.png'],
         kingdom: 'Umbrovea',
         bonus: ['Night Vision', 'Toughness', 'Potent Sorcery'],
         videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
@@ -1184,7 +1184,7 @@ Em busca de um refúgio onde pudessem esconder suas feridas, os Goétios migrara
         ],
         views: [
             {
-                title: 'Os Daemons de Nibhanus: Herdeiros do Caos e Senhores do Inferno',
+                title: 'Caídos',
                 content: 
                 `
                 &emsp;&emsp;<span class="first-letter">N</span>os altos domínios dos céus, onde a pureza e a serenidade reinavam supremas, viviam os celestes, seres de beleza etérea e asas brilhantes. Suas penas reluziam em brancura impecável, trazendo calma e paz àqueles que as tocassem. Eles eram enviados divinos, mensageiros da luz e da bondade, guardiões da harmonia em meio ao Palácio Divino.
