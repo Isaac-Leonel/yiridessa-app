@@ -194,7 +194,7 @@ export default [
     },
     {
         className: 'Sanador',
-        description: 'Um sanador é um especialista em cura e restauração, dedicado a promover a saúde e o bem-estar de outros. Senadores possuem habilidades para tratar ferimentos, aliviar doenças e recuperar energias, utilizando uma combinação de técnicas que podem misturar magia e remédios naturais. Eles são frequentemente vistos como figuras de apoio e proteção, capazes de curar feridas físicas. Além de suas habilidades de cura, senadores também são conhecidos por sua empatia e compaixão, oferecendo consolo e suporte emocional a aqueles que necessitam.',
+        description: 'Um sanador é um especialista em cura e restauração, dedicado a promover a saúde e o bem-estar de outros. Sanadores possuem habilidades para tratar ferimentos, aliviar doenças e recuperar energias, utilizando uma combinação de técnicas que podem misturar magia e remédios naturais. Eles são frequentemente vistos como figuras de apoio e proteção, capazes de curar feridas físicas. Além de suas habilidades de cura, Sanadores também são conhecidos por sua empatia e compaixão, oferecendo consolo e suporte emocional a aqueles que necessitam.',
         evolution: ['Mestre Curandeiro'],
         videoEmbed: "  ",
         armor: 'leve',
