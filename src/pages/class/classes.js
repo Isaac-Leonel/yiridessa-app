@@ -189,7 +189,7 @@ export default [
             },
         ],
         weapons: ['Espada Curta', 'Pistola'],
-        passive: ['Spellcaster', 'Unarmored'],
+        passive: ['Acrobatic Dodge', 'Unarmored'],
         iconURL: 'atirador.jpeg'
     },
     {
