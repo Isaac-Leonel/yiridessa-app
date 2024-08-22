@@ -21,7 +21,7 @@ export const Navigator = React.forwardRef((props, ref) => {
             <StyledLinkDiv>
                 <StyledLinkIconImg to={""}><StyledImg id="yiridessaLogo" src="/img/logo_grande.png"/></StyledLinkIconImg>
                 <StyledLink to={"books"} active={pathName == "books"}><span>BIBLIOTECA</span></StyledLink>
-                <StyledLink to={"jobs"} active={pathName == "jobs"}><span>PROFISSÔES</span></StyledLink>
+                <StyledLink to={"jobs"} active={pathName == "jobs"}><span>PROFISSÕES</span></StyledLink>
                 <StyledLink to={"races"} active={pathName == "races"}><span>RAÇAS</span></StyledLink>
                 <StyledLink to={"classes"} active={pathName == "classes"}><span>CLASSES</span></StyledLink>
                 <StyledA href="https://docs.google.com/document/d/1uO0rtVxtyhnpLwAAGNACNJY4Tk_qovkVzA99baLxEAI/preview" target="_blank" active={pathName == "rules"}><span>MECANICAS</span></StyledA>
