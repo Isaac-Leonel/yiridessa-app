@@ -414,7 +414,7 @@ export default [
         imageUrl: 'humana_IA.png',
         racialImage: ['Humano_F.png','Humano_M.png'],
         kingdom: 'Ydris',
-        bonus: ['Fortified', 'Fight or Flight', 'Tireless'],
+        bonus: ['Fortified', 'Tireless'],
         videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
@@ -729,7 +729,7 @@ export default [
     },
 
  {
-        raceName: 'Viera',
+        raceName: 'Saurens',
         imageUrl: 'Vieira_IA.jpeg',
         racialImage: ['Viera_F.png','Viera_M.png'],
         kingdom: 'Ydris',
@@ -752,7 +752,7 @@ export default [
                 content: 
                 `
                 &emsp;&emsp;<span class="first-letter">O</span> fervor da caçada<br> 
-                &emsp;&emsp;<span class="first-letter">E</span>m meio às vastas florestas de Ydris, onde a vegetação densa sussurra segredos antigos e os ventos carregam histórias esquecidas, vivem os enigmáticos Viera. Esta raça, marcada por uma combinação única de graça, agilidade e uma seriedade quase etérea, mantém-se firme como os guardiões das matas e dos segredos da natureza.<br>                &emsp;&emsp;<span class="first-letter">O</span>s Viera possuem uma aparência que exala sensualidade e exotismo, contrastando profundamente com sua personalidade geralmente séria. As características mais notáveis desta raça são suas chamativas orelhas de coelho e um pequeno rabo, que complementam seu porte gracioso. Suas expressões são frequentemente vazias e distantes, como se estivessem sempre sintonizadas com algo além do alcance humano.<br><br>                &emsp;&emsp;<span class="first-letter">A</span> voz dos Viera é suave, com um sotaque característico que lhes confere um ar nobre e polido. Seu modo de falar é calmo e ponderado, revelando uma profundidade de pensamento e uma sabedoria inata. Caminham de forma vagarosa e pausada, cada passo ddacentuado por suas longas pernas, que lhes conferem uma elegância natural.
+                &emsp;&emsp;<span class="first-letter">E</span>m meio às vastas florestas de Ydris, onde a vegetação densa sussurra segredos antigos e os ventos carregam histórias esquecidas, vivem os enigmáticos Saurens. Esta raça, marcada por uma combinação única de graça, agilidade e uma seriedade quase etérea, mantém-se firme como os guardiões das matas e dos segredos da natureza.<br>                &emsp;&emsp;<span class="first-letter">O</span>s Saurens possuem uma aparência que exala sensualidade e exotismo, contrastando profundamente com sua personalidade geralmente séria. As características mais notáveis desta raça são suas chamativas orelhas de coelho e um pequeno rabo, que complementam seu porte gracioso. Suas expressões são frequentemente vazias e distantes, como se estivessem sempre sintonizadas com algo além do alcance humano.<br><br>                &emsp;&emsp;<span class="first-letter">A</span> voz dos Saurens é suave, com um sotaque característico que lhes confere um ar nobre e polido. Seu modo de falar é calmo e ponderado, revelando uma profundidade de pensamento e uma sabedoria inata. Caminham de forma vagarosa e pausada, cada passo ddacentuado por suas longas pernas, que lhes conferem uma elegância natural.
                 <br><br>
                 `
             },
@@ -761,7 +761,7 @@ export default [
                 content: 
                 `
                 &emsp;&emsp;<span class="first-letter">O</span> conto
-                <br>&emsp;&emsp;<span class="first-letter">O</span>s Viera, conhecidos como os Caçadores da Floresta, possuem uma história rica e fascinante. Dotados de uma visão, audição e faro aguçados, são capazes de ouvir até mesmo os espíritos do outro mundo, além daquilo que chamam de "A Voz da Floresta". Reclusos em suas vilas escondidas nas grandes matas de Ydris, eles mantinham-se isolados do resto do mundo, dedicando suas vidas à proteção e preservação dos segredos da natureza.<br><br>                &emsp;&emsp;<span class="first-letter">N</span>o entanto, com a ascensão dos humanos ao poder em Ydris, os Viera começaram a se tornar mais sociáveis, abrindo suas vilas e interagindo mais com outras raças. Esta mudança trouxe novas dinâmicas e alianças, permitindo-lhes proteger suas florestas de maneira mais eficaz. Durante este período de transição, os Viera encontraram e resgataram os Squirrels, incorporando-os à sua sociedade e fazendo com que fossem chamados de Viera também.
+                <br>&emsp;&emsp;<span class="first-letter">O</span>s Saurens, conhecidos como os Caçadores da Floresta, possuem uma história rica e fascinante. Dotados de uma visão, audição e faro aguçados, são capazes de ouvir até mesmo os espíritos do outro mundo, além daquilo que chamam de "A Voz da Floresta". Reclusos em suas vilas escondidas nas grandes matas de Ydris, eles mantinham-se isolados do resto do mundo, dedicando suas vidas à proteção e preservação dos segredos da natureza.<br><br>                &emsp;&emsp;<span class="first-letter">N</span>o entanto, com a ascensão dos humanos ao poder em Ydris, os Saurens começaram a se tornar mais sociáveis, abrindo suas vilas e interagindo mais com outras raças. Esta mudança trouxe novas dinâmicas e alianças, permitindo-lhes proteger suas florestas de maneira mais eficaz. Durante este período de transição, os Saurens encontraram e resgataram os Squirrels, incorporando-os à sua sociedade e fazendo com que fossem chamados de Saurens também.
                 <br><br>
                 `
             },
@@ -769,7 +769,7 @@ export default [
                 title: 'Rivalidades',
                 content: 
                 `
-                                &emsp;&emsp;<span class="first-letter">R</span>ivalidades Naturais<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Viera não demonstram desgosto aparente por nenhuma outra raça, mantendo uma postura neutra e observadora. Esta neutralidade, no entanto, não deve ser confundida com indiferença. Eles são vigilantes e protetores fervorosos de suas florestas, e qualquer ameaça a seu território ou modo de vida é tratada com severidade.
+                                &emsp;&emsp;<span class="first-letter">R</span>ivalidades Naturais<br><br>                &emsp;&emsp;<span class="first-letter">O</span>s Saurens não demonstram desgosto aparente por nenhuma outra raça, mantendo uma postura neutra e observadora. Esta neutralidade, no entanto, não deve ser confundida com indiferença. Eles são vigilantes e protetores fervorosos de suas florestas, e qualquer ameaça a seu território ou modo de vida é tratada com severidade.
                 `
             },
  {
@@ -787,7 +787,7 @@ export default [
         imageUrl: 'Abelha_IA.jpeg',
         racialImage: ['Bee_F.png','Bee_M.png'],
         kingdom: 'Ydris',
-        bonus: ['Night Vision', 'Tireless'],
+        bonus: ['Night Vision', 'Flight', 'Tireless'],
         videoEmbed: "https://www.youtube.com/embed/uf2bcEonBsE",
         racialPoints: [
             {
