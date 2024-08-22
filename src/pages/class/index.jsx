@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { ClasseCard } from "./components/classeCard";
 import { OriginalImgPosition } from "../../components/navigator";
 import { ClasseModal } from "./components/classeModal"; 
+import { CircleButton } from "../../components/circleButton.jsx";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -22,10 +23,10 @@ export const Classes = () => {
         const asyncFunction = async () => {
             // Object with parameters
             const params = {
-                direction: "horizontal",
+                direction: "vertical",
                 effect: "coverflow",
                 centeredSlides: true,
-                slidesPerView: 12,
+                slidesPerView: 6,
                 mousewheel: true,
                 coverflowEffect: {
                     rotate: 0,
@@ -79,9 +80,11 @@ export const Classes = () => {
                                 
                                 return (
                                     <swiper-slide key={index}>
-                                        <ClasseCard 
-                                            url={race.iconURL} 
-                                            active={slide == index} 
+                                        <CircleButton 
+                                            onClick={console.log("clicou")} 
+                                            radius="100"
+                                            active={slide == index}
+                                            imageName={race.iconURL} 
                                         />
                                     </swiper-slide>
                                 
@@ -89,6 +92,7 @@ export const Classes = () => {
                             })
                         }
                     </swiper-container>
+                    <StyledLine></StyledLine>
                 </StyledRacesContainer>
                 <ClasseModal 
                     className={classes[slide].className ?? ""}
@@ -107,15 +111,14 @@ export const Classes = () => {
 }
 
 const StyledRacesContainer = styled.div`
-    width: 100vw;
-    height: 25%;
+    width: 10%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
 
     swiper-container {
         width: 100%;
-        margin-left: -50px;
     }
 `
 
@@ -127,16 +130,19 @@ const StyledSection = styled.section`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0px 0px 15vw 15vw rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10vw 5vw rgb(0, 0, 0);
     font-family: FireFlight;
     background-image: url('/img/races_background.jpg');
+    display: flex;
+    justify-content: center;
 
     .backdrop {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
 
     }
 `
@@ -145,4 +151,14 @@ const StyledArrow = styled.img`
     width: 20px;
     margin-bottom: 3vh;
     margin-right: 30px;
+`
+
+const StyledLine = styled.div`
+    background-color: #FDF0D5;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 54vh;
+    left: 21.3vw;
+    
 `

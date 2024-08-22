@@ -1,10 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { CircleButton } from '../../../components/circleButton'
+
+
 export const JobCard = ({ url, jobName, onClick, active }) => {
     return (
         <CardContainer onClick={onClick} active={active}>
-            <Card url={url} active={active} />
+            <CircleButton 
+                onClick={false} 
+                radius="90"
+                active={active}
+                imageName={url}/>
             <JobName>{jobName}</JobName>
         </CardContainer>    
     )

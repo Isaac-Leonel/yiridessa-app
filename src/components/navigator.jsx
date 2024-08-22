@@ -24,6 +24,7 @@ export const Navigator = React.forwardRef((props, ref) => {
                 <StyledLink to={"jobs"} active={pathName == "jobs"}><span>PROFISSÔES</span></StyledLink>
                 <StyledLink to={"races"} active={pathName == "races"}><span>RAÇAS</span></StyledLink>
                 <StyledLink to={"classes"} active={pathName == "classes"}><span>CLASSES</span></StyledLink>
+                <StyledA href="https://docs.google.com/document/d/1uO0rtVxtyhnpLwAAGNACNJY4Tk_qovkVzA99baLxEAI/preview" target="_blank" active={pathName == "rules"}><span>MECANICAS</span></StyledA>
                 <StyledA href="https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview" target="_blank" active={pathName == "rules"}><span>REGRAS</span></StyledA>
                 <StyledLink disabled to={""} active={pathName == "allowlist"}><span>ALLOWLIST</span></StyledLink>
             </StyledLinkDiv>
@@ -44,14 +45,20 @@ const StyledNav = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #070000 70%, transparent 100%);
+    background: rgba(15, 15, 15, 0.445);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 `
 
 const StyledLink = styled(Link)`
 	color: ${props => props.disabled ? "rgb(133, 133, 133)" : props.active ? "#961919" : "#fff"};
 	padding: 2rem 0px 2rem 0px;
     letter-spacing: .2em;
+    font-family: Georgia, serif;
     z-index: 10;
+    font-weight: 400;
     font-size: 15px;
 
     span, img, i {
@@ -77,6 +84,8 @@ const StyledA = styled.a`
 	padding: 2rem 0px 2rem 0px;
     letter-spacing: .2em;
     z-index: 10;
+    font-family: Georgia, serif;
+    font-weight: 400;
     font-size: 15px;
 
     span {

@@ -10,12 +10,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -76,12 +76,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -134,17 +134,17 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
             },
 	        {
                 bonusName: 'Autoridade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
             },
         ],
@@ -195,12 +195,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -250,12 +250,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Coragem',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -282,7 +282,9 @@ export default [
                 title: 'Aversões',
                 content: 
                 `
-                                &emsp;&emsp;<span class="first-letter">A</span>versões<br><br>                &emsp;&emsp;<span class="first-letter">G</span>ratos pela liberdade conquistada, os habitantes de Atlanta decidiram unir forças com os elfos, unificando Atlanta com Aetherya. Desde então, as sereias e tritões têm sido respeitados por suas responsabilidades e desempenhos, habitando lagos, rios e oceanos como os guardiões incansáveis das águas e da vida que nelas floresce.                &emsp;&emsp;<span class="first-letter">O</span>s sereianos são particularmente avessos a qualquer criatura vinda de Nibhanus, assim como a qualquer ser que ameace o equilíbrio dos mares e rios, seja através da pesca desenfreada ou da poluição das águas. Por outro lado, mantêm um grande apreço pelos habitantes de Aetherya que, assim como eles, dedicam-se à proteção da natureza. Este respeito mútuo fortalece os laços entre os sereianos e outras raças de Aetherya, garantindo uma aliança duradoura e benéfica para todos.
+                                &emsp;&emsp;<span class="first-letter">A</span>versões<br><br>                &emsp;&emsp;<span class="first-letter">G</span>ratos pela liberdade conquistada, os habitantes de Atlanta decidiram unir forças com os elfos, unificando Atlanta com Aetherya. Desde então, as sereias e tritões têm sido respeitados por suas responsabilidades e desempenhos, habitando lagos, rios e oceanos como os guardiões incansáveis das águas e da vida que nelas floresce.        
+                                <br/>
+                                &emsp;&emsp;<span class="first-letter">O</span>s sereianos são particularmente avessos a qualquer criatura vinda de Nibhanus, assim como a qualquer ser que ameace o equilíbrio dos mares e rios, seja através da pesca desenfreada ou da poluição das águas. Por outro lado, mantêm um grande apreço pelos habitantes de Aetherya que, assim como eles, dedicam-se à proteção da natureza. Este respeito mútuo fortalece os laços entre os sereianos e outras raças de Aetherya, garantindo uma aliança duradoura e benéfica para todos.
                 `
             },
             {
@@ -305,12 +307,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -362,12 +364,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -417,31 +419,31 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 20            },
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 20
             },
  {
                 bonusName: 'Vitalidade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 20
             },
  {
                 bonusName: 'Autoridade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 20
             },
  {
                 bonusName: 'Coragem',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 20
             },
  {
                 bonusName: 'Expertise',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 20
             },
         ],
@@ -501,11 +503,11 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60            },
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -558,16 +560,16 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Vitality',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60            },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
  {
                 bonusName: 'Expertise',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -617,11 +619,11 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60            },
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -682,11 +684,11 @@ export default [
         racialPoints: [
            {
                 bonusName: 'Vitalidade',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60            },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -736,11 +738,11 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60            },
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -790,12 +792,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Agilidade',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -844,12 +846,12 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Coragem',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             },
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
         ],
@@ -881,7 +883,7 @@ export default [
         ],
     },
     {
-        raceName: 'Dark Fey',
+        raceName: 'DarkFey',
         imageUrl: 'darkfey.jpeg',
         racialImage: ['DarkFeyF.png', 'DarkFeyM.png'],
         kingdom: 'Umbrovea',
@@ -890,17 +892,17 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Expertise',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
             },  
 	    {
                 bonusName: 'Agilidade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
             }
         ],
@@ -951,18 +953,18 @@ export default [
         racialPoints: [
             {
                 bonusName: 'Vitalidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
             },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
 
             },  
               {
                  bonusName: 'Expertise',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
 
             }
@@ -1006,14 +1008,14 @@ Esta função sagrada, no entanto, foi se perdendo ao longo do tempo, especialme
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
  
 
             },
             {
                 bonusName: 'Autoridade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40
 
 
@@ -1061,11 +1063,11 @@ Esta função sagrada, no entanto, foi se perdendo ao longo do tempo, especialme
 
              {
                 bonusName: 'Agilidade',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40            },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+4',
+                bonusValue: 4,
                 percentage: 60
             }
 
@@ -1109,13 +1111,13 @@ Esta função sagrada, no entanto, foi se perdendo ao longo do tempo, especialme
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 40  
 
             },
             {
                 bonusName: 'Coragem',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
 
 
@@ -1123,7 +1125,7 @@ Esta função sagrada, no entanto, foi se perdendo ao longo do tempo, especialme
               {
 
                 bonusName: 'Vitalidade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
 
 
@@ -1168,17 +1170,17 @@ Em busca de um refúgio onde pudessem esconder suas feridas, os Goétios migrara
         racialPoints: [
             {
                 bonusName: 'Força',
-                bonusValue: '+3',
+                bonusValue: 3,
                 percentage: 60
             },
             {
                 bonusName: 'Autoridade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 40
             },  
               {
                 bonusName: 'Vitalidade',
-                bonusValue: '+2',
+                bonusValue: 2,
                 percentage: 30
             }
         ],

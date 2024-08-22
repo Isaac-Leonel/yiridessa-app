@@ -7,56 +7,16 @@ import { RaceModal } from "./components/raceModal";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { register } from "swiper/element";
-import { Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
-import races from './races';
+import { CircleButton } from "../../components/circleButton";
 
 
 export const Races = () => {
     const swiperElRef = useRef(null);
-    const [race, setRace] = useState({})
-    const [modalOpen, setModalOpen] = useState(false)
-    const [slide, setSlide] = useState(0)
+    const [kingdom, setKingdom] = useState("Aetherya");
 
+    
     useEffect(() => { 
-        const asyncFunction = async () => {
-            // Object with parameters
-            const params = {
-                direction: "horizontal",
-                effect: "coverflow",
-                centeredSlides: true,
-                slidesPerView: 12,
-                mousewheel: true,
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 0,
-                    modifier: 0,
-                    slideShadows: false,
-                },
-                pagination: false,
-                keyboard: false,
-                modules: [EffectCoverflow, Pagination, Mousewheel],
-                on: {
-                    init(s) {
-                        setSlide(s.activeIndex)
-                    },
-                    slideChange(s) {
-                        setSlide(s.activeIndex)
-                    },
-                }
-            };
-        
-            // Assign it to swiper element
-            await Object.assign(swiperElRef.current, params);
-        
-            // initialize swiper
-            swiperElRef.current.initialize();
-        }
-
-        register();
-        asyncFunction();
-
+     
         const img = document.getElementById('yiridessaLogo')
         if (!img) return
         img.style.top = OriginalImgPosition.top
@@ -65,60 +25,47 @@ export const Races = () => {
 
     }, []);
 
+
+    const handleClick = (value, index) => {
+        setKingdom(value);
+    }
+
     return (
         <StyledSection>
-            <div className="backdrop">
-                <StyledRacesContainer>
-                    <swiper-container
-                        init="false" 
-                        ref={swiperElRef}
-                        id={"mySwiper"}
-                    >
-                        {
-                            races.map((race, index) => {
-                                
-                                return (
-                                    <swiper-slide key={index}>
-                                        <RaceCard 
-                                            url={race.imageUrl} 
-                                            raceName={race.raceName}
-                                            active={slide == index} 
-                                        />
-                                    </swiper-slide>
-                                
-                                )
-                            })
-                        }
-                    </swiper-container>
-                </StyledRacesContainer>
-                <RaceModal 
-                    raceName={races[slide].raceName ?? ""}
-                    imageUrl={races[slide].imageUrl ?? ""} 
-                    racialImage={races[slide].racialImage ?? []}
-                    Appearance={races[slide].Appearance ?? ""}
-                    kingdom={races[slide].kingdom ?? ""}
-                    bonus={races[slide].bonus ?? ""}
-                    racialPoints={races[slide].racialPoints ?? []}
-                    views={races[slide].views ?? []}
-                    videoEmbed={races[slide].videoEmbed ?? ""}
-                />
-            </div>
+            <StyledKingdomContainer>
+                    <StyledKingdom>{kingdom}</StyledKingdom>
+                    <h3>Selecione o Reino:</h3>
+                    <CircleButton 
+                        onClick={() => handleClick("Aetherya")} 
+                        radius="110"
+                        active={kingdom === "Aetherya" ? true : false}
+                        imageName="Aetherya_icon.png"
+                        
+                    />
+                    <CircleButton 
+                         onClick={() => handleClick("Ydris")} 
+                        radius="110"
+                        active={kingdom === "Ydris" ? true : false}
+                        imageName="Ydris_icon.png"
+                    />
+                    <CircleButton 
+                         onClick={() => handleClick("Umbrovea")} 
+                        radius="110"
+                        active={kingdom === "Umbrovea" ? true : false}
+                        imageName="Umbrovea_icon.png"
+                    />
+            </StyledKingdomContainer>
+            <StyledRaceContainer>
+                <RaceModal
+                    kingdom={kingdom}
+                >
+
+                </RaceModal>
+            </StyledRaceContainer>
         </StyledSection>
     )
 }
 
-const StyledRacesContainer = styled.div`
-    width: 100vw;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-
-    swiper-container {
-        width: 100%;
-        margin-left: -50px;
-    }
-`
 
 const StyledSection = styled.section`
     padding: 100px 0px 0px 0px;
@@ -128,22 +75,49 @@ const StyledSection = styled.section`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0px 0px 15vw 15vw rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10vw 5vw rgb(0, 0, 0);
     font-family: FireFlight;
     background-image: url('/img/races_background.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+`
 
-    .backdrop {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+const StyledKingdomContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 15%;
+    height: 100%;
+    margin-top: -80px;
 
+    h3{
+        font-family: Georgia, serif;
+        color: #FDF0D5;
+        font-size: 20px;
+        width: 100px;
+        text-align: center;
     }
 `
 
-const StyledArrow = styled.img`
-    width: 20px;
-    margin-bottom: 3vh;
-    margin-right: 30px;
+const StyledRaceContainer = styled.div`
+  width: 85%;
+  height: 100%;
+`
+
+const StyledKingdom = styled.h1`
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    color: #FDF0D5;
+    background: rgba(15, 15, 15, 0.445);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 `

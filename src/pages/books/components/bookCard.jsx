@@ -48,6 +48,7 @@ const StyledCardContainer = styled.div`
     width: 100%;
     height: 100%;
     perspective: 1000px;
+    
     position: relative;
     filter: ${props => props.slideActive ? "brightness(1.1)" : "brightness(0.5)"};
     -webkit-transition: filter 1s;
@@ -76,6 +77,7 @@ const StyledCardContainer = styled.div`
         width: 100%;
         height: 100%;
         border-radius: 20px;
+        border: 1px solid #FDF0D5;
         display: flex;
         align-items: end;
         justify-content: center;

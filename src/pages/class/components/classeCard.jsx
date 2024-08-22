@@ -22,7 +22,7 @@ const CardContainer = styled.div`
 const Card = styled.div`
     width: ${props => (props.active ? '120px' : '80px')};
     height: ${props => (props.active ? '120px' : '80px')};
-    margin-top: ${props => (props.active ? '60px' : '20px')};;
+    margin-left: ${props => (props.active ? '60px' : '20px')};;
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;

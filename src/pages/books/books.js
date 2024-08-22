@@ -382,6 +382,117 @@ export default [
 
         `
     },
+
+    {
+        img: "livro11.jpg",
+        title: "Ordem Espiritual",
+        text: `
+          
+        <h1>INICIATIVA</h1>
+        <h2>Ordem Espiritual</h2>
+
+        <p style="margin: 0; padding: 0;">
+           <strong>O Mundo de Carne</strong><br/>
+            Há séculos atrás, cinco escravos fugiram de seus opressores, cruzando desertos, florestas e montanhas em busca de liberdade. Exaustos e à beira do desespero, encontraram um antigo santuário escondido nas profundezas de uma bruma densa. Nesse local sagrado protegido contra todos que não fossem convidados, quatro totens ancestrais se erguiam majestosos, cada um representando uma força primordial da natureza.
+            <br/>
+            Sob a proteção desses totens, os cinco escravos encontraram mais do que apenas liberdade física; descobriram um chamado espiritual. Com seus novos dons, decidiram que não poderiam simplesmente viver em paz enquanto outros ainda sofriam nas correntes da escravidão e sob o peso das ameaças espirituais.
+            <br/>
+            Assim, fundaram a Ordem dos Guardiões Espirituais, um grupo dedicado a libertar os oprimidos e a proteger o equilíbrio entre o mundo físico e o espiritual. A ordem cresceu ao longo dos séculos, salvando milhares de pessoas da escravidão e defendendo o mundo de Carne contra os males que se originavam na Sombra.
+            <br/>
+            Com a tênue paz nos dias de hoje, pouco se sabe sobre a ordem. As lendas dizem que, com o passar dos séculos, os Guardiões Espirituais foram se tornando cada vez mais secretos, até que restou apenas um último membro. Este Guardião, carregando o peso de gerações passadas e a responsabilidade de proteger os segredos da ordem, tomou a decisão final.
+            <br/>
+            Em uma noite envolta de brumas, ele fechou os caminhos que levavam ao santuário, escondendo-o para sempre da vista dos mortais. Alguns dizem que ele se fundiu às brumas enquanto outros acreditam que o santuário ainda existe, esperando por aqueles que são dignos de encontrar seu chamado. Assim, a Ordem dos Guardiões Espirituais permanece como uma sombra na história, uma lenda que se desvanece, mas cuja missão ainda ecoa nos corações daqueles que anseiam pela verdadeira liberdade.
+        </p>
+
+        `
+    },
+
+    {
+        img: "livro12.png",
+        title: "O Coven",
+        text: `
+          
+        <h1>INICIATIVA</h1>
+        <h2>Bruxas</h2>
+
+        <p style="margin: 0; padding: 0;">
+            <strong>A ANCESTRALIDADE</strong><br/>
+            A Tribo Manuk era enraizada nas terras geladas onde o vento cortante é mestre e o gelo é testemunha silente, é mais do que uma simples comunidade: é um eco dos tempos antigos, um guardião dos segredos da sobrevivência e um bastião de tradições que resistiram ao implacável avanço do tempo.
+            <br/>
+            Em meio aos vastos campos de neve e montanhas cobertas de branco, os membros desta tribo viveram em harmonia com a natureza, respeitando suas leis e aprendendo com seus mistérios. Seus lares, eram construídos com habilidade e paciência, se misturavam à paisagem como extensões naturais da terra congelada.
+            <br/>
+            A liderança da tribo repousava sobre os ombros de cinco anciãos, cuja sabedoria era tão antiga quanto as próprias montanhas que cercam seu lar. Entre eles, destacava-se a figura da Anciã Mor, uma mulher cujo olhar refletia séculos de experiência e sua voz ressoava como o eco de um passado distante. Ao seu lado, seus irmãos de sabedoria compartilhavam os ensinamentos ancestrais, preservando os rituais e práticas que mantinham a tribo unida.
+
+            <br/>
+            Os membros da Tribo Manuk eram mestres da adaptação, capazes de sobreviver em um ambiente hostil através de sua engenhosidade e resiliência. Conheciam os segredos das plantas e ervas que brotavam timidamente na neve, transformando-as em remédios poderosos que curavam tanto o corpo quanto a alma. Seus rituais de caça eram sagrados, honrando os espíritos dos animais que sacrificam para garantir sua própria sobrevivência.
+            <br/>
+            Mas além de sua habilidade de sobreviver nas terras gélidas, a Tribo Manuk também era guardiã de um legado místico. Em meio às longas noites de inverno, quando o vento sussurrava segredos antigos e as estrelas pareciam mais próximas do que nunca, os membros da tribo se reuniam para celebrar os mistérios da vida e da morte, invocando os espíritos de seus ancestrais através do véu e buscando orientação nas estrelas.
+            <br/>
+            Assim, esta tribo permaneceu como um bastião de tradição e sabedoria em um mundo em constante mudança, uma lembrança dos tempos antigos e um sinal de esperança perdido nas terras geladas do Norte.
+            <br/><br/>
+            <strong>A CORRUPÇÃO</strong><br/>
+            Diante o passar dos anos, o tecido frágil que unia os membros da Tribo Manuk começou a desgastar-se lentamente, como fios delicados expostos à intempérie. O ressentimento e a inveja, sementes amargas plantadas nos corações antes plenos de confiança mútua, brotaram e se enraizaram, minando a harmonia que outrora reinava entre eles.
+            <br/>
+            Conflitos incessantes com tribos vizinhas, disputas por território e recursos escassos, alimentaram as chamas da discórdia. Em meio ao caos e à agitação, um Ancião, enredado pelas teias da amargura e do desejo de poder, ousou propor uma solução drástica: a extinção dos rivais, um gesto de crueldade que feriria não apenas os inimigos, mas também a própria essência da tribo.
+            <br/>
+            Contudo, diante da proposta sombria, a voz firme e sábia da Anciã Mor ergueu-se irradiando clareza em meio a escuridão. Ela rejeitou veementemente a ideia macabra, alertando para as consequências nefastas que tal ato acarretaria. Com palavras impregnadas de sabedoria ancestral, ela advertiu que a fúria dos espíritos tutelares da tribo seria despertada, lançando uma sombra de desgraça sobre todos os que ousaram desafiar sua vontade.
+            <br/>
+            Então o antigo, cego pela ambição e pela arrogância, foi então exilado para as terras além dos limites conhecidos, um destino solitário onde poderia refletir sobre seus erros e buscar redenção. No entanto, a maior não previu a reviravolta traiçoeira do destino. O exilado, alimentado pelo rancor e pela determinação, mergulhou nas intrincadas teias das línguas das tribos vizinhas, absorvendo seus segredos e suas estratégias de guerra.
+            <br/>
+            Assim, munido de conhecimento e influência recém-adquiridos, o idoso renegado retornou à tribo não como um penitente em busca de perdão, mas como um conquistador sedento de poder. À frente de um exército de mercenários, ele usurpou o controle da tribo, semeando o terror e a opressão entre seu próprio povo.
+            <br/>
+            E foi sob o olhar impotente da Anciã Mor e dos outros aliados, atados pela corrente da traição e da dor, que até as mulheres da tribo foram arrancadas de seus lares, arrastadas para longe como mercadorias  para serem escravas, uma ferida aberta na alma da tribo que jamais seria completamente cicatrizada.
+
+            <br/><br/>
+            <strong>A ESCOLHA</strong><br/>
+            O terror se insinuava pelas fissuras da tribo, envolvendo cada coração em um manto sombrio de apreensão. A líder e seus aliados, sentindo o peso iminente da ruína, reuniram-se em um círculo solene, seus pés descalços tocando a terra gelada em um gesto de comunhão com os antigos espíritos que habitavam a terra.
+            <br/>
+            Com a respiração suspensa e os olhos cerrados em concentração, elas entoaram a "Canção Irvaniana", uma melodia ancestral que reverberava através dos séculos, uma lamentação carregada de dor e esperança, ecoando além das montanhas nevadas e alcançando os confins do universo.
+            <br/>
+            Cada nota da canção era um chamado, uma invocação às forças ocultas que residiam nas entranhas da terra, uma prece desesperada por salvação em meio ao caos crescente. E então, como uma resposta aos seus apelos angustiados, uma entidade única surgiu entre elas, uma presença imponente e imaterial que emanava um poder que parecia transcender os limites do tempo e do conflito.
+            <br/>
+            Diante da presença da entidade, o ar pareceu estagnar, como se o próprio universo contivesse a respiração em antecipação ao que estava por vir. O rugido da guerra, o eco do ódio, tudo se dissolveu diante da magnitude desse ser transcendental.
+            <br/>
+            Com uma voz que ressoava como o sussurro dos ventos ancestrais, a entidade indagou: "O que desejam?". E as ancestrais, envoltas pela aura sagrada daquele momento, manifestaram-se em uma união de propósito, anunciando o fim de uma era de trevas e o surgimento de uma nova aurora.
+            <br/>
+            Grisselda Endora, com os olhos marejados de esperança e temor, rogou pelo poder de deter a morte, uma súplica desesperada pela preservação da vida que pulsava nas veias de seu povo. Qimvi, com a serenidade dos sábios, pediu pela sabedoria necessária para garantir a saúde eterna daqueles que ela jurara proteger.
+            <br/>
+            E então veio Helga, com o fogo da vingança queimando em seus olhos, a fúria pulsando em suas veias como uma correnteza de lava incandescente. Empunhando sua demanda com a determinação de uma guerreira inquebrável, ela exigiu que suas palavras se transformassem em armas, afiadas como lâminas, capazes de perfurar o véu da escuridão que ameaçava engolfar sua tribo.
+            <br/>
+            E assim, em meio ao silêncio solene que pairava sobre eles, os destinos entrelaçados da tribo e da entidade foram selados em um pacto ancestral, um juramento sagrado que ecoaria através das eras, moldando o curso da história com as palavras de três mulheres determinadas a lutar até o último suspiro pela sobrevivência de seu povo.
+
+            <br/><br/>
+            <strong>SAIBA O QUE DESEJA</strong><br/>
+            A entidade, cuja presença transcendental preenchia o espaço com uma aura de mistério e poder, estendeu suas patas etéreas em um gesto de benevolência. Sob seu toque, as idosas foram envolvidas por uma luz resplandecente, que as transformou em visões de beleza e juventude, como se o próprio tempo tivesse sido desafiado em sua presença.
+            <br/>
+            Cada uma das três recebeu uma Joia Alma, um receptáculo sagrado que abrigava a essência de sua existência, um elo inquebrável entre sua alma e os segredos do universo. E assim, revigoradas pelo poder concedido pela entidade, elas se ergueram como guerreiras divinas, prontas para enfrentar o desafio que se abatia sobre sua tribo.
+            <br/>
+            Mas mesmo com a bênção da entidade, a batalha não cessou. Helga, envolta pela tempestade de ódio que consumia seu ser, foi a primeira a desencadear seus poderes. Seus olhos ardiam com a chama da vingança, suas mãos tremiam com a sede de justiça, e sua voz ecoava como um trovão carregado de rancor.
+            <br/>
+            Com um grito estridente que cortou o silêncio da noite, Helga desencadeou uma tempestade de destruição, seus poderes se manifestando como uma força imparável da natureza. Os homens da tribo, tomados pelo pânico e pela dor, foram varridos como folhas ao vento diante da fúria impiedosa de Helga, seus corpos tombando no chão gelado como marionetes sem vida.
+            <br/>
+            À sua volta, as tropas inimigas se curvaram em súplica, implorando por clemência diante da ira avassaladora que agora os ameaçava. Mas os olhos de Helga brilhavam com a chama da vingança, e seu coração estava mergulhado nas profundezas do abismo do ódio. Não havia espaço para misericórdia em seu ser consumido pelo fogo da retaliação.
+            <br/>
+            E assim, sob o olhar impotente das Anciãs, as tropas inimigas foram dizimadas pelo furor implacável de Helga, suas vozes sufocadas pelos gritos angustiados que ecoavam através da névoa gélida da noite. Em seu despertar como uma força da natureza, Helga se tornou uma encarnação da destruição, uma criatura de sombras e fúria cuja presença inspirava terror e admiração igualmente. E com cada golpe desferido, cada inimigo derrubado, ela selava seu destino como uma figura lendária cujo nome seria temido e reverenciado pelos séculos que estavam por vir, sendo denominada a Bruxa Mística.
+
+        <br/><br/>
+        <strong>CORAÇÕES ARDENTES</strong><br/>
+        Envolvidas pela aura de desespero e incredulidade, as irmãs de Helga se viram diante de um dilema angustiante. Com o coração dilacerado pela visão da carnificina causada pela fúria impiedosa de sua irmã, elas se ajoelharam sobre o solo congelado, suplicando em meio às lágrimas congeladas que Helga abrandasse sua fúria, que cessasse a tempestade de destruição que ameaçava engolir tudo em seu caminho.
+        <br/>
+        Mas suas súplicas, murmuradas em desespero e agonia, foram como suspiros perdidos no vento cortante da noite. O olhar de Helga, ainda cintilando com o fogo da vingança, não vacilou diante dos apelos desesperados de suas irmãs, seu coração endurecido pela tormenta de emoções que a consumia por dentro.
+        <br/>
+        E então, em meio à geada densa que envolvia o cenário macabro da batalha, um fenômeno inexplicável se desdobrou diante delas: um caminho luminoso, como um raio de luz em meio à escuridão sufocante da noite, se abriu misteriosamente, revelando um destino desconhecido e intrigante.
+        <br/>
+        Uma voz suave e melodiosa, que parecia ressoar de além das fronteiras do mundo conhecido, ecoou através da névoa gélida, convidando-as a avançar para o desconhecido. Um convite enigmático, carregado com o peso do mistério e da incerteza, que despertou uma curiosidade irrefreável dentro das irmãs, apesar de seus corações ainda martelando com o choque da tragédia que acabaram de testemunhar.
+        <br/>
+        Relutantes, mas atraídas pela promessa de respostas e redenção, as irmãs se ergueram do chão gelado, seus passos hesitantes ecoando na quietude da noite. E assim, guiadas pelo brilho incerto do caminho à frente, elas avançaram para a névoa espessa, onde uma figura indistinta e enigmática aguardava seus contornos obscurecidos pela penumbra que envolvia tudo.
+        <br/>
+        "Prepare uma bebida para elas, vão precisar", proclamou a figura com uma voz que era um sussurro misterioso, carregado com a promessa de revelações e segredos ocultos nas sombras. E diante desse convite enigmático, as irmãs hesitaram por um momento, seus olhos fixos na figura que aguardava na névoa, antes de se lançarem no desconhecido, alimentadas pela esperança frágil de que talvez, em meio ao mistério da noite gelada, encontrassem uma trégua para o tormento que consumia suas almas atormentadas.
+        <br/>
+        </p>
+
+        `
+    },
    
    
 ]

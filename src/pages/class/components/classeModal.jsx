@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled from 'styled-components'
 import { Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
 import { register } from "swiper/element";
+import { ContentContainer } from "../../../components/contentContainer";
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import TabContext from '@mui/lab/TabContext';
@@ -59,64 +60,78 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
     return (
         <StyledContainer>
             <StyledModal>
-               <StyledContainerInfos>
-                    <h1>{className}</h1>
-                    <p>{description}</p>
-                    <StyledItem>
-                        <h1>Passivas:</h1>
-                        {
-                            passives.map(bonus => {
-                                return(
-                                    <h2>{bonus}</h2>
-                                )
-                            })
-                        }
-                    </StyledItem>
-                    <StyledItem>
-                        <h1>Evolução:</h1>
-                        {
-                            evolution.map(bonus => {
-                                return(
-                                    <h2>{bonus}</h2>
-                                )
-                            })
-                        }
-                    </StyledItem>
-                    <StyledItem>
-                        <h1>Armas Principais:</h1>
-                        {
-                            weapons.map(bonus => {
-                                return(
-                                    <h2>{bonus}</h2>
-                                )
-                            })
-                        }
-                    </StyledItem>
-                    <StyledItem>
-                        <h1>Armadura:</h1>
-                        <h2>{armor}</h2>
-                    </StyledItem>
-                    <h3>Atributos:</h3>
-                        <StyledAttributes>
+                <div style={{width: "400px", height: "330px"}}>
+                    <ContentContainer title={className}>
+                        <StyledDescription>{description}</StyledDescription>
+                    </ContentContainer>
+                </div>
+                <div style={{width: "400px", height: "120px"}}>
+                    <ContentContainer title="Passivas">
+                        <StyledContainerAt>
                             {
-                                classAttributes.map((atr, index) => {
-                                    return(
-                                        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-                                            <StyledCircle>
-                                                <h1>{atr.type}</h1>
-                                            </StyledCircle>
-                                            <h2>{atr.bonusName}</h2>
-                                        </div>
+                                passives.map((passive) => {
+                                    return (
+                                        
+                                            <StyledAtriContainer>{passive}</StyledAtriContainer>
+                                    
                                     )
-                                }
-                            )
+                                })
                             }
-                           
-                        </StyledAttributes>
-               </StyledContainerInfos>
-               <StyledContainerVideo>
-                  
-               </StyledContainerVideo>
+                         </StyledContainerAt> 
+                    </ContentContainer>
+                </div>
+                <div style={{width: "400px", height: "180px"}}>
+                    <ContentContainer title="Atributos">
+                        <StyledContainerAt>
+                            {
+                        
+                                classAttributes.map((atr) => {
+                                    return (
+                                        
+                                            <StyledBonusContainer>
+                                                <span>{atr.type + "º Atributo"}</span>
+                                                <strong>{atr.bonusName}</strong>
+                                            
+                                            </StyledBonusContainer>
+                                    
+                                    )
+                                })
+                            }
+                        </StyledContainerAt>
+                    </ContentContainer>
+                    
+                </div>
+                <div style={{width: "400px", height: "150px"}}>
+                    <ContentContainer title="Armas">
+                        <StyledContainerAt>
+                            {
+                                weapons.map((weapon) => {
+                                    return (
+                                        
+                                            <StyledAtriContainer>{weapon}</StyledAtriContainer>
+                                    
+                                    )
+                                })
+                            }
+                         </StyledContainerAt> 
+                    </ContentContainer>
+                </div>
+                <div style={{width: "400px", height: "150px"}}>
+                    <ContentContainer title="Armadura">
+                        <StyledContainerAt>
+                            {
+                                armor.map((armor) => {
+                                    return (
+                                        
+                                            <StyledAtriContainer>{armor}</StyledAtriContainer>
+                                    
+                                    )
+                                })
+                            }
+                         </StyledContainerAt> 
+                    </ContentContainer>
+                </div>
+               
             </StyledModal>
         </StyledContainer>
     )
@@ -124,22 +139,25 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
 
 const StyledContainer = styled.div`
     display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100%;
+    width: 60%;
+    height: 85%;
 `
 
 const StyledModal = styled.div`
     backdrop-filter: blur(10px); /* Ajuste o valor do blur conforme necessário */
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 30px;
-    font-family: FireFlight;
-    background-color: #16161649;
-    color: white;
+    background-color: #110202a6;
+    border: 1px solid #FDF0D5;
+    color: #FDF0D5;
     display: flex;
-    flex-direction: row;
-    height: 95%;
-    width: calc(100% - 200px);
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    height: 100%;
+    gap: 10px;
+    
 
     p{
         font-family: Arial, Helvetica, sans-serif;
@@ -150,76 +168,42 @@ const StyledModal = styled.div`
     }
 `
 
-const StyledContainerInfos = styled.div`
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-
-    h3{
-        font-size: 2rem;
-        letter-spacing: 0.1rem;
-    }
+const StyledDescription = styled.p`
+    padding: 10px;
+    margin-top: -15px;
+    font-size: 14px;
 `
 
-const StyledContainerVideo = styled.div`
-    width: 0%;
-    height: 100%;
-    padding: 30px;
+const StyledAtriContainer = styled.h2`
+    background: #FDF0D5;
+    color: #110202;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Georgia, serif;
+`
+
+const StyledBonusContainer = styled.div`
+    background: #FDF0D5;
+    color: #110202;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-`
-
-const StyledItem = styled.div`
-    display: flex;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-
-    h1{
-        font-size: 1.5rem;
-        font-family: Roboto;
-        letter-spacing: 0.2rem;
-        margin-top: 8px;
-    }
-    
-    h2{
-        padding: 5px 15px 5px 15px;
-        margin: 10px;
-        background-color: #5f1b1b;
-        border-radius: 10px;
-        font-size: 1.1rem;
-        letter-spacing: 0.2rem;
-    }
-`
-
-const StyledAttributes = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    
-    h2{
-        font-family: Roboto;
-        font-size: 1.5rem;
-    }
-`
-
-const StyledCircle = styled.div`
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    background-color: #5f1b1b;
-    display: flex;
+    border-radius: 10px;
+    width: 300px;
     justify-content: center;
+    height: 100px;
     align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Georgia, serif;
     text-align: center;
+`
 
-    h1{
-        margin-top: 10px;
-        font-size: 1.4rem;
-        font-family: Roboto;
-        margin-left: 4px;
-    }
-    
+const StyledContainerAt = styled.div`
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    gap: 10px;
 `

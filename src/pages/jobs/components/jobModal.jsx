@@ -44,6 +44,7 @@ const StyledModal = styled.div`
     backdrop-filter: blur(10px); /* Ajuste o valor do blur conforme necessário */
     -webkit-backdrop-filter: blur(10px);
     font-family: FireFlight;
+    border: 1px solid #FDF0D5;
     width: 90%;
     height: 95%;
     display: flex;
@@ -94,6 +95,7 @@ const StyledImg = styled.div`
     border: none;
     background-size: cover;
     background-position: center;
+    border: 1px solid #FDF0D5;
     background-repeat: no-repeat;
     background-image: url(${props => '/img/'+props.url});
 `

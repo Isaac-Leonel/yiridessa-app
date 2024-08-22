@@ -1,31 +1,37 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useEffect, useRef, useState } from "react";
-import styled from 'styled-components'
 import { Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
 import { register } from "swiper/element";
+import styled from 'styled-components'
+import races from '../races';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
-
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { CircleButton } from "../../../components/circleButton";
 
 
 
-export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, racialPoints, views, videoEmbed }) => {
+export const RaceModal = ({kingdom}) => {
     const swiperElRef = useRef(null);
-    const [value, setValue] = useState(1);
+    const [value, setValue] = useState(0);
+    const [index, setIndex] = useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
-    useEffect(() => { 
+    const handleClick = (race, index) => {
+        setIndex(race);
+    }
+
+        useEffect(() => { 
         const asyncFunction = async () => {
             // Object with parameters
             const params = {
@@ -58,140 +64,214 @@ export const RaceModal = ({ raceName, racialImage, kingdom, Appearance, bonus, r
 
     return (
         <StyledContainer>
-            <StyledModal>
-                <StyledInfoDiv>
-                    <StyledContainerFirstInfo>
-                        <StyledContainerRace>
-                            <StyledContainerRacialInfos>
-                                <h1>{raceName}</h1>
-                                <div style={{display: "flex"}}>
-                                    {
-                                        bonus.map(bonus => {
-                                            return(
-                                                <h2>{bonus}</h2>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            </StyledContainerRacialInfos>
-                            <StyledContainerRacialPoints>
-                                {
-                                    racialPoints.map((points, index) => {
-                                        return(
-                                            <ContainerAttribute>
-                                                <AttributeName>                    
-                                                    <h1>{points.bonusName}</h1>
-                                                    <h1>{points.bonusValue}</h1>
-                                                </AttributeName>
-                                                <Box sx={{ width: '100%' }}>
-                                                    <BorderLinearProgress variant="determinate" value={points.percentage} />
-                                                </Box>
-                                            </ContainerAttribute>
-                                        )
-                                    })
-                                }
-                            </StyledContainerRacialPoints>
-                        </StyledContainerRace>
-                        <iframe 
-                            src= {videoEmbed}
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                        <div className={"divImg"}>
-                            
-                                <img src={`/img/${kingdom}_icon.png`}></img>
-                                <h1>{kingdom}</h1>
-                        </div>
-                        
-                    </StyledContainerFirstInfo>
-                    <BodyDiv>
-                        <div className="backgroundPaper"></div>
-                        <div className="text">
-
-                            <TabContext 
-                                value={value}
-                            >
-                                <Box sx={{ borderRadius: "20",  borderBottom: 1, borderColor: 'divider',}}>
-                                    <TabList style={{ margin: "10px 0px 0px 10px" }} onChange={handleChange} aria-label="tabs">
-                                        {
-                                            views.map((view, index) => {
-                                                return(
-                                                    <Tab label={view.title} value={index} />
-                                                )
-                                            })
-                                        }
-                                    </TabList>
-                                </Box>
-                                {
-                                    views.map((view, index) => {
-                                        return(
-                                            <TabPanel sx={{height: '240px', width: '100%', position: "relative"}} value={index}>
-                                                <StyledTextDiv dangerouslySetInnerHTML={{__html: view.content}} />
-                                            </TabPanel>
-                                        )
-                                    })
-                                }
-                            </TabContext>
-                        </div>
-                    </BodyDiv>
-                </StyledInfoDiv>
-                <StyledContainerGender>
-                    <swiper-container
-                        init="false" 
-                        ref={swiperElRef}
-                        id={"mySwiper"}
-                    >  
-                        {
-                    racialImage.map(gender => {
+            <StyledRaceContainer>
+                {
+                    races.map((race, indexS) => {
+                        if(race.kingdom === kingdom) {
                             return (
-                                <swiper-slide >
-                                    <StyledImg url={gender}></StyledImg>
-                                </swiper-slide>
-                            )})
+                                <CircleButton
+                                    onClick={() => handleClick(indexS)} 
+                                    radius="80"
+                                    active={indexS === index ? true : false}
+                                    imageName={race.imageUrl}
+                                />   
+                            )
                         }
-                    </swiper-container>
-                </StyledContainerGender>
-            </StyledModal>
-            {/* <svg>
-                <filter id="wavy2">
-                    <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
-                    <feDisplacementMap in="SourceGraphic" scale="20" />
-                </filter>
-            </svg> */}
+                        
+                    })
+                }
+            </StyledRaceContainer>
+               {
+                races.map((race, indexI) => {
+                    console.log(index)
+                    if(indexI == index)
+                    return (
+                        <StyledModal>
+                            <StyledContainerInfoText>
+                                <StyledInfosContainer>
+                                    <div>
+                                        <div style={{display: "flex", gap:"20px", }}>
+                                            <StyledTextContainer>{race.raceName}</StyledTextContainer>
+                                        </div>
+                                        <div style={{display: "flex", gap:"10px", marginTop: "10px"}}>
+                                            {
+                                                race.bonus.map((bonus) => {
+                                                    return (
+                                                        <StyledPassiveContainer>{bonus}</StyledPassiveContainer>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                        <StyledAttributeContainer>
+                                            {
+                                                race.racialPoints.map((atr, index) => {
+                                                    return(
+                                                        <div>
+                                                            <StyledAttributeText>{atr.bonusName}</StyledAttributeText>
+                                                            <div style={{display: "flex", gap:"2px", marginTop: "5px"}}>
+                                                                <StyledAttributeBar active={atr.bonusValue >= 1 ? true : false}></StyledAttributeBar>
+                                                                <StyledAttributeBar active={atr.bonusValue >= 2 ? true : false}></StyledAttributeBar>
+                                                                <StyledAttributeBar active={atr.bonusValue >= 3 ? true : false}></StyledAttributeBar>
+                                                                <StyledAttributeBar active={atr.bonusValue >= 4 ? true : false}></StyledAttributeBar>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </StyledAttributeContainer>
+                            
+                                    </div>
+                                    <StyledIframe 
+                                            src="https://www.youtube.com/embed/uf2bcEonBsE" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                            allowfullscreen>
+                                    </StyledIframe>
+                                </StyledInfosContainer>
+                                <BodyDiv>
+                                    <div className="backgroundPaper"></div>
+                                    <div className="text">
+
+                                        <TabContext 
+                                            value={value}
+                                        >
+                                            <Box sx={{ borderRadius: "20",  borderBottom: 1, borderColor: 'divider',}}>
+                                                <TabList style={{ margin: "10px 0px 0px 10px" }} onChange={handleChange} aria-label="tabs">
+                                                    {
+                                                        race.views.map((view, index) => {
+                                                            return(
+                                                                <Tab label={view.title} value={index} />
+                                                            )
+                                                        })
+                                                    }
+                                                </TabList>
+                                            </Box>
+                                            {
+                                                race.views.map((view, index) => {
+                                                    return(
+                                                        <TabPanel sx={{height: '35vh', width: '100%', position: "relative"}} value={index}>
+                                                            <StyledTextDiv dangerouslySetInnerHTML={{__html: view.content}} />
+                                                        </TabPanel>
+                                                    )
+                                                })
+                                            }
+                                        </TabContext>
+                                    </div>
+                                </BodyDiv>
+                            </StyledContainerInfoText>  
+                            <StyledImageContainer>
+                                    <StyledButtonContainer>
+                                        <CircleButton
+                                            onClick={console.log("clicou")} 
+                                            radius="40"
+                                            active={true}
+                                            imageName="photo_icon.png"
+                                        ></CircleButton>
+                                    </StyledButtonContainer>
+                                    <StyledRaceGif url={race.raceName + ".gif"}/>
+                                    {/* <swiper-container
+                                        init="false" 
+                                        ref={swiperElRef}
+                                        id={"mySwiper"}
+                                    >  
+                                        {
+                                            race.racialImage.map(gender => {
+                                                return (
+                                                    <swiper-slide >
+                                                        <StyledRaceGif url={gender}></StyledRaceGif>
+                                                    </swiper-slide>
+                                                )})
+                                        }
+                                    </swiper-container> */}
+                            </StyledImageContainer>
+                            
+                           
+                        </StyledModal>
+                    )
+                })
+               }
         </StyledContainer>
     )
 }
 
 const StyledContainer = styled.div`
     display: flex;
-    justify-content: center;
-    width: 100vw;
+    align-items: center;
+    width: 100%;
     height: 100%;
+`
+
+const StyledRaceContainer = styled.div`
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 05px;
 `
 
 const StyledModal = styled.div`
     backdrop-filter: blur(10px); /* Ajuste o valor do blur conforme necessário */
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 30px;
-    font-family: FireFlight;
-    background-color: #16161649;
+    border-radius: 20px;
+    background-color: #1d0908ba;
     display: flex;
-    height: 95%;
-    width: calc(100% - 200px);
+    border: 1px solid #FDF0D5;
+    margin: 20px;
+    width: 90%;
+    height: 90%;
 `
 
-const StyledContainerGender = styled.div`
+const StyledTextContainer = styled.h1`
+    background-color: #1C070A;
+    border: 1px solid #FDF0D5;
+    height: fit-content;
+    padding: 10px;
+    width: 20vw;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #FDF0D5;
+    font-family: Georgia, serif;
+`
+
+const StyledIframe = styled.iframe`
+    border: 1px solid #FDF0D5;
+`
+
+const StyledContainerInfoText = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+`
+
+const StyledInfosContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    justify-content: space-between;
+    
+    iframe {
+        height: 220px;
+        width: 400px;
+        border-radius: 20px;
+    }
+`
+
+const StyledImageContainer = styled.div`
     width: 30%;
-    min-width: 300px;
-    padding: 20px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 
     swiper-container {
-        width: 80%;
-        min-width: 250px;
+        width: 100%;
         height: 100%;
     }
     swiper-slide {
@@ -200,85 +280,43 @@ const StyledContainerGender = styled.div`
     }
 `
 
-const StyledContainerFirstInfo = styled.div`
+const StyledRaceGif = styled.div`
+    background-image: url(${props => '/raceGifs/'+props.url});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    padding: 20px;
-    height: 300px;
-    color: white;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    .divImg {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        min-width: 150px;
-        max-width: 150px;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    iframe {
-        height: 230px;
-        width: 400px;
-        border-radius: 20px;
-    }
+    border-radius: 10px;
+    border: 1px solid #FDF0D5;
+    height: 100%;
 `
 
-
-const StyledContainerRace = styled.div`
-    height: 300px ;
-    width: 500px;
+const StyledPassiveContainer = styled.h2`
+    background-color: #1C070A;
+    border: 1px solid #FDF0D5;
+    height: fit-content;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #FDF0D5;
+    font-family: Georgia, serif;
 `
 
-const StyledContainerRacialPoints = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-`
-
-const StyledContainerRacialInfos = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0px 0px 10px;
-
-    h1 {
-        margin-left: 15px;
-    }
-
-    h2 {
-        font-family: Roboto;
-        background: #5f1b1b;
-        color: white;
-        font-size: 1rem;
-        padding: 10px;
-        margin: 5px 5px 5px 15px;
-        border-radius: 10px;
-    }
-`
 
 const BodyDiv = styled.div`
     display: flex;
     align-items: left;
     flex-direction: column;
-    /* background: #eeeeee; */
     color: #5f1b1b;
-    padding-bottom: 100px;
-    height: 280px;
-    min-width: 61vw;
-    margin: 10px;
+    height: 60%;
     position: relative;
 
     .backgroundPaper {
-        height: 100%;
+        height: 90%;
         width: 100%;
-        border-radius: 20px;
+        border-radius: 10px;
         left: 0;
         top: 0;
         position: absolute;
@@ -295,18 +333,6 @@ const BodyDiv = styled.div`
     }
 `
 
-const StyledInfoDiv = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: #5f1b1b;
-    width: 70%;
-    height: 50%;
-    font-weight: 400;
-    font-size: 2rem;
-
-
-`
 
 const StyledTextDiv = styled.div`
     text-align: justify;
@@ -340,6 +366,31 @@ const StyledTextDiv = styled.div`
     }
 `
 
+const StyledAttributeContainer = styled.div`
+    width: 30%;
+    height: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+`
+
+const StyledAttributeText = styled.h2`
+    height: fit-content;
+    width: 120px;
+    font-size: 18px;
+    color: #FDF0D5;
+    font-family: Georgia, serif;
+`
+
+const StyledAttributeBar = styled.div`
+    width: 45px;
+    height: 10px;
+    border-radius: 5px;
+    background: ${props => (props.active ? '#FDF0D5' : '#1C070A')};
+`
+
+
 const StyledImg = styled.div`
     width: 250px;
     height: 500px;
@@ -349,22 +400,8 @@ const StyledImg = styled.div`
     background-image: url(${props => '/img/'+props.url});
 `
 
-const ContainerAttribute = styled.div`
-    margin: 20px;
-    width: 200px;
-    height: 5px;
-`
-
-const AttributeName = styled.div`
-    display: flex;
-    justify-content: space-between;
-    h1{
-        font-size: 1.2rem;
-        letter-spacing: 0.2rem;
-    }
-`
-
-const BorderLinearProgress = styled(LinearProgress)`
-    height: 10px !important;
-    border-radius: 10px;
+const StyledButtonContainer = styled.div`
+    position: absolute;
+    top: 30px;
+    right: 30px;
 `
