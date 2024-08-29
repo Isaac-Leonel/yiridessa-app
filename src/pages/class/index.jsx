@@ -12,11 +12,9 @@ import { register } from "swiper/element";
 import { Pagination, EffectCoverflow, Mousewheel } from 'swiper/modules';
 import classes from './classes.js';
 
-
 export const Classes = () => {
     const swiperElRef = useRef(null);
-    const [race, setRace] = useState({})
-    const [modalOpen, setModalOpen] = useState(false)
+    const [classe, setClasse] = useState({})
     const [slide, setSlide] = useState(0)
 
     useEffect(() => { 
@@ -41,9 +39,11 @@ export const Classes = () => {
                 on: {
                     init(s) {
                         setSlide(s.activeIndex)
+                        setClasse(classes[0])
                     },
                     slideChange(s) {
                         setSlide(s.activeIndex)
+                        setClasse(classes[s.activeIndex])
                     },
                 }
             };
@@ -77,11 +77,11 @@ export const Classes = () => {
                     >
                         {
                             classes.map((race, index) => {
-                                
+                                if(race.subClasse == false)
                                 return (
                                     <swiper-slide key={index}>
                                         <CircleButton 
-                                            onClick={console.log("clicou")} 
+                                            onClick={() => {setSlide(index); setClasse(race)}} 
                                             radius="100"
                                             active={slide == index}
                                             imageName={race.iconURL} 
@@ -92,19 +92,43 @@ export const Classes = () => {
                             })
                         }
                     </swiper-container>
-                    <StyledLine></StyledLine>
                 </StyledRacesContainer>
                 <ClasseModal 
-                    className={classes[slide].className ?? ""}
-                    description={classes[slide].description ?? ""}
-                    evolution={classes[slide].evolution}
-                    videoEmbed={classes[slide].videoEmbed}
-                    armor={classes[slide].armor}
-                    weapons={classes[slide].weapons}
-                    passives={classes[slide].passive}
-                    classAttributes={classes[slide].classAttributes ?? []}
-
+                    className={classe.className ?? ""}
+                    description={classe.description ?? ""}
+                    evolution={classe.evolution ?? []}
+                    videoEmbed={classe.videoEmbed ?? ""}
+                    armor={classe.armor ?? []}
+                    weapons={classe.weapons ?? []}
+                    passives={classe.passive ?? []}
+                    classAttributes={classe.classAttributes ?? []}
                 />
+                <StyledEvolucoesContainer>
+                    <StyledKingdom>Evoluções</StyledKingdom>
+                    <div style={{display: 'flex', gap: '20px', flexDirection: 'column'}}>
+                        {
+                            classe.evolution?.map(ev => {
+                                return (
+                                    classes.map((subC, index) => {
+                                        if(subC.className === ev){
+                                            return (
+                                                <CircleButton 
+                                                    onClick={() => {setClasse(classes.find(x => x.className === subC.className))}} 
+                                                    radius="100"
+                                                    active={classe.className === subC.className}
+                                                    imageName={subC.iconURL} 
+                                            />
+                                        )
+                                    }
+                                        
+                                    })
+                                )
+                            })
+                            
+                        }
+                    </div>
+                    
+                </StyledEvolucoesContainer>
             </div>
         </StyledSection>
     )
@@ -120,6 +144,15 @@ const StyledRacesContainer = styled.div`
     swiper-container {
         width: 100%;
     }
+`
+
+const StyledEvolucoesContainer = styled.div`
+    width: 10%;
+    height: 100%;
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+    flex-direction: column;
 `
 
 const StyledSection = styled.section`
@@ -161,4 +194,19 @@ const StyledLine = styled.div`
     top: 54vh;
     left: 21.3vw;
     
+`
+
+const StyledKingdom = styled.h1`
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    color: #FDF0D5;
+    background: rgba(15, 15, 15, 0.445);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
 `

@@ -15,6 +15,7 @@ import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgr
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { CircleButton } from "../../../components/circleButton";
 
 
 
@@ -60,12 +61,12 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
     return (
         <StyledContainer>
             <StyledModal>
-                <div style={{width: "400px", height: "330px"}}>
+                <div style={{width: "50%", height: "330px"}}>
                     <ContentContainer title={className}>
                         <StyledDescription>{description}</StyledDescription>
                     </ContentContainer>
                 </div>
-                <div style={{width: "400px", height: "120px"}}>
+                <div style={{width: "50%", height: "120px"}}>
                     <ContentContainer title="Passivas">
                         <StyledContainerAt>
                             {
@@ -80,7 +81,7 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
                          </StyledContainerAt> 
                     </ContentContainer>
                 </div>
-                <div style={{width: "400px", height: "180px"}}>
+                <div style={{width: "50%", height: "180px"}}>
                     <ContentContainer title="Atributos">
                         <StyledContainerAt>
                             {
@@ -101,7 +102,7 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
                     </ContentContainer>
                     
                 </div>
-                <div style={{width: "400px", height: "150px"}}>
+                <div style={{width: "50%", height: "150px"}}>
                     <ContentContainer title="Armas">
                         <StyledContainerAt>
                             {
@@ -116,7 +117,7 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
                          </StyledContainerAt> 
                     </ContentContainer>
                 </div>
-                <div style={{width: "400px", height: "150px"}}>
+                <div style={{width: "50%", height: "150px"}}>
                     <ContentContainer title="Armadura">
                         <StyledContainerAt>
                             {
@@ -131,7 +132,6 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
                          </StyledContainerAt> 
                     </ContentContainer>
                 </div>
-               
             </StyledModal>
         </StyledContainer>
     )
@@ -139,7 +139,7 @@ export const ClasseModal = ({ className, description, evolution, videoEmbed, arm
 
 const StyledContainer = styled.div`
     display: flex;
-    width: 60%;
+    width: 70%;
     height: 85%;
 `
 
@@ -151,10 +151,12 @@ const StyledModal = styled.div`
     color: #FDF0D5;
     display: flex;
     flex-direction: column;
+    margin-right: 100px;
     flex-wrap: wrap;
     border-radius: 20px;
-    padding: 20px;
-    width: 900px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1300px;
     height: 100%;
     gap: 10px;
     
