@@ -269,7 +269,7 @@ export default [
                 type: 2
             },
         ],
-        weapons: ['Machado de uma mão', 'Machado de duas mãos', 'Machadinha de arremesso'],
+        weapons: ['Machado de uma mão', 'Machado de duas mãos', 'Machadinha de arremesso', 'Escudo'],
         passive: ['Charge Attack', 'Barbarian','Two-Handed Specialization','Heavy armor restriction','Aura',],
         iconURL: 'Berserk.jpeg'
     },
@@ -293,7 +293,7 @@ export default [
                 type: 2
             },
         ],
-        weapons: ['Machado de uma mão', 'Machado de duas mãos', 'Machadinha de arremesso'],
+        weapons: ['Machado de uma mão', 'Machadinha de arremesso', 'Alabardas/Lanças de duas mãos'],
         passive: ['Leap Attack', 'Shapeshifting (04formas)','Swiftness','Heavy Armor Restriction','Aura'],
         iconURL: 'Xama.jpeg'
     },
@@ -318,14 +318,14 @@ export default [
             },
         ],
         weapons: ['Espada Curta', 'Arco', 'Espadas Duplas','Crossbows'],
-        passive: ['Acrobatic Dodge', 'Swiftness','Beast Tamer', 'Boaw Mastery','Heavy Armor Restriction', 'Aura'],
+        passive: ['Acrobatic Dodge', 'Swiftness','Beast Tamer', 'Bow Mastery','Heavy Armor Restriction', 'Aura'],
         iconURL: 'Sentinela.jpeg'
     },
     {
         className: 'Espectro',
         description: 'Espectros são assassinos sombrios e mestres da furtividade, especializados em operações secretas e ataques inesperados. Eles são conhecidos por sua habilidade em se esconder nas sombras e se mover sem ser detectados, utilizando táticas furtivas para eliminar alvos com precisão mortal. Equipados com técnicas avançadas de camuflagem e armas silenciosas, os Espectros são especialistas em infiltração e sabotagem. Sua capacidade de operar nas sombras e escapar sem deixar rastros os torna inimigos temidos e difíceis de capturar, permitindo-lhes realizar suas missões com eficácia e discrição.',
         videoEmbed: "  ",
-        evolution: ['Espectro', 'Dançarina das Sombras'],
+        evolution: ['Espectro', 'Dançarina das Sombras', 'Espadas Duplas'],
         armor: ['Leve'],
         classAttributes: [
             {
@@ -349,7 +349,7 @@ export default [
         className: 'Dançarina das Sombras',
         description: 'Um Dançarino das Sombras é um mestre da agilidade e da graça, utilizando seus movimentos fluídos para se esconder nas sombras e executar ataques rápidos e precisos. Combinando habilidades de dança e combate, ele é capaz de se mover de forma quase etérea, evitando ataques e surpreendendo seus inimigos com acrobacias e golpes inesperados com seus leques mágicos. Sua técnica permite-lhe manipular as sombras ao seu redor, tornando-a quase invisível durante a batalha. O Dançarino das Sombras é especialista em ataques furtivos e emboscadas, utilizando sua destreza para desorientar e derrotar adversários com eficiência e elegância.',
         videoEmbed: "  ",
-        evolution: ['Espectro', 'Dançarina das Sombras'],
+        evolution: ['Espectro', 'Dançarina das Sombras', 'Espadas Duplas'],
         armor: ['Leve'],
         classAttributes: [
             {
@@ -389,7 +389,7 @@ export default [
                 type: 2
             },
         ],
-        weapons: ['Armas de uma mão', 'Escudo'],
+        weapons: ['Armas de uma mão', 'Escudo', 'Alabardas/Lanças de duas mãos'],
         passive: ['Charge Attack', 'Armor Specialization', 'Epic toughness', 'Tatics (Taunt)', 'Aura'],
         iconURL: 'Titã.jpeg'
     },
@@ -413,8 +413,8 @@ export default [
                 type: 2
             },
         ],
-        weapons: ['Armas de duas mãos'],
-        passive: ['Spellcaster (Smite)', 'Charge Attack', 'Armor Specialization', 'Infantry training', 'Two-Handd Specialization', 'Aura'],
+        weapons: ['Armas de duas mãos', 'Alabardas/Lanças de duas mãos'],
+        passive: ['Spellcaster (Smite)', 'Charge Attack', 'Armor Specialization', 'Infantry training', 'Two-Handed Specialization', 'Aura'],
         iconURL: 'Cavaleiro.jpeg'
     },
     {
@@ -446,7 +446,7 @@ export default [
         description: 'Guerreiros imbuídos de honra e disciplina, os Samurais são mestres na arte da espada. Eles seguem um código rígido de lealdade, enfrentando qualquer desafio com coragem inabalável e habilidade letal. Com armaduras tradicionais e técnicas de combate precisas, os Samurais protegem seus aliados e destroem seus inimigos com graça e eficiência.',
         videoEmbed: "  ",
         evolution: ['Monge','Samurai'],
-        armor: ['Leve'],
+        armor: ['Leve', 'Média', 'Pesada'],
         classAttributes: [
             {
                 bonusName: 'Agilidade',
@@ -494,7 +494,7 @@ export default [
         description: 'Um Mestre Curandeiro é um especialista em técnicas avançadas de cura e restauração, dedicado a promover a saúde e o bem-estar de outros. Ele possui um profundo conhecimento de remédios, terapias e práticas de cura, que combina para tratar ferimentos e doenças com eficácia. Além de suas habilidades práticas, o Mestre Curandeiro é frequentemente um sábio conselheiro, oferecendo orientação e conforto aos que buscam alívio. Sua expertise vai além do tratamento físico, muitas vezes envolvendo aspectos emocionais e espirituais da cura, proporcionando um cuidado holístico e completo. Sua reputação é construída sobre a confiança e respeito que conquista ao longo dos anos de dedicação e sucesso na arte de curar.',
         videoEmbed: "  ",
         evolution: ['Mestre Curandeiro'],
-        armor: ['Leve'],
+        armor: ['Leve', 'Média'],
         classAttributes: [
             {
                 bonusName: 'Vitalidade',
