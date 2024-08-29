@@ -171,7 +171,7 @@ export default [
                 type: 3
             },
         ],
-        weapons: ['Espada Curta', 'Alaúdes'],
+        weapons: ['Espada Curta', 'Instrumentos Musicais Mágicos'],
         passive: ['Swiftness', 'Unarmored'],
         iconURL: 'artista.jpeg'
     },
@@ -221,7 +221,7 @@ export default [
                 type: 3
             },
         ],
-        weapons: ['Maça de Mão', 'Escudo'],
+        weapons: ['Maça de Mão', 'Selos (Curas)','Escudo'],
         passive: ['Spellcaster', 'Unarmored'],
         iconURL: 'Sanador.png'
     },
@@ -485,7 +485,7 @@ export default [
                 type: 2
             },
         ],
-        weapons: ['Espada Curta', 'Alaúde'],
+        weapons: ['Espada Curta', 'Instrumentos Musicais Mágicos', 'Eloquência Musical'],
         passive: ['Unarmored', 'Swiftness', 'Acrobatic Dodge'],
         iconURL: 'Menestrel.jpeg'
     },
@@ -509,7 +509,7 @@ export default [
                 type: 2
             },
         ],
-        weapons: ['Maça de mão', 'Selos (Curas)', 'Escudo', 'Staffs de cura'],
+        weapons: ['Maça de mão', 'Escudo', 'Selos (Curas)', 'Staffs de cura'],
         passive: ['Spellcaster (Mitrahs Grace)', 'Heavy Armor Restriction', 'Aura'],
         iconURL: 'Curandeiro.jpeg'
     },
