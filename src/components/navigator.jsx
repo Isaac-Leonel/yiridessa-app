@@ -24,9 +24,9 @@ export const Navigator = React.forwardRef((props, ref) => {
                 <StyledLink to={"jobs"} active={pathName == "jobs"}><span>PROFISSÕES</span></StyledLink>
                 <StyledLink to={"races"} active={pathName == "races"}><span>RAÇAS</span></StyledLink>
                 <StyledLink to={"classes"} active={pathName == "classes"}><span>CLASSES</span></StyledLink>
-                <StyledA href="https://docs.google.com/document/d/1uO0rtVxtyhnpLwAAGNACNJY4Tk_qovkVzA99baLxEAI/preview" target="_blank" active={pathName == "rules"}><span>MECANICAS</span></StyledA>
+                <StyledA href="https://docs.google.com/document/d/1uO0rtVxtyhnpLwAAGNACNJY4Tk_qovkVzA99baLxEAI/preview" target="_blank" active={pathName == "mecanicas"}><span>MECANICAS</span></StyledA>
                 <StyledA href="https://docs.google.com/document/d/1A4ojlRQrGWAfnfwq84Bv6AGVr5Ne1g5na9hX0MHhs1c/preview" target="_blank" active={pathName == "rules"}><span>REGRAS</span></StyledA>
-                <StyledLink disabled to={""} active={pathName == "allowlist"}><span>ALLOWLIST</span></StyledLink>
+                <StyledA href="https://forms.gle/8hiLiEG3XBrKQHiz5" target="_blank" active={pathName == "allowlist"}><span>ALLOWLIST</span></StyledA>
             </StyledLinkDiv>
             <StyledIconsContainer>
                 <StyledLinkIcon href="https://discord.gg/y4ZuCc9e8r" target="_blank"><i className="fab fa-discord"></i></StyledLinkIcon>
