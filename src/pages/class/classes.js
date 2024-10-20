@@ -2,7 +2,7 @@
 export default [
     {
         className: 'Elementalista',
-        description: 'Um Elementalista é um mago especializado em um dos elementos (Fogo, Água, Ar, Terra ou Luz). O Elementalista geralmente conhece magias específicas do elemento que mais lhe agrada, já visitou pelo menos algumas vezes o Reino Elemental correspondente e mantém familiares, contatos ou gênios associados a esses elementos.',
+        description: 'O Elementalista é um mago especializado no controle e manipulação dos elementos naturais: fogo, água, terra e ar. Sua habilidade está em canalizar as forças da natureza, utilizando-as tanto de forma ofensiva quanto defensiva. Esses magos são versáteis, capazes de conjurar tempestades, criar muralhas de pedra, manipular chamas intensas e até controlar a correnteza dos rios. No entanto, dominar mais de um elemento exige grande estudo e equilíbrio interior.',
         evolution: ['Arquimago'],
         subClasse: false,
         videoEmbed: "  ",
